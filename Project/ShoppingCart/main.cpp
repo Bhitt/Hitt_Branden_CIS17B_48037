@@ -1,8 +1,8 @@
 /*
  * File:   main.cpp
  * Author: Branden Hitt
- * Created on September 27th, 2016, 8:10 PM
- *      Purpose: Survey the user
+ * Created on September 27th, 2016, 10:00 PM
+ *      Purpose: Create a shopping cart for users to purchase items from
  */
 
 //System Libraries
@@ -15,15 +15,13 @@
 
 //Function Prototypes
 
-//Execution begins here
+//Execution Starts Here
 int main(int argc, char *argv[])
 {
-    //Begin Qt execution
+    //Being Qt execution
     QApplication a(argc, argv);
-    //Create Window
     MainWindow w;
-    //show the window
     w.show();
-    //Exit Stage Right
+
     return a.exec();
 }

@@ -1,7 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+//System Libraries
 #include <QMainWindow>
+#include <QAction>
 
 namespace Ui {
 class MainWindow;
@@ -19,19 +21,19 @@ private slots:
     void newFile();
     void about();
 
-
 private:
-    //
     Ui::MainWindow *ui;
-    //
-    void crMenus(); //create menus
-    void crActn(); //create actions
+
+    void crActns();
+    void crMenus();
+
     //Menus
     QMenu *fileMenu;
     QMenu *helpMenu;
     //Actions
     QAction *newAction;
     QAction *aboutAction;
+
 };
 
 #endif // MAINWINDOW_H

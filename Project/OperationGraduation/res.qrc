@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>defaultBG.png</file>
+        <file>snow.png</file>
+        <file>tile1.png</file>
+        <file>wall.png</file>
+    </qresource>
+</RCC>

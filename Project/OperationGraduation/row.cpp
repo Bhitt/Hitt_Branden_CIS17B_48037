@@ -9,7 +9,7 @@
 
 Row::Row() //Default constructor
 {
-    cols = 9;
+    cols = 16;
     table = new bool[cols];
 
     for(int i = 0; i < cols; i++)

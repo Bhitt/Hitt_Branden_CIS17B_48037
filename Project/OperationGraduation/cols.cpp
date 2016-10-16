@@ -9,7 +9,7 @@
 
 Cols::Cols() //Default Constructor
 {
-    szCols = 9;
+    szCols = 16;
     szRows = 9;
     level = new Row*[szRows];
 

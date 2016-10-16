@@ -7,6 +7,7 @@ INPUT(
 ./release\cols.o
 ./release\row.o
 ./release\player.o
+./release\tile.o
 ./release\qrc_res.o
 ./release\moc_player.o
 );

@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/2772.png</file>
+        <file>Images/BluRayS1-S5.jpg</file>
+        <file>Images/BluRayS1-S5small.png</file>
+        <file>Images/BluRayS1-S5small.xcf</file>
+        <file>Images/BluRayS6.jpg</file>
+        <file>Images/expand.png</file>
+        <file>Images/GameOfThronesBooks.jpg</file>
+        <file>Images/GoTBoardGame.jpg</file>
+        <file>Images/GoTCoffeeMug.jpg</file>
+        <file>Images/GoTMonopoly.jpg</file>
+        <file>Images/Pop!JonSnow.jpg</file>
+        <file>Images/ShoppingCartBG.png</file>
+        <file>Images/shoppingItemPH.png</file>
+        <file>Images/TheIronThrone.jpg</file>
+        <file>Images/TheNightKing.jpg</file>
+        <file>Images/TheWorldOfIceAndFire.jpg</file>
+        <file>main.cpp</file>
+        <file>mainwindow.cpp</file>
+        <file>mainwindow.h</file>
+    </qresource>
+</RCC>

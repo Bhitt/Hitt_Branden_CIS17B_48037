@@ -1,19 +1,21 @@
 #ifndef GAME_H
 #define GAME_H
 
-//System Libraries
+//System and Qt Libraries
 #include <QGraphicsView>
-#include <QGraphicsScene>
 #include <QWidget>
-
+#include <QGraphicsScene>
 //User Libraries
+#include "tile.h"
+#include "map.h"
 #include "player.h"
-class Game: public QGraphicsView{
 
+class Game : public QGraphicsView{
 public:
     Game(QWidget *parent=0);
 
-    QGraphicsScene *scene; //display
+    QGraphicsScene *scene;
+
     Player *player;
 
 };

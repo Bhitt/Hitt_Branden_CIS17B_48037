@@ -9,7 +9,7 @@
 
 /*
  * Notes:   Room Display Currently 960x540
- *                                 14 tiles by 7 tiles (60x60 pixels each)
+ *                                 16 tiles by 9 tiles (60x60 pixels each)
  *                                 including surrounding grid for the wall
  *
  */

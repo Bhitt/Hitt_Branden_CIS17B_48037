@@ -20,7 +20,8 @@ SOURCES += main.cpp \
     level.cpp \
     cols.cpp \
     row.cpp \
-    player.cpp
+    player.cpp \
+    tile.cpp
 
 HEADERS  += \
     game.h \
@@ -29,7 +30,8 @@ HEADERS  += \
     level.h \
     cols.h \
     row.h \
-    player.h
+    player.h \
+    tile.h
 
 FORMS    +=
 

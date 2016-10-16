@@ -7,6 +7,7 @@ INPUT(
 ./debug\cols.o
 ./debug\row.o
 ./debug\player.o
+./debug\tile.o
 ./debug\qrc_res.o
 ./debug\moc_player.o
 );

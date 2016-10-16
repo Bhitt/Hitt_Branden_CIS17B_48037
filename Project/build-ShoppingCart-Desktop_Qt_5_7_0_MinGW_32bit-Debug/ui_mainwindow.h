@@ -46,7 +46,7 @@ public:
     QLabel *GetItBy;
     QLabel *DeliveryDate;
     QPushButton *Expand;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QSpinBox *UnitCount;
     QPushButton *AddToCart;
@@ -61,6 +61,7 @@ public:
     QHBoxLayout *horizontalLayout_14;
     QSpinBox *UnitCount_14;
     QPushButton *AddToCart_14;
+    QLabel *label;
     QGroupBox *ItemListing_3;
     QLabel *Image_15;
     QLabel *ItemName_15;
@@ -105,6 +106,7 @@ public:
     QHBoxLayout *horizontalLayout_18;
     QSpinBox *UnitCount_18;
     QPushButton *AddToCart_18;
+    QLabel *label_2;
     QGroupBox *ItemListing_7;
     QLabel *Image_19;
     QLabel *ItemName_19;
@@ -152,7 +154,13 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
         MainWindow->resize(1280, 720);
-        MainWindow->setStyleSheet(QStringLiteral(""));
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
+        MainWindow->setSizePolicy(sizePolicy);
+        MainWindow->setMaximumSize(QSize(1280, 720));
+        MainWindow->setStyleSheet(QStringLiteral("border-top-color: rgb(138, 163, 170);"));
         actionNew_Order = new QAction(MainWindow);
         actionNew_Order->setObjectName(QStringLiteral("actionNew_Order"));
         actionLoad_Order = new QAction(MainWindow);
@@ -170,9 +178,6 @@ public:
         ItemListing = new QGroupBox(centralWidget);
         ItemListing->setObjectName(QStringLiteral("ItemListing"));
         ItemListing->setGeometry(QRect(20, 10, 400, 171));
-        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(ItemListing->sizePolicy().hasHeightForWidth());
         ItemListing->setSizePolicy(sizePolicy);
         ItemListing->setStyleSheet(QStringLiteral("background-color: rgb(255, 255, 255);"));
@@ -219,21 +224,21 @@ public:
         Expand->setGeometry(QRect(130, 122, 31, 31));
         Expand->setStyleSheet(QStringLiteral("background-image: url(:/Images/expand.png);"));
         Expand->setFlat(true);
-        widget = new QWidget(ItemListing);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(270, 130, 118, 25));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(ItemListing);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(270, 130, 118, 25));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setSpacing(6);
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        UnitCount = new QSpinBox(widget);
+        UnitCount = new QSpinBox(layoutWidget);
         UnitCount->setObjectName(QStringLiteral("UnitCount"));
         UnitCount->setMinimum(1);
 
         horizontalLayout->addWidget(UnitCount);
 
-        AddToCart = new QPushButton(widget);
+        AddToCart = new QPushButton(layoutWidget);
         AddToCart->setObjectName(QStringLiteral("AddToCart"));
         AddToCart->setAutoFillBackground(false);
         AddToCart->setStyleSheet(QStringLiteral("background-color: rgb(191, 191, 191)"));
@@ -251,6 +256,7 @@ public:
         Image_14->setGeometry(QRect(10, 10, 150, 150));
         sizePolicy.setHeightForWidth(Image_14->sizePolicy().hasHeightForWidth());
         Image_14->setSizePolicy(sizePolicy);
+        Image_14->setStyleSheet(QStringLiteral("image: url(:/Images/TheWorldOfIceAndFiresmall.jpg);"));
         Image_14->setPixmap(QPixmap(QString::fromUtf8(":/images/shoppingItemPH.png")));
         ItemName_14 = new QLabel(ItemListing_2);
         ItemName_14->setObjectName(QStringLiteral("ItemName_14"));
@@ -259,7 +265,7 @@ public:
         ItemName_14->setTextFormat(Qt::RichText);
         byCompany_14 = new QLabel(ItemListing_2);
         byCompany_14->setObjectName(QStringLiteral("byCompany_14"));
-        byCompany_14->setGeometry(QRect(180, 30, 71, 16));
+        byCompany_14->setGeometry(QRect(180, 30, 111, 16));
         byCompany_14->setFont(font1);
         Price_14 = new QLabel(ItemListing_2);
         Price_14->setObjectName(QStringLiteral("Price_14"));
@@ -293,6 +299,14 @@ public:
 
         horizontalLayout_14->addWidget(AddToCart_14);
 
+        label = new QLabel(ItemListing_2);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(230, 44, 61, 30));
+        QFont font3;
+        font3.setFamily(QStringLiteral("MS Shell Dlg 2"));
+        font3.setStrikeOut(true);
+        label->setFont(font3);
+        label->setTextFormat(Qt::RichText);
         ItemListing_3 = new QGroupBox(centralWidget);
         ItemListing_3->setObjectName(QStringLiteral("ItemListing_3"));
         ItemListing_3->setGeometry(QRect(20, 390, 400, 171));
@@ -304,6 +318,7 @@ public:
         Image_15->setGeometry(QRect(10, 10, 150, 150));
         sizePolicy.setHeightForWidth(Image_15->sizePolicy().hasHeightForWidth());
         Image_15->setSizePolicy(sizePolicy);
+        Image_15->setStyleSheet(QStringLiteral("image: url(:/Images/TheIronThronesmall.jpg);"));
         Image_15->setPixmap(QPixmap(QString::fromUtf8(":/images/shoppingItemPH.png")));
         ItemName_15 = new QLabel(ItemListing_3);
         ItemName_15->setObjectName(QStringLiteral("ItemName_15"));
@@ -312,7 +327,7 @@ public:
         ItemName_15->setTextFormat(Qt::RichText);
         byCompany_15 = new QLabel(ItemListing_3);
         byCompany_15->setObjectName(QStringLiteral("byCompany_15"));
-        byCompany_15->setGeometry(QRect(180, 30, 71, 16));
+        byCompany_15->setGeometry(QRect(180, 30, 111, 16));
         byCompany_15->setFont(font1);
         Price_15 = new QLabel(ItemListing_3);
         Price_15->setObjectName(QStringLiteral("Price_15"));
@@ -357,6 +372,7 @@ public:
         Image_16->setGeometry(QRect(10, 10, 150, 150));
         sizePolicy.setHeightForWidth(Image_16->sizePolicy().hasHeightForWidth());
         Image_16->setSizePolicy(sizePolicy);
+        Image_16->setStyleSheet(QStringLiteral("image: url(:/Images/BluRayS6small.jpg);"));
         Image_16->setPixmap(QPixmap(QString::fromUtf8(":/images/shoppingItemPH.png")));
         ItemName_16 = new QLabel(ItemListing_4);
         ItemName_16->setObjectName(QStringLiteral("ItemName_16"));
@@ -410,15 +426,16 @@ public:
         Image_17->setGeometry(QRect(10, 10, 150, 150));
         sizePolicy.setHeightForWidth(Image_17->sizePolicy().hasHeightForWidth());
         Image_17->setSizePolicy(sizePolicy);
+        Image_17->setStyleSheet(QStringLiteral("image: url(:/Images/GoTBoardGamesmall.jpg);"));
         Image_17->setPixmap(QPixmap(QString::fromUtf8(":/images/shoppingItemPH.png")));
         ItemName_17 = new QLabel(ItemListing_5);
         ItemName_17->setObjectName(QStringLiteral("ItemName_17"));
-        ItemName_17->setGeometry(QRect(170, 10, 211, 21));
+        ItemName_17->setGeometry(QRect(170, 10, 221, 21));
         ItemName_17->setFont(font);
         ItemName_17->setTextFormat(Qt::RichText);
         byCompany_17 = new QLabel(ItemListing_5);
         byCompany_17->setObjectName(QStringLiteral("byCompany_17"));
-        byCompany_17->setGeometry(QRect(180, 30, 71, 16));
+        byCompany_17->setGeometry(QRect(180, 30, 121, 16));
         byCompany_17->setFont(font1);
         Price_17 = new QLabel(ItemListing_5);
         Price_17->setObjectName(QStringLiteral("Price_17"));
@@ -463,15 +480,16 @@ public:
         Image_18->setGeometry(QRect(10, 10, 150, 150));
         sizePolicy.setHeightForWidth(Image_18->sizePolicy().hasHeightForWidth());
         Image_18->setSizePolicy(sizePolicy);
+        Image_18->setStyleSheet(QStringLiteral("image: url(:/Images/TheNightKingsmall.jpg);"));
         Image_18->setPixmap(QPixmap(QString::fromUtf8(":/images/shoppingItemPH.png")));
         ItemName_18 = new QLabel(ItemListing_6);
         ItemName_18->setObjectName(QStringLiteral("ItemName_18"));
-        ItemName_18->setGeometry(QRect(170, 10, 211, 21));
+        ItemName_18->setGeometry(QRect(160, 10, 231, 21));
         ItemName_18->setFont(font);
         ItemName_18->setTextFormat(Qt::RichText);
         byCompany_18 = new QLabel(ItemListing_6);
         byCompany_18->setObjectName(QStringLiteral("byCompany_18"));
-        byCompany_18->setGeometry(QRect(180, 30, 71, 16));
+        byCompany_18->setGeometry(QRect(180, 30, 121, 16));
         byCompany_18->setFont(font1);
         Price_18 = new QLabel(ItemListing_6);
         Price_18->setObjectName(QStringLiteral("Price_18"));
@@ -505,6 +523,9 @@ public:
 
         horizontalLayout_18->addWidget(AddToCart_18);
 
+        label_2 = new QLabel(ItemListing_6);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setGeometry(QRect(230, 50, 91, 16));
         ItemListing_7 = new QGroupBox(centralWidget);
         ItemListing_7->setObjectName(QStringLiteral("ItemListing_7"));
         ItemListing_7->setGeometry(QRect(860, 10, 400, 171));
@@ -516,6 +537,7 @@ public:
         Image_19->setGeometry(QRect(10, 10, 150, 150));
         sizePolicy.setHeightForWidth(Image_19->sizePolicy().hasHeightForWidth());
         Image_19->setSizePolicy(sizePolicy);
+        Image_19->setStyleSheet(QStringLiteral("image: url(:/Images/GameOfThronesBookssmall.jpg);"));
         Image_19->setPixmap(QPixmap(QString::fromUtf8(":/images/shoppingItemPH.png")));
         ItemName_19 = new QLabel(ItemListing_7);
         ItemName_19->setObjectName(QStringLiteral("ItemName_19"));
@@ -524,7 +546,7 @@ public:
         ItemName_19->setTextFormat(Qt::RichText);
         byCompany_19 = new QLabel(ItemListing_7);
         byCompany_19->setObjectName(QStringLiteral("byCompany_19"));
-        byCompany_19->setGeometry(QRect(180, 30, 71, 16));
+        byCompany_19->setGeometry(QRect(180, 30, 121, 16));
         byCompany_19->setFont(font1);
         Price_19 = new QLabel(ItemListing_7);
         Price_19->setObjectName(QStringLiteral("Price_19"));
@@ -569,6 +591,7 @@ public:
         Image_20->setGeometry(QRect(10, 10, 150, 150));
         sizePolicy.setHeightForWidth(Image_20->sizePolicy().hasHeightForWidth());
         Image_20->setSizePolicy(sizePolicy);
+        Image_20->setStyleSheet(QStringLiteral("image: url(:/Images/GoTCoffeeMugsmall.jpg);"));
         Image_20->setPixmap(QPixmap(QString::fromUtf8(":/images/shoppingItemPH.png")));
         ItemName_20 = new QLabel(ItemListing_8);
         ItemName_20->setObjectName(QStringLiteral("ItemName_20"));
@@ -577,7 +600,7 @@ public:
         ItemName_20->setTextFormat(Qt::RichText);
         byCompany_20 = new QLabel(ItemListing_8);
         byCompany_20->setObjectName(QStringLiteral("byCompany_20"));
-        byCompany_20->setGeometry(QRect(180, 30, 71, 16));
+        byCompany_20->setGeometry(QRect(180, 30, 111, 16));
         byCompany_20->setFont(font1);
         Price_20 = new QLabel(ItemListing_8);
         Price_20->setObjectName(QStringLiteral("Price_20"));
@@ -622,6 +645,7 @@ public:
         Image_21->setGeometry(QRect(10, 10, 150, 150));
         sizePolicy.setHeightForWidth(Image_21->sizePolicy().hasHeightForWidth());
         Image_21->setSizePolicy(sizePolicy);
+        Image_21->setStyleSheet(QStringLiteral("image: url(:/Images/Pop!JonSnowsmall.jpg);"));
         Image_21->setPixmap(QPixmap(QString::fromUtf8(":/images/shoppingItemPH.png")));
         ItemName_21 = new QLabel(ItemListing_9);
         ItemName_21->setObjectName(QStringLiteral("ItemName_21"));
@@ -630,7 +654,7 @@ public:
         ItemName_21->setTextFormat(Qt::RichText);
         byCompany_21 = new QLabel(ItemListing_9);
         byCompany_21->setObjectName(QStringLiteral("byCompany_21"));
-        byCompany_21->setGeometry(QRect(180, 30, 71, 16));
+        byCompany_21->setGeometry(QRect(180, 30, 131, 16));
         byCompany_21->setFont(font1);
         Price_21 = new QLabel(ItemListing_9);
         Price_21->setObjectName(QStringLiteral("Price_21"));
@@ -674,6 +698,7 @@ public:
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 1280, 21));
+        menuBar->setStyleSheet(QStringLiteral("background-color: rgb(161, 174, 175);"));
         menuFile = new QMenu(menuBar);
         menuFile->setObjectName(QStringLiteral("menuFile"));
         menuHelp = new QMenu(menuBar);
@@ -683,6 +708,7 @@ public:
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
+        mainToolBar->setStyleSheet(QStringLiteral("background-color: rgb(150, 159, 161);"));
         MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
         statusBar = new QStatusBar(MainWindow);
         statusBar->setObjectName(QStringLiteral("statusBar"));
@@ -747,15 +773,16 @@ public:
 #ifndef QT_NO_TOOLTIP
         ItemName_14->setToolTip(QApplication::translate("MainWindow", "Item Name", 0));
 #endif // QT_NO_TOOLTIP
-        ItemName_14->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:400; color:#94c8ff;\">Item Name: Item Detail</span></p></body></html>", 0));
-        byCompany_14->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#afafaf;\">by Company</span></p></body></html>", 0));
-        Price_14->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#990000;\">$59.99</span></p></body></html>", 0));
+        ItemName_14->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:400; color:#94c8ff;\">The World of Ice &amp; Fire</span></p></body></html>", 0));
+        byCompany_14->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#afafaf;\">by George R. R. Martin</span></p></body></html>", 0));
+        Price_14->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#990000;\">$29.49</span></p></body></html>", 0));
         GetItBy_14->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:7pt; color:#afafaf;\">Get it by</span></p></body></html>", 0));
         DeliveryDate_12->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#0caa46;\">Tuesday, Oct 18</span></p></body></html>", 0));
 #ifndef QT_NO_TOOLTIP
         AddToCart_14->setToolTip(QApplication::translate("MainWindow", "Add to your cart", 0));
 #endif // QT_NO_TOOLTIP
         AddToCart_14->setText(QApplication::translate("MainWindow", "Add to Cart", 0));
+        label->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#9c9c9c;\">$50.00</span></p></body></html>", 0));
         ItemListing_3->setTitle(QString());
 #ifndef QT_NO_TOOLTIP
         Image_15->setToolTip(QApplication::translate("MainWindow", "Click to Expand", 0));
@@ -767,11 +794,11 @@ public:
 #ifndef QT_NO_TOOLTIP
         ItemName_15->setToolTip(QApplication::translate("MainWindow", "Item Name", 0));
 #endif // QT_NO_TOOLTIP
-        ItemName_15->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:400; color:#94c8ff;\">Item Name: Item Detail</span></p></body></html>", 0));
-        byCompany_15->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#afafaf;\">by Company</span></p></body></html>", 0));
-        Price_15->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#990000;\">$59.99</span></p></body></html>", 0));
+        ItemName_15->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:400; color:#94c8ff;\">Game of Thrones: Iron Throne</span></p></body></html>", 0));
+        byCompany_15->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#afafaf;\">by Dark Horse Deluxe</span></p></body></html>", 0));
+        Price_15->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#990000;\">$45.18</span></p></body></html>", 0));
         GetItBy_15->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:7pt; color:#afafaf;\">Get it by</span></p></body></html>", 0));
-        DeliveryDate_13->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#0caa46;\">Tuesday, Oct 18</span></p></body></html>", 0));
+        DeliveryDate_13->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#0caa46;\">Tuesday, Oct 20</span></p></body></html>", 0));
 #ifndef QT_NO_TOOLTIP
         AddToCart_15->setToolTip(QApplication::translate("MainWindow", "Add to your cart", 0));
 #endif // QT_NO_TOOLTIP
@@ -787,9 +814,9 @@ public:
 #ifndef QT_NO_TOOLTIP
         ItemName_16->setToolTip(QApplication::translate("MainWindow", "Item Name", 0));
 #endif // QT_NO_TOOLTIP
-        ItemName_16->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:400; color:#94c8ff;\">Item Name: Item Detail</span></p></body></html>", 0));
-        byCompany_16->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#afafaf;\">by Company</span></p></body></html>", 0));
-        Price_16->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#990000;\">$59.99</span></p></body></html>", 0));
+        ItemName_16->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:400; color:#94c8ff;\">Game of Thrones - Season 6</span></p></body></html>", 0));
+        byCompany_16->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#afafaf;\">by HBO</span></p></body></html>", 0));
+        Price_16->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#990000;\">$39.99</span></p></body></html>", 0));
         GetItBy_16->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:7pt; color:#afafaf;\">Get it by</span></p></body></html>", 0));
         DeliveryDate_14->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#0caa46;\">Tuesday, Oct 18</span></p></body></html>", 0));
 #ifndef QT_NO_TOOLTIP
@@ -807,9 +834,9 @@ public:
 #ifndef QT_NO_TOOLTIP
         ItemName_17->setToolTip(QApplication::translate("MainWindow", "Item Name", 0));
 #endif // QT_NO_TOOLTIP
-        ItemName_17->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:400; color:#94c8ff;\">Item Name: Item Detail</span></p></body></html>", 0));
-        byCompany_17->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#afafaf;\">by Company</span></p></body></html>", 0));
-        Price_17->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#990000;\">$59.99</span></p></body></html>", 0));
+        ItemName_17->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:8pt; font-weight:400; color:#94c8ff;\">A Game of Thrones: The Board Game</span></p></body></html>", 0));
+        byCompany_17->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#afafaf;\">by Christian T. Peterson</span></p></body></html>", 0));
+        Price_17->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#990000;\">$46.86</span></p></body></html>", 0));
         GetItBy_17->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:7pt; color:#afafaf;\">Get it by</span></p></body></html>", 0));
         DeliveryDate_15->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#0caa46;\">Tuesday, Oct 18</span></p></body></html>", 0));
 #ifndef QT_NO_TOOLTIP
@@ -827,15 +854,16 @@ public:
 #ifndef QT_NO_TOOLTIP
         ItemName_18->setToolTip(QApplication::translate("MainWindow", "Item Name", 0));
 #endif // QT_NO_TOOLTIP
-        ItemName_18->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:400; color:#94c8ff;\">Item Name: Item Detail</span></p></body></html>", 0));
-        byCompany_18->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#afafaf;\">by Company</span></p></body></html>", 0));
-        Price_18->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#990000;\">$59.99</span></p></body></html>", 0));
+        ItemName_18->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:400; color:#94c8ff;\">Game of Thrones: The Night's King</span></p></body></html>", 0));
+        byCompany_18->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#afafaf;\">by Dark Horse Comics</span></p></body></html>", 0));
+        Price_18->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#990000;\">$129.99</span></p></body></html>", 0));
         GetItBy_18->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:7pt; color:#afafaf;\">Get it by</span></p></body></html>", 0));
-        DeliveryDate_16->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#0caa46;\">Tuesday, Oct 18</span></p></body></html>", 0));
+        DeliveryDate_16->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#0caa46;\">Tuesday, Oct 19</span></p></body></html>", 0));
 #ifndef QT_NO_TOOLTIP
         AddToCart_18->setToolTip(QApplication::translate("MainWindow", "Add to your cart", 0));
 #endif // QT_NO_TOOLTIP
         AddToCart_18->setText(QApplication::translate("MainWindow", "Add to Cart", 0));
+        label_2->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#9f9f9f;\">+ $19.99 Shipping</span></p></body></html>", 0));
         ItemListing_7->setTitle(QString());
 #ifndef QT_NO_TOOLTIP
         Image_19->setToolTip(QApplication::translate("MainWindow", "Click to Expand", 0));
@@ -847,8 +875,8 @@ public:
 #ifndef QT_NO_TOOLTIP
         ItemName_19->setToolTip(QApplication::translate("MainWindow", "Item Name", 0));
 #endif // QT_NO_TOOLTIP
-        ItemName_19->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:400; color:#94c8ff;\">Item Name: Item Detail</span></p></body></html>", 0));
-        byCompany_19->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#afafaf;\">by Company</span></p></body></html>", 0));
+        ItemName_19->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:400; color:#94c8ff;\">A Game of Thrones 5-Book Set</span></p></body></html>", 0));
+        byCompany_19->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#afafaf;\">by George R. R. Martin</span></p></body></html>", 0));
         Price_19->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#990000;\">$59.99</span></p></body></html>", 0));
         GetItBy_19->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:7pt; color:#afafaf;\">Get it by</span></p></body></html>", 0));
         DeliveryDate_17->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#0caa46;\">Tuesday, Oct 18</span></p></body></html>", 0));
@@ -867,9 +895,9 @@ public:
 #ifndef QT_NO_TOOLTIP
         ItemName_20->setToolTip(QApplication::translate("MainWindow", "Item Name", 0));
 #endif // QT_NO_TOOLTIP
-        ItemName_20->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:400; color:#94c8ff;\">Item Name: Item Detail</span></p></body></html>", 0));
-        byCompany_20->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#afafaf;\">by Company</span></p></body></html>", 0));
-        Price_20->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#990000;\">$59.99</span></p></body></html>", 0));
+        ItemName_20->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:400; color:#94c8ff;\">Game of Thrones Coffee Mug</span></p></body></html>", 0));
+        byCompany_20->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#afafaf;\">by Dark Horse Deluxe</span></p></body></html>", 0));
+        Price_20->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#990000;\">$10.51</span></p></body></html>", 0));
         GetItBy_20->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:7pt; color:#afafaf;\">Get it by</span></p></body></html>", 0));
         DeliveryDate_18->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#0caa46;\">Tuesday, Oct 18</span></p></body></html>", 0));
 #ifndef QT_NO_TOOLTIP
@@ -887,9 +915,9 @@ public:
 #ifndef QT_NO_TOOLTIP
         ItemName_21->setToolTip(QApplication::translate("MainWindow", "Item Name", 0));
 #endif // QT_NO_TOOLTIP
-        ItemName_21->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:400; color:#94c8ff;\">Item Name: Item Detail</span></p></body></html>", 0));
-        byCompany_21->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#afafaf;\">by Company</span></p></body></html>", 0));
-        Price_21->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#990000;\">$59.99</span></p></body></html>", 0));
+        ItemName_21->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:400; color:#94c8ff;\">Funko POP GoT: Jon Snow</span></p></body></html>", 0));
+        byCompany_21->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#afafaf;\">by Funko Pop! Television</span></p></body></html>", 0));
+        Price_21->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#990000;\">$11.99</span></p></body></html>", 0));
         GetItBy_21->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:7pt; color:#afafaf;\">Get it by</span></p></body></html>", 0));
         DeliveryDate_19->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#0caa46;\">Tuesday, Oct 18</span></p></body></html>", 0));
 #ifndef QT_NO_TOOLTIP

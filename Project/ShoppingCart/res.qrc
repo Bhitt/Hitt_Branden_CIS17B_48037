@@ -19,5 +19,14 @@
         <file>main.cpp</file>
         <file>mainwindow.cpp</file>
         <file>mainwindow.h</file>
+        <file>Images/BluRayS6small.jpg</file>
+        <file>Images/GameOfThronesBookssmall.jpg</file>
+        <file>Images/GoTBoardGamesmall.jpg</file>
+        <file>Images/GoTCoffeeMugsmall.jpg</file>
+        <file>Images/GoTMonopolysmall.jpg</file>
+        <file>Images/Pop!JonSnowsmall.jpg</file>
+        <file>Images/TheIronThronesmall.jpg</file>
+        <file>Images/TheNightKingsmall.jpg</file>
+        <file>Images/TheWorldOfIceAndFiresmall.jpg</file>
     </qresource>
 </RCC>

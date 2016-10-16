@@ -10,11 +10,23 @@
     <height>720</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">border-top-color: rgb(138, 163, 170);</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QGroupBox" name="ItemListing">
@@ -187,7 +199,7 @@
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>270</x>
@@ -265,6 +277,9 @@
      <property name="statusTip">
       <string/>
      </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Images/TheWorldOfIceAndFiresmall.jpg);</string>
+     </property>
      <property name="text">
       <string/>
      </property>
@@ -293,7 +308,7 @@
       <string>Item Name</string>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:400; color:#94c8ff;&quot;&gt;Item Name: Item Detail&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:400; color:#94c8ff;&quot;&gt;The World of Ice &amp;amp; Fire&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="textFormat">
       <enum>Qt::RichText</enum>
@@ -304,7 +319,7 @@
       <rect>
        <x>180</x>
        <y>30</y>
-       <width>71</width>
+       <width>111</width>
        <height>16</height>
       </rect>
      </property>
@@ -315,7 +330,7 @@
       </font>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Company&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by George R. R. Martin&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="Price_14">
@@ -328,7 +343,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$59.99&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$29.49&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="GetItBy_14">
@@ -403,6 +418,28 @@
       </item>
      </layout>
     </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>44</y>
+       <width>61</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <strikeout>true</strikeout>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#9c9c9c;&quot;&gt;$50.00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="ItemListing_3">
     <property name="geometry">
@@ -446,6 +483,9 @@
      <property name="statusTip">
       <string/>
      </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Images/TheIronThronesmall.jpg);</string>
+     </property>
      <property name="text">
       <string/>
      </property>
@@ -474,7 +514,7 @@
       <string>Item Name</string>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:400; color:#94c8ff;&quot;&gt;Item Name: Item Detail&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:400; color:#94c8ff;&quot;&gt;Game of Thrones: Iron Throne&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="textFormat">
       <enum>Qt::RichText</enum>
@@ -485,7 +525,7 @@
       <rect>
        <x>180</x>
        <y>30</y>
-       <width>71</width>
+       <width>111</width>
        <height>16</height>
       </rect>
      </property>
@@ -496,7 +536,7 @@
       </font>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Company&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Dark Horse Deluxe&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="Price_15">
@@ -509,7 +549,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$59.99&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$45.18&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="GetItBy_15">
@@ -546,7 +586,7 @@
       </font>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#0caa46;&quot;&gt;Tuesday, Oct 18&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#0caa46;&quot;&gt;Tuesday, Oct 20&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QWidget" name="layoutWidget_14">
@@ -627,6 +667,9 @@
      <property name="statusTip">
       <string/>
      </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Images/BluRayS6small.jpg);</string>
+     </property>
      <property name="text">
       <string/>
      </property>
@@ -655,7 +698,7 @@
       <string>Item Name</string>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:400; color:#94c8ff;&quot;&gt;Item Name: Item Detail&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:400; color:#94c8ff;&quot;&gt;Game of Thrones - Season 6&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="textFormat">
       <enum>Qt::RichText</enum>
@@ -677,7 +720,7 @@
       </font>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Company&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by HBO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="Price_16">
@@ -690,7 +733,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$59.99&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$39.99&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="GetItBy_16">
@@ -808,6 +851,9 @@
      <property name="statusTip">
       <string/>
      </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Images/GoTBoardGamesmall.jpg);</string>
+     </property>
      <property name="text">
       <string/>
      </property>
@@ -820,7 +866,7 @@
       <rect>
        <x>170</x>
        <y>10</y>
-       <width>211</width>
+       <width>221</width>
        <height>21</height>
       </rect>
      </property>
@@ -836,7 +882,7 @@
       <string>Item Name</string>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:400; color:#94c8ff;&quot;&gt;Item Name: Item Detail&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:400; color:#94c8ff;&quot;&gt;A Game of Thrones: The Board Game&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="textFormat">
       <enum>Qt::RichText</enum>
@@ -847,7 +893,7 @@
       <rect>
        <x>180</x>
        <y>30</y>
-       <width>71</width>
+       <width>121</width>
        <height>16</height>
       </rect>
      </property>
@@ -858,7 +904,7 @@
       </font>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Company&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Christian T. Peterson&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="Price_17">
@@ -871,7 +917,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$59.99&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$46.86&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="GetItBy_17">
@@ -989,6 +1035,9 @@
      <property name="statusTip">
       <string/>
      </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Images/TheNightKingsmall.jpg);</string>
+     </property>
      <property name="text">
       <string/>
      </property>
@@ -999,9 +1048,9 @@
     <widget class="QLabel" name="ItemName_18">
      <property name="geometry">
       <rect>
-       <x>170</x>
+       <x>160</x>
        <y>10</y>
-       <width>211</width>
+       <width>231</width>
        <height>21</height>
       </rect>
      </property>
@@ -1017,7 +1066,7 @@
       <string>Item Name</string>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:400; color:#94c8ff;&quot;&gt;Item Name: Item Detail&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:400; color:#94c8ff;&quot;&gt;Game of Thrones: The Night's King&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="textFormat">
       <enum>Qt::RichText</enum>
@@ -1028,7 +1077,7 @@
       <rect>
        <x>180</x>
        <y>30</y>
-       <width>71</width>
+       <width>121</width>
        <height>16</height>
       </rect>
      </property>
@@ -1039,7 +1088,7 @@
       </font>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Company&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Dark Horse Comics&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="Price_18">
@@ -1052,7 +1101,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$59.99&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$129.99&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="GetItBy_18">
@@ -1089,7 +1138,7 @@
       </font>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#0caa46;&quot;&gt;Tuesday, Oct 18&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#0caa46;&quot;&gt;Tuesday, Oct 19&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QWidget" name="layoutWidget_17">
@@ -1126,6 +1175,19 @@
        </widget>
       </item>
      </layout>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>50</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#9f9f9f;&quot;&gt;+ $19.99 Shipping&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
     </widget>
    </widget>
    <widget class="QGroupBox" name="ItemListing_7">
@@ -1170,6 +1232,9 @@
      <property name="statusTip">
       <string/>
      </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Images/GameOfThronesBookssmall.jpg);</string>
+     </property>
      <property name="text">
       <string/>
      </property>
@@ -1198,7 +1263,7 @@
       <string>Item Name</string>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:400; color:#94c8ff;&quot;&gt;Item Name: Item Detail&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:400; color:#94c8ff;&quot;&gt;A Game of Thrones 5-Book Set&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="textFormat">
       <enum>Qt::RichText</enum>
@@ -1209,7 +1274,7 @@
       <rect>
        <x>180</x>
        <y>30</y>
-       <width>71</width>
+       <width>121</width>
        <height>16</height>
       </rect>
      </property>
@@ -1220,7 +1285,7 @@
       </font>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Company&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by George R. R. Martin&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="Price_19">
@@ -1351,6 +1416,9 @@
      <property name="statusTip">
       <string/>
      </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Images/GoTCoffeeMugsmall.jpg);</string>
+     </property>
      <property name="text">
       <string/>
      </property>
@@ -1379,7 +1447,7 @@
       <string>Item Name</string>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:400; color:#94c8ff;&quot;&gt;Item Name: Item Detail&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:400; color:#94c8ff;&quot;&gt;Game of Thrones Coffee Mug&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="textFormat">
       <enum>Qt::RichText</enum>
@@ -1390,7 +1458,7 @@
       <rect>
        <x>180</x>
        <y>30</y>
-       <width>71</width>
+       <width>111</width>
        <height>16</height>
       </rect>
      </property>
@@ -1401,7 +1469,7 @@
       </font>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Company&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Dark Horse Deluxe&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="Price_20">
@@ -1414,7 +1482,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$59.99&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$10.51&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="GetItBy_20">
@@ -1532,6 +1600,9 @@
      <property name="statusTip">
       <string/>
      </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Images/Pop!JonSnowsmall.jpg);</string>
+     </property>
      <property name="text">
       <string/>
      </property>
@@ -1560,7 +1631,7 @@
       <string>Item Name</string>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:400; color:#94c8ff;&quot;&gt;Item Name: Item Detail&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:400; color:#94c8ff;&quot;&gt;Funko POP GoT: Jon Snow&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="textFormat">
       <enum>Qt::RichText</enum>
@@ -1571,7 +1642,7 @@
       <rect>
        <x>180</x>
        <y>30</y>
-       <width>71</width>
+       <width>131</width>
        <height>16</height>
       </rect>
      </property>
@@ -1582,7 +1653,7 @@
       </font>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Company&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Funko Pop! Television&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="Price_21">
@@ -1595,7 +1666,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$59.99&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$11.99&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="GetItBy_21">
@@ -1707,6 +1778,9 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(161, 174, 175);</string>
+   </property>
    <widget class="QMenu" name="menuFile">
     <property name="title">
      <string>File</string>
@@ -1734,6 +1808,9 @@
    <addaction name="menuCheckout"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(150, 159, 161);</string>
+   </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
    </attribute>

@@ -727,7 +727,7 @@ public:
 
         retranslateUi(MainWindow);
         QObject::connect(actionExit, SIGNAL(triggered()), MainWindow, SLOT(close()));
-        QObject::connect(Image, SIGNAL(linkActivated(QString)), MainWindow, SLOT(close()));
+        QObject::connect(actionAbout, SIGNAL(triggered()), MainWindow, SLOT(about()));
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi

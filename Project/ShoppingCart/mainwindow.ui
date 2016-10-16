@@ -1870,14 +1870,14 @@
    </hints>
   </connection>
   <connection>
-   <sender>Image</sender>
-   <signal>linkActivated(QString)</signal>
+   <sender>actionAbout</sender>
+   <signal>triggered()</signal>
    <receiver>MainWindow</receiver>
-   <slot>close()</slot>
+   <slot>about()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>104</x>
-     <y>127</y>
+     <x>-1</x>
+     <y>-1</y>
     </hint>
     <hint type="destinationlabel">
      <x>639</x>
@@ -1886,4 +1886,7 @@
    </hints>
   </connection>
  </connections>
+ <slots>
+  <slot>about()</slot>
+ </slots>
 </ui>

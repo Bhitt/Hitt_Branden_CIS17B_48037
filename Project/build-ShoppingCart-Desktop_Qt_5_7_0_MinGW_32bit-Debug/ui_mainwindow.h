@@ -62,6 +62,7 @@ public:
     QSpinBox *UnitCount_14;
     QPushButton *AddToCart_14;
     QLabel *label;
+    QPushButton *Expand_4;
     QGroupBox *ItemListing_3;
     QLabel *Image_15;
     QLabel *ItemName_15;
@@ -73,6 +74,7 @@ public:
     QHBoxLayout *horizontalLayout_15;
     QSpinBox *UnitCount_15;
     QPushButton *AddToCart_15;
+    QPushButton *Expand_7;
     QGroupBox *ItemListing_4;
     QLabel *Image_16;
     QLabel *ItemName_16;
@@ -84,6 +86,7 @@ public:
     QHBoxLayout *horizontalLayout_16;
     QSpinBox *UnitCount_16;
     QPushButton *AddToCart_16;
+    QPushButton *Expand_2;
     QGroupBox *ItemListing_5;
     QLabel *Image_17;
     QLabel *ItemName_17;
@@ -95,6 +98,7 @@ public:
     QHBoxLayout *horizontalLayout_17;
     QSpinBox *UnitCount_17;
     QPushButton *AddToCart_17;
+    QPushButton *Expand_5;
     QGroupBox *ItemListing_6;
     QLabel *Image_18;
     QLabel *ItemName_18;
@@ -107,6 +111,7 @@ public:
     QSpinBox *UnitCount_18;
     QPushButton *AddToCart_18;
     QLabel *label_2;
+    QPushButton *Expand_8;
     QGroupBox *ItemListing_7;
     QLabel *Image_19;
     QLabel *ItemName_19;
@@ -118,6 +123,7 @@ public:
     QHBoxLayout *horizontalLayout_19;
     QSpinBox *UnitCount_19;
     QPushButton *AddToCart_19;
+    QPushButton *Expand_3;
     QGroupBox *ItemListing_8;
     QLabel *Image_20;
     QLabel *ItemName_20;
@@ -129,6 +135,7 @@ public:
     QHBoxLayout *horizontalLayout_20;
     QSpinBox *UnitCount_20;
     QPushButton *AddToCart_20;
+    QPushButton *Expand_6;
     QGroupBox *ItemListing_9;
     QLabel *Image_21;
     QLabel *ItemName_21;
@@ -140,6 +147,7 @@ public:
     QHBoxLayout *horizontalLayout_21;
     QSpinBox *UnitCount_21;
     QPushButton *AddToCart_21;
+    QPushButton *Expand_9;
     QPushButton *CheckoutButton;
     QPushButton *pushButton;
     QMenuBar *menuBar;
@@ -177,7 +185,7 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         ItemListing = new QGroupBox(centralWidget);
         ItemListing->setObjectName(QStringLiteral("ItemListing"));
-        ItemListing->setGeometry(QRect(20, 10, 400, 171));
+        ItemListing->setGeometry(QRect(20, 20, 400, 171));
         sizePolicy.setHeightForWidth(ItemListing->sizePolicy().hasHeightForWidth());
         ItemListing->setSizePolicy(sizePolicy);
         ItemListing->setStyleSheet(QStringLiteral("background-color: rgb(255, 255, 255);"));
@@ -221,12 +229,12 @@ public:
         DeliveryDate->setFont(font1);
         Expand = new QPushButton(ItemListing);
         Expand->setObjectName(QStringLiteral("Expand"));
-        Expand->setGeometry(QRect(130, 122, 31, 31));
+        Expand->setGeometry(QRect(130, 130, 31, 31));
         Expand->setStyleSheet(QStringLiteral("background-image: url(:/Images/expand.png);"));
         Expand->setFlat(true);
         layoutWidget = new QWidget(ItemListing);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(270, 130, 118, 25));
+        layoutWidget->setGeometry(QRect(271, 130, 121, 25));
         horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setSpacing(6);
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
@@ -247,13 +255,13 @@ public:
 
         ItemListing_2 = new QGroupBox(centralWidget);
         ItemListing_2->setObjectName(QStringLiteral("ItemListing_2"));
-        ItemListing_2->setGeometry(QRect(20, 200, 400, 171));
+        ItemListing_2->setGeometry(QRect(20, 210, 400, 171));
         sizePolicy.setHeightForWidth(ItemListing_2->sizePolicy().hasHeightForWidth());
         ItemListing_2->setSizePolicy(sizePolicy);
         ItemListing_2->setStyleSheet(QStringLiteral("background-color: rgb(255, 255, 255);"));
         Image_14 = new QLabel(ItemListing_2);
         Image_14->setObjectName(QStringLiteral("Image_14"));
-        Image_14->setGeometry(QRect(10, 10, 150, 150));
+        Image_14->setGeometry(QRect(10, 10, 121, 150));
         sizePolicy.setHeightForWidth(Image_14->sizePolicy().hasHeightForWidth());
         Image_14->setSizePolicy(sizePolicy);
         Image_14->setStyleSheet(QStringLiteral("image: url(:/Images/TheWorldOfIceAndFiresmall.jpg);"));
@@ -307,15 +315,20 @@ public:
         font3.setStrikeOut(true);
         label->setFont(font3);
         label->setTextFormat(Qt::RichText);
+        Expand_4 = new QPushButton(ItemListing_2);
+        Expand_4->setObjectName(QStringLiteral("Expand_4"));
+        Expand_4->setGeometry(QRect(130, 130, 31, 31));
+        Expand_4->setStyleSheet(QStringLiteral("background-image: url(:/Images/expand.png);"));
+        Expand_4->setFlat(true);
         ItemListing_3 = new QGroupBox(centralWidget);
         ItemListing_3->setObjectName(QStringLiteral("ItemListing_3"));
-        ItemListing_3->setGeometry(QRect(20, 390, 400, 171));
+        ItemListing_3->setGeometry(QRect(20, 400, 400, 171));
         sizePolicy.setHeightForWidth(ItemListing_3->sizePolicy().hasHeightForWidth());
         ItemListing_3->setSizePolicy(sizePolicy);
         ItemListing_3->setStyleSheet(QStringLiteral("background-color: rgb(255, 255, 255);"));
         Image_15 = new QLabel(ItemListing_3);
         Image_15->setObjectName(QStringLiteral("Image_15"));
-        Image_15->setGeometry(QRect(10, 10, 150, 150));
+        Image_15->setGeometry(QRect(10, 10, 141, 150));
         sizePolicy.setHeightForWidth(Image_15->sizePolicy().hasHeightForWidth());
         Image_15->setSizePolicy(sizePolicy);
         Image_15->setStyleSheet(QStringLiteral("image: url(:/Images/TheIronThronesmall.jpg);"));
@@ -361,9 +374,14 @@ public:
 
         horizontalLayout_15->addWidget(AddToCart_15);
 
+        Expand_7 = new QPushButton(ItemListing_3);
+        Expand_7->setObjectName(QStringLiteral("Expand_7"));
+        Expand_7->setGeometry(QRect(130, 130, 31, 31));
+        Expand_7->setStyleSheet(QStringLiteral("background-image: url(:/Images/expand.png);"));
+        Expand_7->setFlat(true);
         ItemListing_4 = new QGroupBox(centralWidget);
         ItemListing_4->setObjectName(QStringLiteral("ItemListing_4"));
-        ItemListing_4->setGeometry(QRect(440, 10, 400, 171));
+        ItemListing_4->setGeometry(QRect(440, 20, 400, 171));
         sizePolicy.setHeightForWidth(ItemListing_4->sizePolicy().hasHeightForWidth());
         ItemListing_4->setSizePolicy(sizePolicy);
         ItemListing_4->setStyleSheet(QStringLiteral("background-color: rgb(255, 255, 255);"));
@@ -415,9 +433,14 @@ public:
 
         horizontalLayout_16->addWidget(AddToCart_16);
 
+        Expand_2 = new QPushButton(ItemListing_4);
+        Expand_2->setObjectName(QStringLiteral("Expand_2"));
+        Expand_2->setGeometry(QRect(150, 130, 31, 31));
+        Expand_2->setStyleSheet(QStringLiteral("background-image: url(:/Images/expand.png);"));
+        Expand_2->setFlat(true);
         ItemListing_5 = new QGroupBox(centralWidget);
         ItemListing_5->setObjectName(QStringLiteral("ItemListing_5"));
-        ItemListing_5->setGeometry(QRect(440, 200, 400, 171));
+        ItemListing_5->setGeometry(QRect(440, 210, 400, 171));
         sizePolicy.setHeightForWidth(ItemListing_5->sizePolicy().hasHeightForWidth());
         ItemListing_5->setSizePolicy(sizePolicy);
         ItemListing_5->setStyleSheet(QStringLiteral("background-color: rgb(255, 255, 255);"));
@@ -469,9 +492,14 @@ public:
 
         horizontalLayout_17->addWidget(AddToCart_17);
 
+        Expand_5 = new QPushButton(ItemListing_5);
+        Expand_5->setObjectName(QStringLiteral("Expand_5"));
+        Expand_5->setGeometry(QRect(150, 130, 31, 31));
+        Expand_5->setStyleSheet(QStringLiteral("background-image: url(:/Images/expand.png);"));
+        Expand_5->setFlat(true);
         ItemListing_6 = new QGroupBox(centralWidget);
         ItemListing_6->setObjectName(QStringLiteral("ItemListing_6"));
-        ItemListing_6->setGeometry(QRect(440, 390, 400, 171));
+        ItemListing_6->setGeometry(QRect(440, 400, 400, 171));
         sizePolicy.setHeightForWidth(ItemListing_6->sizePolicy().hasHeightForWidth());
         ItemListing_6->setSizePolicy(sizePolicy);
         ItemListing_6->setStyleSheet(QStringLiteral("background-color: rgb(255, 255, 255);"));
@@ -526,9 +554,14 @@ public:
         label_2 = new QLabel(ItemListing_6);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setGeometry(QRect(230, 50, 91, 16));
+        Expand_8 = new QPushButton(ItemListing_6);
+        Expand_8->setObjectName(QStringLiteral("Expand_8"));
+        Expand_8->setGeometry(QRect(150, 130, 31, 31));
+        Expand_8->setStyleSheet(QStringLiteral("background-image: url(:/Images/expand.png);"));
+        Expand_8->setFlat(true);
         ItemListing_7 = new QGroupBox(centralWidget);
         ItemListing_7->setObjectName(QStringLiteral("ItemListing_7"));
-        ItemListing_7->setGeometry(QRect(860, 10, 400, 171));
+        ItemListing_7->setGeometry(QRect(860, 20, 400, 171));
         sizePolicy.setHeightForWidth(ItemListing_7->sizePolicy().hasHeightForWidth());
         ItemListing_7->setSizePolicy(sizePolicy);
         ItemListing_7->setStyleSheet(QStringLiteral("background-color: rgb(255, 255, 255);"));
@@ -580,9 +613,14 @@ public:
 
         horizontalLayout_19->addWidget(AddToCart_19);
 
+        Expand_3 = new QPushButton(ItemListing_7);
+        Expand_3->setObjectName(QStringLiteral("Expand_3"));
+        Expand_3->setGeometry(QRect(170, 130, 31, 31));
+        Expand_3->setStyleSheet(QStringLiteral("background-image: url(:/Images/expand.png);"));
+        Expand_3->setFlat(true);
         ItemListing_8 = new QGroupBox(centralWidget);
         ItemListing_8->setObjectName(QStringLiteral("ItemListing_8"));
-        ItemListing_8->setGeometry(QRect(860, 200, 400, 171));
+        ItemListing_8->setGeometry(QRect(860, 210, 400, 171));
         sizePolicy.setHeightForWidth(ItemListing_8->sizePolicy().hasHeightForWidth());
         ItemListing_8->setSizePolicy(sizePolicy);
         ItemListing_8->setStyleSheet(QStringLiteral("background-color: rgb(255, 255, 255);"));
@@ -634,9 +672,14 @@ public:
 
         horizontalLayout_20->addWidget(AddToCart_20);
 
+        Expand_6 = new QPushButton(ItemListing_8);
+        Expand_6->setObjectName(QStringLiteral("Expand_6"));
+        Expand_6->setGeometry(QRect(170, 130, 31, 31));
+        Expand_6->setStyleSheet(QStringLiteral("background-image: url(:/Images/expand.png);"));
+        Expand_6->setFlat(true);
         ItemListing_9 = new QGroupBox(centralWidget);
         ItemListing_9->setObjectName(QStringLiteral("ItemListing_9"));
-        ItemListing_9->setGeometry(QRect(860, 390, 400, 171));
+        ItemListing_9->setGeometry(QRect(860, 400, 400, 171));
         sizePolicy.setHeightForWidth(ItemListing_9->sizePolicy().hasHeightForWidth());
         ItemListing_9->setSizePolicy(sizePolicy);
         ItemListing_9->setStyleSheet(QStringLiteral("background-color: rgb(255, 255, 255);"));
@@ -688,12 +731,17 @@ public:
 
         horizontalLayout_21->addWidget(AddToCart_21);
 
+        Expand_9 = new QPushButton(ItemListing_9);
+        Expand_9->setObjectName(QStringLiteral("Expand_9"));
+        Expand_9->setGeometry(QRect(170, 130, 31, 31));
+        Expand_9->setStyleSheet(QStringLiteral("background-image: url(:/Images/expand.png);"));
+        Expand_9->setFlat(true);
         CheckoutButton = new QPushButton(centralWidget);
         CheckoutButton->setObjectName(QStringLiteral("CheckoutButton"));
-        CheckoutButton->setGeometry(QRect(1120, 590, 141, 31));
+        CheckoutButton->setGeometry(QRect(1120, 600, 141, 31));
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(1040, 590, 71, 31));
+        pushButton->setGeometry(QRect(1040, 600, 71, 31));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -742,9 +790,6 @@ public:
         actionAbout->setText(QApplication::translate("MainWindow", "About", 0));
         actionExit->setText(QApplication::translate("MainWindow", "Exit", 0));
         ItemListing->setTitle(QString());
-#ifndef QT_NO_TOOLTIP
-        Image->setToolTip(QApplication::translate("MainWindow", "Click to Expand", 0));
-#endif // QT_NO_TOOLTIP
 #ifndef QT_NO_STATUSTIP
         Image->setStatusTip(QString());
 #endif // QT_NO_STATUSTIP
@@ -757,6 +802,9 @@ public:
         Price->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#990000;\">$80.07</span></p></body></html>", 0));
         GetItBy->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:7pt; color:#afafaf;\">Get it by</span></p></body></html>", 0));
         DeliveryDate->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#0caa46;\">Tuesday, Oct 18</span></p></body></html>", 0));
+#ifndef QT_NO_TOOLTIP
+        Expand->setToolTip(QApplication::translate("MainWindow", "Click to expand image", 0));
+#endif // QT_NO_TOOLTIP
         Expand->setText(QString());
 #ifndef QT_NO_TOOLTIP
         AddToCart->setToolTip(QApplication::translate("MainWindow", "Add to your cart", 0));
@@ -783,6 +831,10 @@ public:
 #endif // QT_NO_TOOLTIP
         AddToCart_14->setText(QApplication::translate("MainWindow", "Add to Cart", 0));
         label->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#9c9c9c;\">$50.00</span></p></body></html>", 0));
+#ifndef QT_NO_TOOLTIP
+        Expand_4->setToolTip(QApplication::translate("MainWindow", "Click to expand image", 0));
+#endif // QT_NO_TOOLTIP
+        Expand_4->setText(QString());
         ItemListing_3->setTitle(QString());
 #ifndef QT_NO_TOOLTIP
         Image_15->setToolTip(QApplication::translate("MainWindow", "Click to Expand", 0));
@@ -803,6 +855,10 @@ public:
         AddToCart_15->setToolTip(QApplication::translate("MainWindow", "Add to your cart", 0));
 #endif // QT_NO_TOOLTIP
         AddToCart_15->setText(QApplication::translate("MainWindow", "Add to Cart", 0));
+#ifndef QT_NO_TOOLTIP
+        Expand_7->setToolTip(QApplication::translate("MainWindow", "Click to expand image", 0));
+#endif // QT_NO_TOOLTIP
+        Expand_7->setText(QString());
         ItemListing_4->setTitle(QString());
 #ifndef QT_NO_TOOLTIP
         Image_16->setToolTip(QApplication::translate("MainWindow", "Click to Expand", 0));
@@ -823,6 +879,10 @@ public:
         AddToCart_16->setToolTip(QApplication::translate("MainWindow", "Add to your cart", 0));
 #endif // QT_NO_TOOLTIP
         AddToCart_16->setText(QApplication::translate("MainWindow", "Add to Cart", 0));
+#ifndef QT_NO_TOOLTIP
+        Expand_2->setToolTip(QApplication::translate("MainWindow", "Click to expand image", 0));
+#endif // QT_NO_TOOLTIP
+        Expand_2->setText(QString());
         ItemListing_5->setTitle(QString());
 #ifndef QT_NO_TOOLTIP
         Image_17->setToolTip(QApplication::translate("MainWindow", "Click to Expand", 0));
@@ -843,6 +903,10 @@ public:
         AddToCart_17->setToolTip(QApplication::translate("MainWindow", "Add to your cart", 0));
 #endif // QT_NO_TOOLTIP
         AddToCart_17->setText(QApplication::translate("MainWindow", "Add to Cart", 0));
+#ifndef QT_NO_TOOLTIP
+        Expand_5->setToolTip(QApplication::translate("MainWindow", "Click to expand image", 0));
+#endif // QT_NO_TOOLTIP
+        Expand_5->setText(QString());
         ItemListing_6->setTitle(QString());
 #ifndef QT_NO_TOOLTIP
         Image_18->setToolTip(QApplication::translate("MainWindow", "Click to Expand", 0));
@@ -864,6 +928,10 @@ public:
 #endif // QT_NO_TOOLTIP
         AddToCart_18->setText(QApplication::translate("MainWindow", "Add to Cart", 0));
         label_2->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#9f9f9f;\">+ $19.99 Shipping</span></p></body></html>", 0));
+#ifndef QT_NO_TOOLTIP
+        Expand_8->setToolTip(QApplication::translate("MainWindow", "Click to expand image", 0));
+#endif // QT_NO_TOOLTIP
+        Expand_8->setText(QString());
         ItemListing_7->setTitle(QString());
 #ifndef QT_NO_TOOLTIP
         Image_19->setToolTip(QApplication::translate("MainWindow", "Click to Expand", 0));
@@ -884,6 +952,10 @@ public:
         AddToCart_19->setToolTip(QApplication::translate("MainWindow", "Add to your cart", 0));
 #endif // QT_NO_TOOLTIP
         AddToCart_19->setText(QApplication::translate("MainWindow", "Add to Cart", 0));
+#ifndef QT_NO_TOOLTIP
+        Expand_3->setToolTip(QApplication::translate("MainWindow", "Click to expand image", 0));
+#endif // QT_NO_TOOLTIP
+        Expand_3->setText(QString());
         ItemListing_8->setTitle(QString());
 #ifndef QT_NO_TOOLTIP
         Image_20->setToolTip(QApplication::translate("MainWindow", "Click to Expand", 0));
@@ -904,6 +976,10 @@ public:
         AddToCart_20->setToolTip(QApplication::translate("MainWindow", "Add to your cart", 0));
 #endif // QT_NO_TOOLTIP
         AddToCart_20->setText(QApplication::translate("MainWindow", "Add to Cart", 0));
+#ifndef QT_NO_TOOLTIP
+        Expand_6->setToolTip(QApplication::translate("MainWindow", "Click to expand image", 0));
+#endif // QT_NO_TOOLTIP
+        Expand_6->setText(QString());
         ItemListing_9->setTitle(QString());
 #ifndef QT_NO_TOOLTIP
         Image_21->setToolTip(QApplication::translate("MainWindow", "Click to Expand", 0));
@@ -924,6 +1000,10 @@ public:
         AddToCart_21->setToolTip(QApplication::translate("MainWindow", "Add to your cart", 0));
 #endif // QT_NO_TOOLTIP
         AddToCart_21->setText(QApplication::translate("MainWindow", "Add to Cart", 0));
+#ifndef QT_NO_TOOLTIP
+        Expand_9->setToolTip(QApplication::translate("MainWindow", "Click to expand image", 0));
+#endif // QT_NO_TOOLTIP
+        Expand_9->setText(QString());
         CheckoutButton->setText(QApplication::translate("MainWindow", "Proceed To Checkout", 0));
         pushButton->setText(QApplication::translate("MainWindow", "Next Page", 0));
         menuFile->setTitle(QApplication::translate("MainWindow", "File", 0));

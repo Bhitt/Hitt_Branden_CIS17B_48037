@@ -33,7 +33,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>10</y>
+      <y>20</y>
       <width>400</width>
       <height>171</height>
      </rect>
@@ -67,9 +67,6 @@
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
-     </property>
-     <property name="toolTip">
-      <string>Click to Expand</string>
      </property>
      <property name="statusTip">
       <string/>
@@ -184,10 +181,13 @@
      <property name="geometry">
       <rect>
        <x>130</x>
-       <y>122</y>
+       <y>130</y>
        <width>31</width>
        <height>31</height>
       </rect>
+     </property>
+     <property name="toolTip">
+      <string>Click to expand image</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-image: url(:/Images/expand.png);</string>
@@ -202,9 +202,9 @@
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>270</x>
+       <x>271</x>
        <y>130</y>
-       <width>118</width>
+       <width>121</width>
        <height>25</height>
       </rect>
      </property>
@@ -239,7 +239,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>200</y>
+      <y>210</y>
       <width>400</width>
       <height>171</height>
      </rect>
@@ -261,7 +261,7 @@
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>150</width>
+       <width>121</width>
        <height>150</height>
       </rect>
      </property>
@@ -440,12 +440,34 @@
       <enum>Qt::RichText</enum>
      </property>
     </widget>
+    <widget class="QPushButton" name="Expand_4">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>130</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Click to expand image</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/Images/expand.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="ItemListing_3">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>390</y>
+      <y>400</y>
       <width>400</width>
       <height>171</height>
      </rect>
@@ -467,7 +489,7 @@
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>150</width>
+       <width>141</width>
        <height>150</height>
       </rect>
      </property>
@@ -624,12 +646,34 @@
       </item>
      </layout>
     </widget>
+    <widget class="QPushButton" name="Expand_7">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>130</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Click to expand image</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/Images/expand.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="ItemListing_4">
     <property name="geometry">
      <rect>
       <x>440</x>
-      <y>10</y>
+      <y>20</y>
       <width>400</width>
       <height>171</height>
      </rect>
@@ -808,12 +852,34 @@
       </item>
      </layout>
     </widget>
+    <widget class="QPushButton" name="Expand_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>130</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Click to expand image</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/Images/expand.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="ItemListing_5">
     <property name="geometry">
      <rect>
       <x>440</x>
-      <y>200</y>
+      <y>210</y>
       <width>400</width>
       <height>171</height>
      </rect>
@@ -992,12 +1058,34 @@
       </item>
      </layout>
     </widget>
+    <widget class="QPushButton" name="Expand_5">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>130</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Click to expand image</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/Images/expand.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="ItemListing_6">
     <property name="geometry">
      <rect>
       <x>440</x>
-      <y>390</y>
+      <y>400</y>
       <width>400</width>
       <height>171</height>
      </rect>
@@ -1189,12 +1277,34 @@
       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#9f9f9f;&quot;&gt;+ $19.99 Shipping&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
+    <widget class="QPushButton" name="Expand_8">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>130</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Click to expand image</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/Images/expand.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="ItemListing_7">
     <property name="geometry">
      <rect>
       <x>860</x>
-      <y>10</y>
+      <y>20</y>
       <width>400</width>
       <height>171</height>
      </rect>
@@ -1373,12 +1483,34 @@
       </item>
      </layout>
     </widget>
+    <widget class="QPushButton" name="Expand_3">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>130</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Click to expand image</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/Images/expand.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="ItemListing_8">
     <property name="geometry">
      <rect>
       <x>860</x>
-      <y>200</y>
+      <y>210</y>
       <width>400</width>
       <height>171</height>
      </rect>
@@ -1557,12 +1689,34 @@
       </item>
      </layout>
     </widget>
+    <widget class="QPushButton" name="Expand_6">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>130</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Click to expand image</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/Images/expand.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="ItemListing_9">
     <property name="geometry">
      <rect>
       <x>860</x>
-      <y>390</y>
+      <y>400</y>
       <width>400</width>
       <height>171</height>
      </rect>
@@ -1741,12 +1895,34 @@
       </item>
      </layout>
     </widget>
+    <widget class="QPushButton" name="Expand_9">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>130</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Click to expand image</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/Images/expand.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
    <widget class="QPushButton" name="CheckoutButton">
     <property name="geometry">
      <rect>
       <x>1120</x>
-      <y>590</y>
+      <y>600</y>
       <width>141</width>
       <height>31</height>
      </rect>
@@ -1759,7 +1935,7 @@
     <property name="geometry">
      <rect>
       <x>1040</x>
-      <y>590</y>
+      <y>600</y>
       <width>71</width>
       <height>31</height>
      </rect>

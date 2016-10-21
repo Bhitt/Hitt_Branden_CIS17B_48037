@@ -78,22 +78,6 @@ public:
     QSpinBox *RoomRatingSpinBox;
     QScrollArea *scrollArea;
     QWidget *scrollAreaWidgetContents;
-    QGroupBox *groupBox_2;
-    QSlider *HowLikely1;
-    QLabel *label_3;
-    QWidget *layoutWidget;
-    QHBoxLayout *horizontalLayout_11;
-    QLabel *label;
-    QSpacerItem *horizontalSpacer;
-    QLabel *label_2;
-    QGroupBox *groupBox_3;
-    QSlider *HowLikely1_2;
-    QLabel *label_4;
-    QWidget *layoutWidget1;
-    QHBoxLayout *horizontalLayout_12;
-    QLabel *label_5;
-    QSpacerItem *horizontalSpacer_2;
-    QLabel *label_6;
     QGroupBox *groupBox_4;
     QSlider *HowLikely1_3;
     QLabel *label_7;
@@ -126,6 +110,23 @@ public:
     QLabel *label_17;
     QSpacerItem *horizontalSpacer_6;
     QLabel *label_18;
+    QWidget *widget;
+    QGroupBox *groupBox_2;
+    QSlider *HowLikely1;
+    QLabel *label_3;
+    QWidget *layoutWidget;
+    QHBoxLayout *horizontalLayout_11;
+    QLabel *label;
+    QSpacerItem *horizontalSpacer;
+    QLabel *label_2;
+    QGroupBox *groupBox_3;
+    QSlider *HowLikely1_2;
+    QLabel *label_4;
+    QWidget *layoutWidget1;
+    QHBoxLayout *horizontalLayout_12;
+    QLabel *label_5;
+    QSpacerItem *horizontalSpacer_2;
+    QLabel *label_6;
     QGroupBox *groupBox_8;
     QWidget *layoutWidget2;
     QVBoxLayout *TimePlayedLayout;
@@ -349,75 +350,17 @@ public:
         scrollArea = new QScrollArea(centralWidget);
         scrollArea->setObjectName(QStringLiteral("scrollArea"));
         scrollArea->setGeometry(QRect(20, 380, 881, 281));
+        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Expanding);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(scrollArea->sizePolicy().hasHeightForWidth());
+        scrollArea->setSizePolicy(sizePolicy1);
+        scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+        scrollArea->setSizeAdjustPolicy(QAbstractScrollArea::AdjustToContents);
+        scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 879, 279));
-        groupBox_2 = new QGroupBox(scrollAreaWidgetContents);
-        groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
-        groupBox_2->setGeometry(QRect(10, 10, 381, 101));
-        HowLikely1 = new QSlider(groupBox_2);
-        HowLikely1->setObjectName(QStringLiteral("HowLikely1"));
-        HowLikely1->setGeometry(QRect(10, 50, 361, 22));
-        HowLikely1->setValue(10);
-        HowLikely1->setOrientation(Qt::Horizontal);
-        label_3 = new QLabel(groupBox_2);
-        label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setGeometry(QRect(80, 80, 221, 16));
-        layoutWidget = new QWidget(groupBox_2);
-        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(10, 10, 361, 22));
-        horizontalLayout_11 = new QHBoxLayout(layoutWidget);
-        horizontalLayout_11->setSpacing(6);
-        horizontalLayout_11->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_11->setObjectName(QStringLiteral("horizontalLayout_11"));
-        horizontalLayout_11->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(layoutWidget);
-        label->setObjectName(QStringLiteral("label"));
-
-        horizontalLayout_11->addWidget(label);
-
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_11->addItem(horizontalSpacer);
-
-        label_2 = new QLabel(layoutWidget);
-        label_2->setObjectName(QStringLiteral("label_2"));
-
-        horizontalLayout_11->addWidget(label_2);
-
-        groupBox_3 = new QGroupBox(scrollAreaWidgetContents);
-        groupBox_3->setObjectName(QStringLiteral("groupBox_3"));
-        groupBox_3->setGeometry(QRect(470, 10, 381, 101));
-        HowLikely1_2 = new QSlider(groupBox_3);
-        HowLikely1_2->setObjectName(QStringLiteral("HowLikely1_2"));
-        HowLikely1_2->setGeometry(QRect(10, 50, 361, 22));
-        HowLikely1_2->setValue(50);
-        HowLikely1_2->setOrientation(Qt::Horizontal);
-        label_4 = new QLabel(groupBox_3);
-        label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setGeometry(QRect(50, 80, 291, 20));
-        layoutWidget1 = new QWidget(groupBox_3);
-        layoutWidget1->setObjectName(QStringLiteral("layoutWidget1"));
-        layoutWidget1->setGeometry(QRect(10, 10, 361, 22));
-        horizontalLayout_12 = new QHBoxLayout(layoutWidget1);
-        horizontalLayout_12->setSpacing(6);
-        horizontalLayout_12->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_12->setObjectName(QStringLiteral("horizontalLayout_12"));
-        horizontalLayout_12->setContentsMargins(0, 0, 0, 0);
-        label_5 = new QLabel(layoutWidget1);
-        label_5->setObjectName(QStringLiteral("label_5"));
-
-        horizontalLayout_12->addWidget(label_5);
-
-        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_12->addItem(horizontalSpacer_2);
-
-        label_6 = new QLabel(layoutWidget1);
-        label_6->setObjectName(QStringLiteral("label_6"));
-
-        horizontalLayout_12->addWidget(label_6);
-
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 862, 279));
         groupBox_4 = new QGroupBox(scrollAreaWidgetContents);
         groupBox_4->setObjectName(QStringLiteral("groupBox_4"));
         groupBox_4->setGeometry(QRect(10, 130, 381, 101));
@@ -550,6 +493,78 @@ public:
 
         horizontalLayout_16->addWidget(label_18);
 
+        widget = new QWidget(scrollAreaWidgetContents);
+        widget->setObjectName(QStringLiteral("widget"));
+        widget->setGeometry(QRect(0, 0, 881, 451));
+        groupBox_2 = new QGroupBox(widget);
+        groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
+        groupBox_2->setGeometry(QRect(0, 0, 381, 101));
+        HowLikely1 = new QSlider(groupBox_2);
+        HowLikely1->setObjectName(QStringLiteral("HowLikely1"));
+        HowLikely1->setGeometry(QRect(10, 50, 361, 22));
+        HowLikely1->setValue(10);
+        HowLikely1->setOrientation(Qt::Horizontal);
+        label_3 = new QLabel(groupBox_2);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setGeometry(QRect(80, 80, 221, 16));
+        layoutWidget = new QWidget(groupBox_2);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(10, 10, 361, 22));
+        horizontalLayout_11 = new QHBoxLayout(layoutWidget);
+        horizontalLayout_11->setSpacing(6);
+        horizontalLayout_11->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_11->setObjectName(QStringLiteral("horizontalLayout_11"));
+        horizontalLayout_11->setContentsMargins(0, 0, 0, 0);
+        label = new QLabel(layoutWidget);
+        label->setObjectName(QStringLiteral("label"));
+
+        horizontalLayout_11->addWidget(label);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_11->addItem(horizontalSpacer);
+
+        label_2 = new QLabel(layoutWidget);
+        label_2->setObjectName(QStringLiteral("label_2"));
+
+        horizontalLayout_11->addWidget(label_2);
+
+        groupBox_3 = new QGroupBox(widget);
+        groupBox_3->setObjectName(QStringLiteral("groupBox_3"));
+        groupBox_3->setGeometry(QRect(480, 0, 381, 101));
+        HowLikely1_2 = new QSlider(groupBox_3);
+        HowLikely1_2->setObjectName(QStringLiteral("HowLikely1_2"));
+        HowLikely1_2->setGeometry(QRect(10, 50, 361, 22));
+        HowLikely1_2->setValue(50);
+        HowLikely1_2->setOrientation(Qt::Horizontal);
+        label_4 = new QLabel(groupBox_3);
+        label_4->setObjectName(QStringLiteral("label_4"));
+        label_4->setGeometry(QRect(50, 80, 291, 20));
+        layoutWidget1 = new QWidget(groupBox_3);
+        layoutWidget1->setObjectName(QStringLiteral("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(10, 10, 361, 22));
+        horizontalLayout_12 = new QHBoxLayout(layoutWidget1);
+        horizontalLayout_12->setSpacing(6);
+        horizontalLayout_12->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_12->setObjectName(QStringLiteral("horizontalLayout_12"));
+        horizontalLayout_12->setContentsMargins(0, 0, 0, 0);
+        label_5 = new QLabel(layoutWidget1);
+        label_5->setObjectName(QStringLiteral("label_5"));
+
+        horizontalLayout_12->addWidget(label_5);
+
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_12->addItem(horizontalSpacer_2);
+
+        label_6 = new QLabel(layoutWidget1);
+        label_6->setObjectName(QStringLiteral("label_6"));
+
+        horizontalLayout_12->addWidget(label_6);
+
+        groupBox_2->raise();
+        groupBox_2->raise();
+        groupBox_3->raise();
         scrollArea->setWidget(scrollAreaWidgetContents);
         groupBox_8 = new QGroupBox(centralWidget);
         groupBox_8->setObjectName(QStringLiteral("groupBox_8"));
@@ -717,20 +732,6 @@ public:
 #ifndef QT_NO_TOOLTIP
         scrollArea->setToolTip(QApplication::translate("MainWindow", "Scroll down for more sliders.", 0));
 #endif // QT_NO_TOOLTIP
-        groupBox_2->setTitle(QString());
-#ifndef QT_NO_TOOLTIP
-        HowLikely1->setToolTip(QApplication::translate("MainWindow", "Drag to your answer", 0));
-#endif // QT_NO_TOOLTIP
-        label_3->setText(QApplication::translate("MainWindow", "6. How likely are you to play this game again?", 0));
-        label->setText(QApplication::translate("MainWindow", "Not at all", 0));
-        label_2->setText(QApplication::translate("MainWindow", "Very", 0));
-        groupBox_3->setTitle(QString());
-#ifndef QT_NO_TOOLTIP
-        HowLikely1_2->setToolTip(QApplication::translate("MainWindow", "Drag to your answer", 0));
-#endif // QT_NO_TOOLTIP
-        label_4->setText(QApplication::translate("MainWindow", "7. How likely are you to tell your friends about this game?", 0));
-        label_5->setText(QApplication::translate("MainWindow", "Not at all", 0));
-        label_6->setText(QApplication::translate("MainWindow", "Very", 0));
         groupBox_4->setTitle(QString());
 #ifndef QT_NO_TOOLTIP
         HowLikely1_3->setToolTip(QApplication::translate("MainWindow", "Drag to your answer", 0));
@@ -759,6 +760,20 @@ public:
         label_16->setText(QApplication::translate("MainWindow", "11. How much do you like sliders?", 0));
         label_17->setText(QApplication::translate("MainWindow", "Not at all", 0));
         label_18->setText(QApplication::translate("MainWindow", "Very", 0));
+        groupBox_2->setTitle(QString());
+#ifndef QT_NO_TOOLTIP
+        HowLikely1->setToolTip(QApplication::translate("MainWindow", "Drag to your answer", 0));
+#endif // QT_NO_TOOLTIP
+        label_3->setText(QApplication::translate("MainWindow", "6. How likely are you to play this game again?", 0));
+        label->setText(QApplication::translate("MainWindow", "Not at all", 0));
+        label_2->setText(QApplication::translate("MainWindow", "Very", 0));
+        groupBox_3->setTitle(QString());
+#ifndef QT_NO_TOOLTIP
+        HowLikely1_2->setToolTip(QApplication::translate("MainWindow", "Drag to your answer", 0));
+#endif // QT_NO_TOOLTIP
+        label_4->setText(QApplication::translate("MainWindow", "7. How likely are you to tell your friends about this game?", 0));
+        label_5->setText(QApplication::translate("MainWindow", "Not at all", 0));
+        label_6->setText(QApplication::translate("MainWindow", "Very", 0));
         groupBox_8->setTitle(QApplication::translate("MainWindow", "How long did you play Operation Graduation?", 0));
         radioButton_5->setText(QApplication::translate("MainWindow", "Less than 1 Hour", 0));
         radioButton->setText(QApplication::translate("MainWindow", "1 Hour", 0));

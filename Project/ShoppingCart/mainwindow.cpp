@@ -12,10 +12,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     //set background
-//    QPixmap bkgnd(":/Images/ShoppingCartBG.png");
-//    QPalette palette;
-//    palette.setBrush(QPalette::Background, bkgnd);
-//    this->setPalette(palette);
+    QPixmap bkgnd(":/Images/ShoppingCartBG.png");
+    QPalette palette;
+    palette.setBrush(QPalette::Background, bkgnd);
+    this->setPalette(palette);
 
 }
 

@@ -26,5 +26,6 @@
         <file>images/TheNightKingsmall.jpg</file>
         <file>images/TheWorldOfIceAndFire.jpg</file>
         <file>images/TheWorldOfIceAndFiresmall.jpg</file>
+        <file>images/Icon.png</file>
     </qresource>
 </RCC>

@@ -25,6 +25,10 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/images/images/Icon.png</normaloff>:/images/images/Icon.png</iconset>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QMdiArea" name="mdiArea">
     <property name="geometry">
@@ -54,7 +58,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">#menuBar{
-background-color: rgb(71, 136, 117);
+background-color: rgb(100, 161, 159);
 }</string>
    </property>
    <widget class="QMenu" name="menuMenu">
@@ -90,21 +94,21 @@ background-color: rgb(71, 136, 117);
   <widget class="QStatusBar" name="statusBar">
    <property name="styleSheet">
     <string notr="true">#statusBar{
-background-color: rgb(71, 136, 117);
+background-color: rgb(100, 161, 159);
 }</string>
    </property>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <property name="styleSheet">
     <string notr="true">#mainToolBar{
-background-color: rgb(119, 177, 160);
+background-color: rgb(157, 213, 211);
 }</string>
    </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
    </attribute>
    <attribute name="toolBarBreak">
-    <bool>true</bool>
+    <bool>false</bool>
    </attribute>
   </widget>
   <action name="actionChange_User">
@@ -154,7 +158,9 @@ background-color: rgb(119, 177, 160);
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>actionExit</sender>

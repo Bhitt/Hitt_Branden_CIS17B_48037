@@ -44,7 +44,8 @@ void MainWindow::crLgSc()
     }
     isLog = true;
     loginchild = new LoginChild(ui->mdiArea);
-    loginchild->setAttribute(Qt::WA_DeleteOnClose);
+    loginchild->setAttribute(Qt::WA_DeleteOnClose);\
+    loginchild->setWindowFlags(Qt::WindowStaysOnTopHint);
     loginchild->show();
     loginchild->move(390,200);
     //connections

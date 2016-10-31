@@ -216,14 +216,14 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_15">
      <item>
-      <widget class="QSpinBox" name="UnitCount_15">
+      <widget class="QSpinBox" name="UnitCount7">
        <property name="minimum">
         <number>1</number>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="AddToCart_15">
+      <widget class="QPushButton" name="AddToCart7">
        <property name="toolTip">
         <string>Add to your cart</string>
        </property>
@@ -422,14 +422,14 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_18">
      <item>
-      <widget class="QSpinBox" name="UnitCount_18">
+      <widget class="QSpinBox" name="UnitCount8">
        <property name="minimum">
         <number>1</number>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="AddToCart_18">
+      <widget class="QPushButton" name="AddToCart8">
        <property name="toolTip">
         <string>Add to your cart</string>
        </property>
@@ -641,14 +641,14 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_21">
      <item>
-      <widget class="QSpinBox" name="UnitCount_21">
+      <widget class="QSpinBox" name="UnitCount9">
        <property name="minimum">
         <number>1</number>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="AddToCart_21">
+      <widget class="QPushButton" name="AddToCart9">
        <property name="toolTip">
         <string>Add to your cart</string>
        </property>
@@ -847,14 +847,14 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_20">
      <item>
-      <widget class="QSpinBox" name="UnitCount_20">
+      <widget class="QSpinBox" name="UnitCount6">
        <property name="minimum">
         <number>1</number>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="AddToCart_20">
+      <widget class="QPushButton" name="AddToCart6">
        <property name="toolTip">
         <string>Add to your cart</string>
        </property>
@@ -1053,14 +1053,14 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_17">
      <item>
-      <widget class="QSpinBox" name="UnitCount_17">
+      <widget class="QSpinBox" name="UnitCount5">
        <property name="minimum">
         <number>1</number>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="AddToCart_17">
+      <widget class="QPushButton" name="AddToCart5">
        <property name="toolTip">
         <string>Add to your cart</string>
        </property>
@@ -1259,14 +1259,14 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_14">
      <item>
-      <widget class="QSpinBox" name="UnitCount_14">
+      <widget class="QSpinBox" name="UnitCount4">
        <property name="minimum">
         <number>1</number>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="AddToCart_14">
+      <widget class="QPushButton" name="AddToCart4">
        <property name="toolTip">
         <string>Add to your cart</string>
        </property>
@@ -1516,7 +1516,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="AddToCart">
+      <widget class="QPushButton" name="AddToCart1">
        <property name="toolTip">
         <string>Add to your cart</string>
        </property>
@@ -1693,14 +1693,14 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_16">
      <item>
-      <widget class="QSpinBox" name="UnitCount_16">
+      <widget class="QSpinBox" name="UnitCount2">
        <property name="minimum">
         <number>1</number>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="AddToCart_16">
+      <widget class="QPushButton" name="AddToCart2">
        <property name="toolTip">
         <string>Add to your cart</string>
        </property>
@@ -1899,14 +1899,14 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_19">
      <item>
-      <widget class="QSpinBox" name="UnitCount_19">
+      <widget class="QSpinBox" name="UnitCount3">
        <property name="minimum">
         <number>1</number>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="AddToCart_19">
+      <widget class="QPushButton" name="AddToCart3">
        <property name="toolTip">
         <string>Add to your cart</string>
        </property>
@@ -2061,7 +2061,7 @@ background-color: rgb(255, 255, 255);
    <property name="flat">
     <bool>true</bool>
    </property>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="TotLabel">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -2079,7 +2079,7 @@ background-color: rgb(255, 255, 255);
      <string>Total:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="DollarSign">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -2092,7 +2092,7 @@ background-color: rgb(255, 255, 255);
      <string>$</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="Money">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -2147,8 +2147,26 @@ background-color: rgb(255, 255, 255);
   </customwidget>
  </customwidgets>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>AddToCart1</sender>
+   <signal>clicked()</signal>
+   <receiver>ListingChild1</receiver>
+   <slot>AddUnit1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>373</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>639</x>
+     <y>359</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
  <slots>
   <slot>about()</slot>
+  <slot>AddUnit1()</slot>
  </slots>
 </ui>

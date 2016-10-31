@@ -19,6 +19,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     name = "default";
     password = "default";
+    total=0;
 
     setWindowTitle(tr("Branden's Bizarre Bazaar"));
     //begin with login screen

@@ -34,6 +34,7 @@ private:
 
     QString name;
     QString password;
+    int total;
 
 private slots:
     void crLgSc(); //create the login screen

@@ -19,6 +19,18 @@ public:
 private:
     Ui::ListingChild1 *ui;
 
+    int unit1;
+    int unit2;
+    int unit3;
+    int unit4;
+    int unit5;
+    int unit6;
+    int unit7;
+    int unit8;
+    int unit9;
+
+    int total;
+
 public slots:
     void on_Expand_clicked();
     void on_Expand_2_clicked();
@@ -29,6 +41,8 @@ public slots:
     void on_Expand_7_clicked();
     void on_Expand_8_clicked();
     void on_Expand_9_clicked();
+
+    void AddUnit1();
 };
 
 #endif // LISTINGCHILD1_H

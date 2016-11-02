@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QMdiSubWindow>
+#include <QPushButton>
 
 namespace Ui {
 class ListingChild1;
@@ -31,6 +32,9 @@ private:
 
     float total;
 
+    QPushButton *image;
+    bool isExpand;
+
 public slots:
     void on_Expand_clicked();
     void on_Expand_2_clicked();
@@ -41,6 +45,8 @@ public slots:
     void on_Expand_7_clicked();
     void on_Expand_8_clicked();
     void on_Expand_9_clicked();
+
+    void expBool();
 
     void addUnit1();
     void addUnit2();

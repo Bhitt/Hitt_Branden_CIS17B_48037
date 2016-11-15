@@ -1,46 +1,44 @@
-#include "listingchild1.h"
-#include "ui_listingchild1.h"
-#include <QDebug>
+#include "listingchild2.h"
+#include "ui_listingchild2.h"
 
-ListingChild1::ListingChild1(QWidget *parent) :
+ListingChild2::ListingChild2(QWidget *parent) :
     QMdiSubWindow(parent),
-    ui(new Ui::ListingChild1)
+    ui(new Ui::ListingChild2)
 {
     ui->setupUi(this);
-    
+
     //set banner timer
     timer = new QTimer();
     connect(timer,SIGNAL(timeout()),this,SLOT(bannerT()));
     timer->start(2000);
 
     //set units to zero
-    unit1=0, unit2=0, unit3=0;
-    unit4=0, unit5=0, unit6=0;
-    unit7=0, unit8=0, unit9=0;
+    unit10=0, unit11=0, unit12=0;
+    unit13=0, unit14=0, unit15=0;
+    unit16=0, unit17=0, unit18=0;
     total=0;
-    
+
     //set the image expand to false
     isExpand=false;
     //set the unitCount values
-    emit fetch();
-
+    emit fetch2();
 }
 
-ListingChild1::~ListingChild1()
+ListingChild2::~ListingChild2()
 {
     delete ui;
 }
 
-void ListingChild1::on_Expand_clicked()
+void ListingChild2::on_Expand_clicked()
 {
     if(isExpand) image->close();
     isExpand=true;
     image = new QPushButton;
     image->setFlat(true);
-    image->setIcon(QPixmap(":/images/images/BluRayS1-S5"));
+    image->setIcon(QPixmap(":/images/images/WDBluRayS1-S5"));
     image->setIconSize(QSize(600,800));
-    image->setFixedSize(585,800);
-    image->setWindowTitle(tr("Item #1"));
+    image->setFixedSize(342,445);
+    image->setWindowTitle(tr("Item #10"));
     image->setWindowFlags(Qt::FramelessWindowHint);
     image->setToolTip(tr("Click image to close"));
     connect(image,SIGNAL(clicked()),image,SLOT(close()));
@@ -48,17 +46,16 @@ void ListingChild1::on_Expand_clicked()
     image->show();
 }
 
-void ListingChild1::on_Expand_2_clicked()
+void ListingChild2::on_Expand_2_clicked()
 {
     if(isExpand) image->close();
     isExpand=true;
     image = new QPushButton;
     image->setFlat(true);
-    image->setIcon(QPixmap(":/images/images/BluRayS6"));
+    image->setIcon(QPixmap(":/images/images/WDBluRayS6"));
     image->setIconSize(QSize(600,800));
-    image->setFixedSize(550,685);
-//    image->setScaledContents(true);
-    image->setWindowTitle(tr("Item #2"));
+    image->setFixedSize(500,639);
+    image->setWindowTitle(tr("Item #11"));
     image->setWindowFlags(Qt::FramelessWindowHint);
     image->setToolTip(tr("Click image to close"));
     connect(image,SIGNAL(clicked()),image,SLOT(close()));
@@ -66,16 +63,16 @@ void ListingChild1::on_Expand_2_clicked()
     image->show();
 }
 
-void ListingChild1::on_Expand_3_clicked()
+void ListingChild2::on_Expand_3_clicked()
 {
     if(isExpand) image->close();
     isExpand=true;
     image = new QPushButton;
     image->setFlat(true);
-    image->setIcon(QPixmap(":/images/images/GameOfThronesBooks"));
+    image->setIcon(QPixmap(":/images/images/WDComic1"));
     image->setIconSize(QSize(600,800));
-    image->setFixedSize(490,482);
-    image->setWindowTitle(tr("Item #3"));
+    image->setFixedSize(325,499);
+    image->setWindowTitle(tr("Item #12"));
     image->setWindowFlags(Qt::FramelessWindowHint);
     image->setToolTip(tr("Click image to close"));
     connect(image,SIGNAL(clicked()),image,SLOT(close()));
@@ -83,16 +80,16 @@ void ListingChild1::on_Expand_3_clicked()
     image->show();
 }
 
-void ListingChild1::on_Expand_4_clicked()
+void ListingChild2::on_Expand_4_clicked()
 {
     if(isExpand) image->close();
     isExpand=true;
     image = new QPushButton;
     image->setFlat(true);
-    image->setIcon(QPixmap(":/images/images/TheWorldOfIceAndFire"));
+    image->setIcon(QPixmap(":/images/images/WDComic2"));
     image->setIconSize(QSize(600,800));
-    image->setFixedSize(600,790);
-    image->setWindowTitle(tr("Item #4"));
+    image->setFixedSize(325,499);
+    image->setWindowTitle(tr("Item #13"));
     image->setWindowFlags(Qt::FramelessWindowHint);
     image->setToolTip(tr("Click image to close"));
     connect(image,SIGNAL(clicked()),image,SLOT(close()));
@@ -100,16 +97,33 @@ void ListingChild1::on_Expand_4_clicked()
     image->show();
 }
 
-void ListingChild1::on_Expand_5_clicked()
+void ListingChild2::on_Expand_5_clicked()
 {
     if(isExpand) image->close();
     isExpand=true;
     image = new QPushButton;
     image->setFlat(true);
-    image->setIcon(QPixmap(":/images/images/GoTBoardGame"));
+    image->setIcon(QPixmap(":/images/images/WDBoardGame"));
+    image->setIconSize(QSize(750,514));
+    image->setFixedSize(750,514);
+    image->setWindowTitle(tr("Item #14"));
+    image->setWindowFlags(Qt::FramelessWindowHint);
+    image->setToolTip(tr("Click image to close"));
+    connect(image,SIGNAL(clicked()),image,SLOT(close()));
+    connect(image,SIGNAL(clicked()),this,SLOT(expBool()));
+    image->show();
+}
+
+void ListingChild2::on_Expand_6_clicked()
+{
+    if(isExpand) image->close();
+    isExpand=true;
+    image = new QPushButton;
+    image->setFlat(true);
+    image->setIcon(QPixmap(":/images/images/WDCoffeeMug"));
     image->setIconSize(QSize(700,700));
-    image->setFixedSize(650,700);
-    image->setWindowTitle(tr("Item #5"));
+    image->setFixedSize(607,579);
+    image->setWindowTitle(tr("Item #15"));
     image->setWindowFlags(Qt::FramelessWindowHint);
     image->setToolTip(tr("Click image to close"));
     connect(image,SIGNAL(clicked()),image,SLOT(close()));
@@ -117,67 +131,16 @@ void ListingChild1::on_Expand_5_clicked()
     image->show();
 }
 
-void ListingChild1::on_Expand_6_clicked()
+void ListingChild2::on_Expand_7_clicked()
 {
     if(isExpand) image->close();
     isExpand=true;
     image = new QPushButton;
     image->setFlat(true);
-    image->setIcon(QPixmap(":/images/images/GoTCoffeeMug"));
-    image->setIconSize(QSize(700,700));
-    image->setFixedSize(700,650);
-    image->setWindowTitle(tr("Item #6"));
-    image->setWindowFlags(Qt::FramelessWindowHint);
-    image->setToolTip(tr("Click image to close"));
-    connect(image,SIGNAL(clicked()),image,SLOT(close()));
-    connect(image,SIGNAL(clicked()),this,SLOT(expBool()));
-    image->show();
-}
-
-void ListingChild1::on_Expand_7_clicked()
-{
-    if(isExpand) image->close();
-    isExpand=true;
-    image = new QPushButton;
-    image->setFlat(true);
-    image->setIcon(QPixmap(":/images/images/TheIronThrone"));
-    image->setIconSize(QSize(700,700));
-    image->setFixedSize(500,500);
-    image->setWindowTitle(tr("Item #7"));
-    image->setWindowFlags(Qt::FramelessWindowHint);
-    image->setToolTip(tr("Click image to close"));
-    connect(image,SIGNAL(clicked()),image,SLOT(close()));
-    connect(image,SIGNAL(clicked()),this,SLOT(expBool()));
-    image->show();
-}
-
-void ListingChild1::on_Expand_8_clicked()
-{
-    if(isExpand) image->close();
-    isExpand=true;
-    image = new QPushButton;
-    image->setFlat(true);
-    image->setIcon(QPixmap(":/images/images/TheNightKing"));
-    image->setIconSize(QSize(900,700));
-    image->setFixedSize(900,670);
-    image->setWindowTitle(tr("Item #8"));
-    image->setWindowFlags(Qt::FramelessWindowHint);
-    image->setToolTip(tr("Click image to close"));
-    connect(image,SIGNAL(clicked()),image,SLOT(close()));
-    connect(image,SIGNAL(clicked()),this,SLOT(expBool()));
-    image->show();
-}
-
-void ListingChild1::on_Expand_9_clicked()
-{
-    if(isExpand) image->close();
-    isExpand=true;
-    image = new QPushButton;
-    image->setFlat(true);
-    image->setIcon(QPixmap(":/images/images/Pop!JonSnow"));
+    image->setIcon(QPixmap(":/images/images/Daryl"));
     image->setIconSize(QSize(700,700));
     image->setFixedSize(700,700);
-    image->setWindowTitle(tr("Item #9"));
+    image->setWindowTitle(tr("Item #16"));
     image->setWindowFlags(Qt::FramelessWindowHint);
     image->setToolTip(tr("Click image to close"));
     connect(image,SIGNAL(clicked()),image,SLOT(close()));
@@ -185,20 +148,54 @@ void ListingChild1::on_Expand_9_clicked()
     image->show();
 }
 
-void ListingChild1::expBool()
+void ListingChild2::on_Expand_8_clicked()
+{
+    if(isExpand) image->close();
+    isExpand=true;
+    image = new QPushButton;
+    image->setFlat(true);
+    image->setIcon(QPixmap(":/images/images/Glenn"));
+    image->setIconSize(QSize(400,750));
+    image->setFixedSize(400,750);
+    image->setWindowTitle(tr("Item #17"));
+    image->setWindowFlags(Qt::FramelessWindowHint);
+    image->setToolTip(tr("Click image to close"));
+    connect(image,SIGNAL(clicked()),image,SLOT(close()));
+    connect(image,SIGNAL(clicked()),this,SLOT(expBool()));
+    image->show();
+}
+
+void ListingChild2::on_Expand_9_clicked()
+{
+    if(isExpand) image->close();
+    isExpand=true;
+    image = new QPushButton;
+    image->setFlat(true);
+    image->setIcon(QPixmap(":/images/images/Pop!Negan"));
+    image->setIconSize(QSize(700,700));
+    image->setFixedSize(600,427);
+    image->setWindowTitle(tr("Item #18"));
+    image->setWindowFlags(Qt::FramelessWindowHint);
+    image->setToolTip(tr("Click image to close"));
+    connect(image,SIGNAL(clicked()),image,SLOT(close()));
+    connect(image,SIGNAL(clicked()),this,SLOT(expBool()));
+    image->show();
+}
+
+void ListingChild2::expBool()
 {
     isExpand = false;
 }
 
-void ListingChild1::addUnit1()
+void ListingChild2::addUnit10()
 {
 //    qDebug()<<total;
     int temp=0;
     QString tempS;
-    temp = ui->UnitCount->value();
-    total -= 80.07f * unit1;
-    total += 80.07f *ui->UnitCount->value();
-    unit1=temp;
+    temp = ui->UnitCount10->value();
+    total -= 77.21f * unit10;
+    total += 77.21f *ui->UnitCount10->value();
+    unit10=temp;
     tempS = QString::number(total);
     if(total < 0.1) tempS = "0.00";
     ui->Money->setText(tempS);
@@ -206,15 +203,15 @@ void ListingChild1::addUnit1()
     addCart();
 }
 
-void ListingChild1::addUnit2()
+void ListingChild2::addUnit11()
 {
 //    qDebug()<<total;
     int temp=0;
     QString tempS;
-    temp = ui->UnitCount2->value();
-    total -= 39.99f * unit2;
-    total += 39.99f *ui->UnitCount2->value();
-    unit2=temp;
+    temp = ui->UnitCount11->value();
+    total -= 49.99f * unit11;
+    total += 49.99f *ui->UnitCount11->value();
+    unit11=temp;
     tempS = QString::number(total);
     if(total < 0.1) tempS = "0.00";
     ui->Money->setText(tempS);
@@ -222,15 +219,15 @@ void ListingChild1::addUnit2()
     addCart();
 }
 
-void ListingChild1::addUnit3()
+void ListingChild2::addUnit12()
 {
 //    qDebug()<<total;
     int temp=0;
     QString tempS;
-    temp = ui->UnitCount3->value();
-    total -= 59.99f * unit3;
-    total += 59.99f *ui->UnitCount3->value();
-    unit3=temp;
+    temp = ui->UnitCount12->value();
+    total -= 34.45f * unit12;
+    total += 34.45f *ui->UnitCount12->value();
+    unit12=temp;
     tempS = QString::number(total);
     if(total < 0.1) tempS = "0.00";
     ui->Money->setText(tempS);
@@ -238,15 +235,15 @@ void ListingChild1::addUnit3()
     addCart();
 }
 
-void ListingChild1::addUnit4()
+void ListingChild2::addUnit13()
 {
 //    qDebug()<<total;
     int temp=0;
     QString tempS;
-    temp = ui->UnitCount4->value();
-    total -= 29.49f * unit4;
-    total += 29.49f *ui->UnitCount4->value();
-    unit4=temp;
+    temp = ui->UnitCount13->value();
+    total -= 30.50f * unit13;
+    total += 30.50f *ui->UnitCount13->value();
+    unit13=temp;
     tempS = QString::number(total);
     if(total < 0.1) tempS = "0.00";
     ui->Money->setText(tempS);
@@ -254,15 +251,15 @@ void ListingChild1::addUnit4()
     addCart();
 }
 
-void ListingChild1::addUnit5()
+void ListingChild2::addUnit14()
 {
 //    qDebug()<<total;
     int temp=0;
     QString tempS;
-    temp = ui->UnitCount5->value();
-    total -= 46.86f * unit5;
-    total += 46.86f *ui->UnitCount5->value();
-    unit5=temp;
+    temp = ui->UnitCount14->value();
+    total -= 34.88f * unit14;
+    total += 34.88f *ui->UnitCount14->value();
+    unit14=temp;
     tempS = QString::number(total);
     if(total < 0.1) tempS = "0.00";
     ui->Money->setText(tempS);
@@ -270,15 +267,15 @@ void ListingChild1::addUnit5()
     addCart();
 }
 
-void ListingChild1::addUnit6()
+void ListingChild2::addUnit15()
 {
 //    qDebug()<<total;
     int temp=0;
     QString tempS;
-    temp = ui->UnitCount6->value();
-    total -= 10.51f * unit6;
-    total += 10.51f *ui->UnitCount6->value();
-    unit6=temp;
+    temp = ui->UnitCount15->value();
+    total -= 16.23f * unit15;
+    total += 16.23f *ui->UnitCount15->value();
+    unit15=temp;
     tempS = QString::number(total);
     if(total < 0.1) tempS = "0.00";
     ui->Money->setText(tempS);
@@ -286,15 +283,15 @@ void ListingChild1::addUnit6()
     addCart();
 }
 
-void ListingChild1::addUnit7()
+void ListingChild2::addUnit16()
 {
 //    qDebug()<<total;
     int temp=0;
     QString tempS;
-    temp = ui->UnitCount7->value();
-    total -= 45.18f * unit7;
-    total += 45.18f *ui->UnitCount7->value();
-    unit7=temp;
+    temp = ui->UnitCount16->value();
+    total -= 192.74f * unit16;
+    total += 192.74f *ui->UnitCount16->value();
+    unit16=temp;
     tempS = QString::number(total);
     if(total < 0.1) tempS = "0.00";
     ui->Money->setText(tempS);
@@ -302,15 +299,15 @@ void ListingChild1::addUnit7()
     addCart();
 }
 
-void ListingChild1::addUnit8()
+void ListingChild2::addUnit17()
 {
 //    qDebug()<<total;
     int temp=0;                         //tempory storage for the ui unit count value
     QString tempS;                      //tempory string that will be set on the ui money
-    temp = ui->UnitCount8->value();     //sets temp to the current value in the ui
-    total -= 129.99f * unit8;
-    total += 129.99f *ui->UnitCount8->value();
-    unit8=temp;
+    temp = ui->UnitCount17->value();     //sets temp to the current value in the ui
+    total -= 474.23f * unit17;
+    total += 474.23f *ui->UnitCount17->value();
+    unit17=temp;
     tempS = QString::number(total);
     if(total < 0.1) tempS = "0.00";
     ui->Money->setText(tempS);
@@ -318,15 +315,15 @@ void ListingChild1::addUnit8()
     addCart();
 }
 
-void ListingChild1::addUnit9()
+void ListingChild2::addUnit18()
 {
 //    qDebug()<<total;
     int temp=0;
     QString tempS;
-    temp = ui->UnitCount9->value();
-    total -= 11.99f * unit9;
-    total += 11.99f *ui->UnitCount9->value();
-    unit9=temp;
+    temp = ui->UnitCount18->value();
+    total -= 15.43f * unit18;
+    total += 15.43f *ui->UnitCount18->value();
+    unit18=temp;
     tempS = QString::number(total);
     if(total < 0.1) tempS = "0.00";
     ui->Money->setText(tempS);
@@ -334,90 +331,89 @@ void ListingChild1::addUnit9()
     addCart();
 }
 
-void ListingChild1::on_image1button_clicked()
+void ListingChild2::on_image1button_clicked()
 {
     on_Expand_clicked();
 }
 
-void ListingChild1::on_image2button_clicked()
+void ListingChild2::on_image2button_clicked()
 {
     on_Expand_2_clicked();
 }
 
-void ListingChild1::on_image3button_clicked()
+void ListingChild2::on_image3button_clicked()
 {
     on_Expand_3_clicked();
 }
 
-void ListingChild1::on_image4button_clicked()
+void ListingChild2::on_image4button_clicked()
 {
     on_Expand_4_clicked();
 }
 
-void ListingChild1::on_image5button_clicked()
+void ListingChild2::on_image5button_clicked()
 {
     on_Expand_5_clicked();
 }
 
-void ListingChild1::on_image6button_clicked()
+void ListingChild2::on_image6button_clicked()
 {
     on_Expand_6_clicked();
 }
 
-void ListingChild1::on_image7button_clicked()
+void ListingChild2::on_image7button_clicked()
 {
     on_Expand_7_clicked();
 }
 
-void ListingChild1::on_image8button_clicked()
+void ListingChild2::on_image8button_clicked()
 {
     on_Expand_8_clicked();
 }
 
-void ListingChild1::on_image9button_clicked()
+void ListingChild2::on_image9button_clicked()
 {
     on_Expand_9_clicked();
 }
 
-void ListingChild1::grab1(int u1, int u2, int u3, int u4, int u5, int u6, int u7, int u8, int u9, float t)
+void ListingChild2::grab2(int u10, int u11, int u12, int u13, int u14, int u15, int u16, int u17, int u18, float t)
 {
     QString tempS;
-    unit1=u1;
-    unit2=u2;
-    unit3=u3;
-    unit4=u4;
-    unit5=u5;
-    unit6=u6;
-    unit7=u7;
-    unit8=u8;
-    unit9=u9;
+    unit10=u10;
+    unit11=u11;
+    unit12=u12;
+    unit13=u13;
+    unit14=u14;
+    unit15=u15;
+    unit16=u16;
+    unit17=u17;
+    unit18=u18;
     total=t;
-    ui->UnitCount->setValue(unit1);
-    ui->UnitCount2->setValue(unit2);
-    ui->UnitCount3->setValue(unit3);
-    ui->UnitCount4->setValue(unit4);
-    ui->UnitCount5->setValue(unit5);
-    ui->UnitCount6->setValue(unit6);
-    ui->UnitCount7->setValue(unit7);
-    ui->UnitCount8->setValue(unit8);
-    ui->UnitCount9->setValue(unit9);
+    ui->UnitCount10->setValue(unit10);
+    ui->UnitCount11->setValue(unit11);
+    ui->UnitCount12->setValue(unit12);
+    ui->UnitCount13->setValue(unit13);
+    ui->UnitCount14->setValue(unit14);
+    ui->UnitCount15->setValue(unit15);
+    ui->UnitCount16->setValue(unit16);
+    ui->UnitCount17->setValue(unit17);
+    ui->UnitCount18->setValue(unit18);
     tempS = QString::number(total);
     ui->Money->setText(tempS);
 }
 
-void ListingChild1::bannerT()
+void ListingChild2::bannerT()
 {
     ui->banner->deleteLater();
     timer->stop();
 }
 
-void ListingChild1::addCart()
+void ListingChild2::addCart()
 {
-    emit sendCnt1(unit1,unit2,unit3,unit4,unit5,unit6,unit7,unit8,unit9,total);
+    emit sendCnt2(unit10,unit11,unit12,unit13,unit14,unit15,unit16,unit17,unit18,total);
 }
 
-
-void ListingChild1::on_GoTo2_clicked()
+void ListingChild2::on_GoTo1_clicked()
 {
-    emit page2();
+    emit page1();
 }

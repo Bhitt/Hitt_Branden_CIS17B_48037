@@ -5,6 +5,7 @@
 
 #include "loginchild.h"
 #include "listingchild1.h"
+#include "listingchild2.h"
 
 namespace Ui {
 class MainWindow;
@@ -37,6 +38,7 @@ private:
     Ui::MainWindow *ui;
     LoginChild *loginchild;
     ListingChild1 *listingchild1;
+    ListingChild2 *listingchild2;
 
     bool isLog;
     bool isList1;
@@ -51,17 +53,21 @@ private:
 
 signals:
     void setup1(int,int,int,int,int,int,int,int,int,float); //send the information to set up the first page
+    void setup2(int,int,int,int,int,int,int,int,int,float); //send the information to set up the second page
 
 public slots:
     void emSetUp1(); //emit the setup signal
+    void emSetUp2(); //emit the second setup signal
 
 private slots:
     void crLgSc(); //create the login screen
     void crLiP1(); //create the listing child page 1
+    void crLiP2(); //create the listing child page 2
     void remLog(); //set the isLog to false
     void setFal(); //set bools to false
     void setNaPa(QString user, QString pass); //set the user name and password
     void setCnt1(int u1, int u2, int u3, int u4, int u5, int u6, int u7, int u8, int u9, float t); //set the unitC counts from the first listing page
+    void setCnt2(int u10, int u11, int u12, int u13, int u14, int u15, int u16, int u17, int u18, float t); //set the unitC counnts from the second listing page
 };
 
 #endif // MAINWINDOW_H

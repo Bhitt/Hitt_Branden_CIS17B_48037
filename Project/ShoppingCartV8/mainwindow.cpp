@@ -82,12 +82,46 @@ void MainWindow::crLiP1()
     connect(listingchild1,SIGNAL(fetch()),this,SLOT(emSetUp1()));
     connect(listingchild1,SIGNAL(sendCnt1(int,int,int,int,int,int,int,int,int,float)),this,SLOT(setCnt1(int,int,int,int,int,int,int,int,int,float)));
     connect(this,SIGNAL(setup1(int,int,int,int,int,int,int,int,int,float)),listingchild1,SLOT(grab1(int,int,int,int,int,int,int,int,int,float)));
+    connect(listingchild1,SIGNAL(page2()),this,SLOT(crLiP2()));
+
+    //change borders
+    this->menuBar()->setStyleSheet(tr("background-color: rgb(100, 161, 159);"));
+    this->ui->mainToolBar->setStyleSheet(tr("background-color: rgb(157, 213, 211);"));
+    this->statusBar()->setStyleSheet(tr("background-color: rgb(100, 161, 159);"));
 
     //emit fetch
     listingchild1->fetch();
 
     //set status bar
     this->statusBar()->showMessage(tr("Game of Thrones Items"));
+}
+
+void MainWindow::crLiP2()
+{
+    //check if any listings are displayed
+    setFal();
+    //create the first listing page
+    isList2 = true;
+    listingchild2 = new ListingChild2(ui->mdiArea);
+    listingchild2->setAttribute(Qt::WA_DeleteOnClose);
+    listingchild2->setWindowFlags(Qt::FramelessWindowHint);
+    listingchild2->show();
+    //connections between the listing page and the mainwindow
+    connect(listingchild2,SIGNAL(fetch2()),this,SLOT(emSetUp2()));
+    connect(listingchild2,SIGNAL(sendCnt2(int,int,int,int,int,int,int,int,int,float)),this,SLOT(setCnt2(int,int,int,int,int,int,int,int,int,float)));
+    connect(this,SIGNAL(setup2(int,int,int,int,int,int,int,int,int,float)),listingchild2,SLOT(grab2(int,int,int,int,int,int,int,int,int,float)));
+    connect(listingchild2,SIGNAL(page1()),this,SLOT(crLiP1()));
+
+    //change borders
+    this->menuBar()->setStyleSheet(tr("background-color: rgb(178, 175, 155);"));
+    this->ui->mainToolBar->setStyleSheet(tr("background-color: rgb(114, 112, 99);"));
+    this->statusBar()->setStyleSheet(tr("background-color: rgb(178, 175, 155);"));
+
+    //emit fetch
+    listingchild2->fetch2();
+
+    //set status bar
+    this->statusBar()->showMessage(tr("The Walking Dead Items"));
 }
 
 void MainWindow::remLog()
@@ -102,7 +136,7 @@ void MainWindow::setFal()
         isList1 = false;
     }
     if(isList2){
-        //delete listingchild2;
+        delete listingchild2;
         isList2 = false;
     }
     if(isList3){
@@ -120,7 +154,7 @@ void MainWindow::setNaPa(QString user, QString pass)
     name = user;
     password = pass;
     qDebug() << user;
-    qDebug() <<pass;
+    qDebug() << pass;
 }
 
 void MainWindow::setCnt1(int u1, int u2, int u3, int u4, int u5, int u6, int u7, int u8, int u9, float t)
@@ -138,8 +172,29 @@ void MainWindow::setCnt1(int u1, int u2, int u3, int u4, int u5, int u6, int u7,
     totalM=t;
 }
 
+void MainWindow::setCnt2(int u10, int u11, int u12, int u13, int u14, int u15, int u16, int u17, int u18, float t)
+{
+//    qDebug()<<"entered MainWindow::setCnt2";
+    unitC10=u10;
+    unitC11=u11;
+    unitC12=u12;
+    unitC13=u13;
+    unitC14=u14;
+    unitC15=u15;
+    unitC16=u16;
+    unitC17=u17;
+    unitC18=u18;
+    totalM=t;
+}
+
 void MainWindow::emSetUp1()
 {
 //    qDebug()<<"entered emSetUp1";
     emit setup1(unitC1,unitC2,unitC3,unitC4,unitC5,unitC6,unitC7,unitC8,unitC9,totalM);
+}
+
+void MainWindow::emSetUp2()
+{
+//    qDebug()<<"entered emSetUp2";
+    emit setup2(unitC10,unitC11,unitC12,unitC13,unitC14,unitC15,unitC16,unitC17,unitC18,totalM);
 }

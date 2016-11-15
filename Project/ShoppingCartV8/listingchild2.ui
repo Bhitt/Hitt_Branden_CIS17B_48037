@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>ListingChild1</class>
- <widget class="QMdiSubWindow" name="ListingChild1">
+ <class>ListingChild2</class>
+ <widget class="QMdiSubWindow" name="ListingChild2">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -26,8 +26,8 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">#ListingChild1 {border-top-color: rgb(138, 163, 170);
-background-image: url(:/images/images/ShoppingCartBG.png);
+   <string notr="true">#ListingChild2 {
+background-image: url(:/images/images/WDBG.png);
 
 }</string>
   </property>
@@ -106,7 +106,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/images/images/TheIronThronesmall.jpg);</string>
+     <string notr="true">image: url(:/images/images/Daryl.jpg);</string>
     </property>
     <property name="text">
      <string/>
@@ -158,7 +158,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      </font>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Dark Horse Deluxe&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Gentle Giant&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="Price_15">
@@ -171,7 +171,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$45.18&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$192.74&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="GetItBy_15">
@@ -222,7 +222,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_15">
      <item>
-      <widget class="QSpinBox" name="UnitCount7">
+      <widget class="QSpinBox" name="UnitCount16">
        <property name="minimum">
         <number>0</number>
        </property>
@@ -334,7 +334,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/images/images/TheNightKingsmall.jpg);</string>
+     <string notr="true">image: url(:/images/images/Glenn.jpg);</string>
     </property>
     <property name="text">
      <string/>
@@ -346,9 +346,9 @@ background-image: url(:/images/images/ShoppingCartBG.png);
    <widget class="QLabel" name="ItemName_18">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>180</x>
       <y>10</y>
-      <width>231</width>
+      <width>171</width>
       <height>21</height>
      </rect>
     </property>
@@ -364,7 +364,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <string>Item Name</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:400; color:#94c8ff;&quot;&gt;Game of Thrones: The Night's King&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:400; color:#94c8ff;&quot;&gt;The Walking Dead: Glenn&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="textFormat">
      <enum>Qt::RichText</enum>
@@ -386,7 +386,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      </font>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Dark Horse Comics&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Walking Dead&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="Price_18">
@@ -399,7 +399,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$129.99&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$474.23&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="GetItBy_18">
@@ -450,7 +450,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_18">
      <item>
-      <widget class="QSpinBox" name="UnitCount8">
+      <widget class="QSpinBox" name="UnitCount17">
        <property name="minimum">
         <number>0</number>
        </property>
@@ -575,7 +575,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/images/images/Pop!JonSnowsmall.jpg);</string>
+     <string notr="true">image: url(:/images/images/Pop!Negan.jpg);</string>
     </property>
     <property name="text">
      <string/>
@@ -605,7 +605,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <string>Item Name</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:400; color:#94c8ff;&quot;&gt;Funko POP GoT: Jon Snow&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:400; color:#94c8ff;&quot;&gt;Funko POP WD: Negan&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="textFormat">
      <enum>Qt::RichText</enum>
@@ -640,7 +640,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$11.99&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$15.43&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="GetItBy_21">
@@ -691,7 +691,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_21">
      <item>
-      <widget class="QSpinBox" name="UnitCount9">
+      <widget class="QSpinBox" name="UnitCount18">
        <property name="minimum">
         <number>0</number>
        </property>
@@ -803,7 +803,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/images/images/GoTCoffeeMugsmall.jpg);</string>
+     <string notr="true">image: url(:/images/images/WDCoffeeMug.jpg);</string>
     </property>
     <property name="text">
      <string/>
@@ -833,7 +833,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <string>Item Name</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:400; color:#94c8ff;&quot;&gt;Game of Thrones Coffee Mug&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:400; color:#94c8ff;&quot;&gt;The Walking Dead Coffee Mug&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="textFormat">
      <enum>Qt::RichText</enum>
@@ -855,7 +855,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      </font>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Dark Horse Deluxe&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Walking Dead&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="Price_20">
@@ -868,7 +868,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$10.51&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$16.23&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="GetItBy_20">
@@ -919,7 +919,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_20">
      <item>
-      <widget class="QSpinBox" name="UnitCount6">
+      <widget class="QSpinBox" name="UnitCount15">
        <property name="minimum">
         <number>0</number>
        </property>
@@ -1031,7 +1031,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/images/images/GoTBoardGamesmall.jpg);</string>
+     <string notr="true">image: url(:/images/images/WDBoardGame.jpg);</string>
     </property>
     <property name="text">
      <string/>
@@ -1061,7 +1061,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <string>Item Name</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:400; color:#94c8ff;&quot;&gt;A Game of Thrones: The Board Game&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:400; color:#94c8ff;&quot;&gt;The Walking Dead The Best Defense&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="textFormat">
      <enum>Qt::RichText</enum>
@@ -1083,7 +1083,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      </font>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Christian T. Peterson&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Cryptozoic&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="Price_17">
@@ -1096,7 +1096,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$46.86&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$25.96&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="GetItBy_17">
@@ -1147,7 +1147,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_17">
      <item>
-      <widget class="QSpinBox" name="UnitCount5">
+      <widget class="QSpinBox" name="UnitCount14">
        <property name="minimum">
         <number>0</number>
        </property>
@@ -1259,7 +1259,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/images/images/TheWorldOfIceAndFiresmall.jpg);</string>
+     <string notr="true">image: url(:/images/images/WDComic2.jpg);</string>
     </property>
     <property name="text">
      <string/>
@@ -1273,7 +1273,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <rect>
       <x>170</x>
       <y>10</y>
-      <width>211</width>
+      <width>221</width>
       <height>21</height>
      </rect>
     </property>
@@ -1289,7 +1289,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <string>Item Name</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:400; color:#94c8ff;&quot;&gt;The World of Ice &amp;amp; Fire&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:400; color:#94c8ff;&quot;&gt;The Walking Dead: Compendium Two&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="textFormat">
      <enum>Qt::RichText</enum>
@@ -1300,7 +1300,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <rect>
       <x>180</x>
       <y>30</y>
-      <width>111</width>
+      <width>171</width>
       <height>16</height>
      </rect>
     </property>
@@ -1311,7 +1311,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      </font>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by George R. R. Martin&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Robert Kirkman and Sina Grace&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="Price_14">
@@ -1324,7 +1324,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$29.49&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$30.50&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="GetItBy_14">
@@ -1375,7 +1375,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_14">
      <item>
-      <widget class="QSpinBox" name="UnitCount4">
+      <widget class="QSpinBox" name="UnitCount13">
        <property name="minimum">
         <number>0</number>
        </property>
@@ -1509,7 +1509,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/images/images/BluRayS1-S5small.png);</string>
+     <string notr="true">image: url(:/images/images/WDBluRayS1-S5.jpg);</string>
     </property>
     <property name="text">
      <string/>
@@ -1539,7 +1539,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <string>Item Name</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:400; color:#94c8ff;&quot;&gt;Game of Thrones - Season 1-5&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:400; color:#94c8ff;&quot;&gt;The Walking Dead - Season 1-5&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="textFormat">
      <enum>Qt::RichText</enum>
@@ -1561,7 +1561,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      </font>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by HBO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by AMC&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="Price">
@@ -1574,7 +1574,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$80.07&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$77.21&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="GetItBy">
@@ -1647,7 +1647,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QSpinBox" name="UnitCount">
+      <widget class="QSpinBox" name="UnitCount10">
        <property name="minimum">
         <number>0</number>
        </property>
@@ -1740,7 +1740,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/images/images/BluRayS6small.jpg);</string>
+     <string notr="true">image: url(:/images/images/WDBluRayS6.jpg);</string>
     </property>
     <property name="text">
      <string/>
@@ -1770,7 +1770,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <string>Item Name</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:400; color:#94c8ff;&quot;&gt;Game of Thrones - Season 6&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:400; color:#94c8ff;&quot;&gt;The Walking Dead - Season 6&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="textFormat">
      <enum>Qt::RichText</enum>
@@ -1792,7 +1792,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      </font>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by HBO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by AMC&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="Price_16">
@@ -1805,7 +1805,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$39.99&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$49.99&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="GetItBy_16">
@@ -1856,7 +1856,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_16">
      <item>
-      <widget class="QSpinBox" name="UnitCount2">
+      <widget class="QSpinBox" name="UnitCount11">
        <property name="minimum">
         <number>0</number>
        </property>
@@ -1968,7 +1968,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/images/images/GameOfThronesBookssmall.jpg);</string>
+     <string notr="true">image: url(:/images/images/WDComic1.jpg);</string>
     </property>
     <property name="text">
      <string/>
@@ -1982,7 +1982,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <rect>
       <x>170</x>
       <y>10</y>
-      <width>211</width>
+      <width>221</width>
       <height>21</height>
      </rect>
     </property>
@@ -1998,7 +1998,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <string>Item Name</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:400; color:#94c8ff;&quot;&gt;A Game of Thrones 5-Book Set&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:400; color:#94c8ff;&quot;&gt;The Walking Dead: Compendium One&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="textFormat">
      <enum>Qt::RichText</enum>
@@ -2009,7 +2009,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      <rect>
       <x>180</x>
       <y>30</y>
-      <width>121</width>
+      <width>191</width>
       <height>16</height>
      </rect>
     </property>
@@ -2020,7 +2020,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      </font>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by George R. R. Martin&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#afafaf;&quot;&gt;by Robert Kirkman and Charlie Adlard&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="Price_19">
@@ -2033,7 +2033,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$59.99&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#990000;&quot;&gt;$34.45&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="GetItBy_19">
@@ -2084,7 +2084,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_19">
      <item>
-      <widget class="QSpinBox" name="UnitCount3">
+      <widget class="QSpinBox" name="UnitCount12">
        <property name="minimum">
         <number>0</number>
        </property>
@@ -2172,7 +2172,7 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     <item>
      <widget class="QPushButton" name="GoTo1">
       <property name="enabled">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="font">
        <font>
@@ -2206,6 +2206,9 @@ background-image: url(:/images/images/ShoppingCartBG.png);
     </item>
     <item>
      <widget class="QPushButton" name="GoTo2">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="font">
        <font>
         <family>Verdana</family>
@@ -2328,10 +2331,10 @@ background-color: rgb(255, 255, 255);
   <widget class="QLabel" name="banner">
    <property name="geometry">
     <rect>
-     <x>2</x>
-     <y>60</y>
+     <x>0</x>
+     <y>120</y>
      <width>1280</width>
-     <height>500</height>
+     <height>400</height>
     </rect>
    </property>
    <property name="sizePolicy">
@@ -2343,11 +2346,11 @@ background-color: rgb(255, 255, 255);
    <property name="maximumSize">
     <size>
      <width>1280</width>
-     <height>500</height>
+     <height>400</height>
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">image: url(:/images/images/GoTBanner.png);</string>
+    <string notr="true">image: url(:/images/images/WDBanner.jpg);</string>
    </property>
    <property name="text">
     <string/>
@@ -2398,8 +2401,8 @@ background-color: rgb(255, 255, 255);
   <connection>
    <sender>AddToCart1</sender>
    <signal>clicked()</signal>
-   <receiver>ListingChild1</receiver>
-   <slot>addUnit1()</slot>
+   <receiver>ListingChild2</receiver>
+   <slot>addUnit10()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>373</x>
@@ -2414,8 +2417,8 @@ background-color: rgb(255, 255, 255);
   <connection>
    <sender>AddToCart2</sender>
    <signal>clicked()</signal>
-   <receiver>ListingChild1</receiver>
-   <slot>addUnit2()</slot>
+   <receiver>ListingChild2</receiver>
+   <slot>addUnit11()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>789</x>
@@ -2430,8 +2433,8 @@ background-color: rgb(255, 255, 255);
   <connection>
    <sender>AddToCart3</sender>
    <signal>clicked()</signal>
-   <receiver>ListingChild1</receiver>
-   <slot>addUnit3()</slot>
+   <receiver>ListingChild2</receiver>
+   <slot>addUnit12()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>1209</x>
@@ -2446,8 +2449,8 @@ background-color: rgb(255, 255, 255);
   <connection>
    <sender>AddToCart4</sender>
    <signal>clicked()</signal>
-   <receiver>ListingChild1</receiver>
-   <slot>addUnit4()</slot>
+   <receiver>ListingChild2</receiver>
+   <slot>addUnit13()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>369</x>
@@ -2462,8 +2465,8 @@ background-color: rgb(255, 255, 255);
   <connection>
    <sender>AddToCart5</sender>
    <signal>clicked()</signal>
-   <receiver>ListingChild1</receiver>
-   <slot>addUnit5()</slot>
+   <receiver>ListingChild2</receiver>
+   <slot>addUnit14()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>789</x>
@@ -2478,8 +2481,8 @@ background-color: rgb(255, 255, 255);
   <connection>
    <sender>AddToCart6</sender>
    <signal>clicked()</signal>
-   <receiver>ListingChild1</receiver>
-   <slot>addUnit6()</slot>
+   <receiver>ListingChild2</receiver>
+   <slot>addUnit15()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>1209</x>
@@ -2494,8 +2497,8 @@ background-color: rgb(255, 255, 255);
   <connection>
    <sender>AddToCart7</sender>
    <signal>clicked()</signal>
-   <receiver>ListingChild1</receiver>
-   <slot>addUnit7()</slot>
+   <receiver>ListingChild2</receiver>
+   <slot>addUnit16()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>369</x>
@@ -2510,8 +2513,8 @@ background-color: rgb(255, 255, 255);
   <connection>
    <sender>AddToCart8</sender>
    <signal>clicked()</signal>
-   <receiver>ListingChild1</receiver>
-   <slot>addUnit8()</slot>
+   <receiver>ListingChild2</receiver>
+   <slot>addUnit17()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>789</x>
@@ -2526,8 +2529,8 @@ background-color: rgb(255, 255, 255);
   <connection>
    <sender>AddToCart9</sender>
    <signal>clicked()</signal>
-   <receiver>ListingChild1</receiver>
-   <slot>addUnit9()</slot>
+   <receiver>ListingChild2</receiver>
+   <slot>addUnit18()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>1209</x>
@@ -2541,16 +2544,16 @@ background-color: rgb(255, 255, 255);
   </connection>
  </connections>
  <slots>
-  <signal>fetch()</signal>
+  <signal>fetch2()</signal>
   <slot>about()</slot>
-  <slot>addUnit1()</slot>
-  <slot>addUnit2()</slot>
-  <slot>addUnit3()</slot>
-  <slot>addUnit4()</slot>
-  <slot>addUnit5()</slot>
-  <slot>addUnit6()</slot>
-  <slot>addUnit7()</slot>
-  <slot>addUnit8()</slot>
-  <slot>addUnit9()</slot>
+  <slot>addUnit10()</slot>
+  <slot>addUnit11()</slot>
+  <slot>addUnit12()</slot>
+  <slot>addUnit13()</slot>
+  <slot>addUnit14()</slot>
+  <slot>addUnit15()</slot>
+  <slot>addUnit16()</slot>
+  <slot>addUnit17()</slot>
+  <slot>addUnit18()</slot>
  </slots>
 </ui>

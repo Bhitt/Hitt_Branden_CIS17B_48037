@@ -28,5 +28,17 @@
         <file>images/TheWorldOfIceAndFiresmall.jpg</file>
         <file>images/Icon.png</file>
         <file>images/GoTBanner.png</file>
+        <file>images/Daryl.jpg</file>
+        <file>images/Glenn.jpg</file>
+        <file>images/Pop!Negan.jpg</file>
+        <file>images/WDBluRayS1-S5.jpg</file>
+        <file>images/WDBluRayS6.jpg</file>
+        <file>images/WDBoardGame.jpg</file>
+        <file>images/WDCoffeeMug.jpg</file>
+        <file>images/WDComic1.jpg</file>
+        <file>images/WDComic2.jpg</file>
+        <file>images/WDComic3.jpg</file>
+        <file>images/WDBanner.jpg</file>
+        <file>images/WDBG.png</file>
     </qresource>
 </RCC>

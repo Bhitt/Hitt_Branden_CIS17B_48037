@@ -2329,6 +2329,9 @@ background-color: rgb(255, 255, 255);
    </widget>
   </widget>
   <widget class="QLabel" name="banner">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>0</x>

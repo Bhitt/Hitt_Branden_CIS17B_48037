@@ -241,8 +241,8 @@ void ListingChild2::addUnit13()
     int temp=0;
     QString tempS;
     temp = ui->UnitCount13->value();
-    total -= 30.50f * unit13;
-    total += 30.50f *ui->UnitCount13->value();
+    total -= 30.51f * unit13;
+    total += 30.51f *ui->UnitCount13->value();
     unit13=temp;
     tempS = QString::number(total);
     if(total < 0.1) tempS = "0.00";
@@ -257,8 +257,8 @@ void ListingChild2::addUnit14()
     int temp=0;
     QString tempS;
     temp = ui->UnitCount14->value();
-    total -= 34.88f * unit14;
-    total += 34.88f *ui->UnitCount14->value();
+    total -= 25.96f * unit14;
+    total += 25.96f *ui->UnitCount14->value();
     unit14=temp;
     tempS = QString::number(total);
     if(total < 0.1) tempS = "0.00";

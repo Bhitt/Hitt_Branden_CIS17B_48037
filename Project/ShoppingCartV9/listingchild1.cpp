@@ -11,7 +11,7 @@ ListingChild1::ListingChild1(QWidget *parent) :
     //set banner timer
     timer = new QTimer();
     connect(timer,SIGNAL(timeout()),this,SLOT(bannerT()));
-    timer->start(1300);
+    timer->start(1200);
 
     //set units to zero
     unit1=0, unit2=0, unit3=0;

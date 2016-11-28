@@ -36,8 +36,8 @@ private:
 
     float total; //dollar total
 
-    QPushButton *image;
-    bool isExpand;
+    QPushButton *image; //for the expanded images
+    bool isExpand;      //keeps track of any items expanded
     
     void addCart(); //any of the add to cart buttons were pushed
     void dateSet(); //set up the dates for delivery
@@ -47,6 +47,10 @@ signals:
     void page2(); //switch to page two
 
 public slots:
+
+
+private slots:
+
     void on_Expand_clicked(); //when the expand button is clicked
     void on_Expand_2_clicked();
     void on_Expand_3_clicked();
@@ -68,7 +72,7 @@ public slots:
     void addUnit7();
     void addUnit8();
     void addUnit9();
-private slots:
+
     void on_image1button_clicked(); //when the images are clicked on the page
     void on_image2button_clicked();
     void on_image3button_clicked();
@@ -80,9 +84,9 @@ private slots:
     void on_image9button_clicked();
 
     void grab1(int, int u2, int u3, int u4, int u5, int u6, int u7, int u8, int u9, float t); //grabs the values to set on the page
-    void bannerT(); //banner timeout slot
-    void on_GoTo2_clicked();
-    void on_nextPage_clicked();
+    void bannerT();             //banner timeout slot
+    void on_GoTo2_clicked();    //page two button ckicled
+    void on_nextPage_clicked(); //next page button clicked
 };
 
 #endif // LISTINGCHILD1_H

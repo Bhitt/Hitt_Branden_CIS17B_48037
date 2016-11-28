@@ -197,7 +197,7 @@ background-image: url(:/images/images/WDBG.png);
      <rect>
       <x>230</x>
       <y>70</y>
-      <width>91</width>
+      <width>120</width>
       <height>16</height>
      </rect>
     </property>
@@ -425,7 +425,7 @@ background-image: url(:/images/images/WDBG.png);
      <rect>
       <x>230</x>
       <y>70</y>
-      <width>91</width>
+      <width>120</width>
       <height>16</height>
      </rect>
     </property>
@@ -666,7 +666,7 @@ background-image: url(:/images/images/WDBG.png);
      <rect>
       <x>230</x>
       <y>70</y>
-      <width>91</width>
+      <width>120</width>
       <height>16</height>
      </rect>
     </property>
@@ -894,7 +894,7 @@ background-image: url(:/images/images/WDBG.png);
      <rect>
       <x>230</x>
       <y>70</y>
-      <width>91</width>
+      <width>120</width>
       <height>16</height>
      </rect>
     </property>
@@ -1122,7 +1122,7 @@ background-image: url(:/images/images/WDBG.png);
      <rect>
       <x>230</x>
       <y>70</y>
-      <width>91</width>
+      <width>120</width>
       <height>16</height>
      </rect>
     </property>
@@ -1350,7 +1350,7 @@ background-image: url(:/images/images/WDBG.png);
      <rect>
       <x>230</x>
       <y>70</y>
-      <width>91</width>
+      <width>120</width>
       <height>16</height>
      </rect>
     </property>
@@ -1600,7 +1600,7 @@ background-image: url(:/images/images/WDBG.png);
      <rect>
       <x>230</x>
       <y>70</y>
-      <width>91</width>
+      <width>120</width>
       <height>16</height>
      </rect>
     </property>
@@ -1617,7 +1617,7 @@ background-image: url(:/images/images/WDBG.png);
    <widget class="QPushButton" name="Expand">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>150</x>
       <y>130</y>
       <width>31</width>
       <height>31</height>
@@ -1831,7 +1831,7 @@ background-image: url(:/images/images/WDBG.png);
      <rect>
       <x>230</x>
       <y>70</y>
-      <width>91</width>
+      <width>120</width>
       <height>16</height>
      </rect>
     </property>
@@ -2059,7 +2059,7 @@ background-image: url(:/images/images/WDBG.png);
      <rect>
       <x>230</x>
       <y>70</y>
-      <width>91</width>
+      <width>120</width>
       <height>16</height>
      </rect>
     </property>

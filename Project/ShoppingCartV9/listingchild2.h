@@ -41,12 +41,16 @@ private:
 
     void addCart(); //any of the add to cart buttons were pushed
     void dateSet(); //set up the dates for delivery
+
 signals:
     void sendCnt2(int,int,int,int,int,int,int,int,int,float); //send the user counts
     void fetch2(); //for listing setup purposes
     void page1();  //switch to page 1
 
 public slots:
+
+private slots:
+
     void on_Expand_clicked(); //when the expand button is clicked
     void on_Expand_2_clicked();
     void on_Expand_3_clicked();
@@ -68,7 +72,7 @@ public slots:
     void addUnit16();
     void addUnit17();
     void addUnit18();
-private slots:
+
     void on_image1button_clicked(); //when the images are clicked on the page
     void on_image2button_clicked();
     void on_image3button_clicked();
@@ -80,9 +84,9 @@ private slots:
     void on_image9button_clicked();
 
     void grab2(int u10, int u11, int u12, int u13, int u14, int u15, int u16, int u17, int u18, float t); //grabs the values to set on the page
-    void bannerT(); //banner timeout slot
-    void on_GoTo1_clicked();
-    void on_previous_clicked();
+    void bannerT();                 //banner timeout slot
+    void on_GoTo1_clicked();        //go to page 1 button clicked
+    void on_previous_clicked();     //previous page button clicked
 };
 
 #endif // LISTINGCHILD2_H

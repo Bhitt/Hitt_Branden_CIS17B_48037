@@ -18,20 +18,23 @@ SOURCES += main.cpp\
     loginchild.cpp \
     listingchild1.cpp \
     listingchild2.cpp \
-    registerchild.cpp
+    registerchild.cpp \
+    listingchild3.cpp
 
 HEADERS  += mainwindow.h \
     loginchild.h \
     listingchild1.h \
     listingchild2.h \
     connection.h \
-    registerchild.h
+    registerchild.h \
+    listingchild3.h
 
 FORMS    += mainwindow.ui \
     loginchild.ui \
     listingchild1.ui \
     listingchild2.ui \
-    registerchild.ui
+    registerchild.ui \
+    listingchild3.ui
 
 RESOURCES += \
     res.qrc

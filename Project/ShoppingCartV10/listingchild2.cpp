@@ -457,7 +457,17 @@ void ListingChild2::on_GoTo1_clicked()
     emit page1();
 }
 
+void ListingChild2::on_GoTo3_clicked()
+{
+    emit page3();
+}
+
 void ListingChild2::on_previous_clicked()
 {
     emit page1();
+}
+
+void ListingChild2::on_nextPage_clicked()
+{
+    emit page3();
 }

@@ -248,11 +248,28 @@ background-color: rgb(157, 213, 211);
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>actionPage_3</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>crLiP3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>639</x>
+     <y>359</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>crLgSc()</slot>
   <slot>crLiP1()</slot>
   <slot>crLiP2()</slot>
   <slot>crRgSc()</slot>
+  <slot>crLiP3()</slot>
  </slots>
 </ui>

@@ -43,8 +43,9 @@ private:
     void dateSet(); //set up the dates for delivery
 signals:
     void sendCnt1(int,int,int,int,int,int,int,int,int,float); //send the user counts
-    void fetch(); //for listing setup purposes
-    void page2(); //switch to page two
+    void fetch();   //for listing setup purposes
+    void page2();   //switch to page two
+    void page3();   //switch to page three
 
 public slots:
 
@@ -85,7 +86,8 @@ private slots:
 
     void grab1(int, int u2, int u3, int u4, int u5, int u6, int u7, int u8, int u9, float t); //grabs the values to set on the page
     void bannerT();             //banner timeout slot
-    void on_GoTo2_clicked();    //page two button ckicled
+    void on_GoTo2_clicked();    //page two button clicked
+    void on_GoTo3_clicked();    //page three button clicked
     void on_nextPage_clicked(); //next page button clicked
 };
 

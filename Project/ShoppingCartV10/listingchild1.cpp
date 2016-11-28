@@ -460,6 +460,11 @@ void ListingChild1::on_GoTo2_clicked()
     emit page2();
 }
 
+void ListingChild1::on_GoTo3_clicked()
+{
+    emit page3();
+}
+
 void ListingChild1::on_nextPage_clicked()
 {
     emit page2();

@@ -220,6 +220,7 @@ void MainWindow::crLiP1()
     connect(listingchild1,SIGNAL(sendCnt1(int,int,int,int,int,int,int,int,int,float)),this,SLOT(setCnt1(int,int,int,int,int,int,int,int,int,float)));
     connect(this,SIGNAL(setup1(int,int,int,int,int,int,int,int,int,float)),listingchild1,SLOT(grab1(int,int,int,int,int,int,int,int,int,float)));
     connect(listingchild1,SIGNAL(page2()),this,SLOT(crLiP2()));
+    connect(listingchild1,SIGNAL(page3()),this,SLOT(crLiP3()));
 
     //change borders
     this->menuBar()->setStyleSheet(tr("background-color: rgb(100, 161, 159);"));
@@ -248,6 +249,7 @@ void MainWindow::crLiP2()
     connect(listingchild2,SIGNAL(sendCnt2(int,int,int,int,int,int,int,int,int,float)),this,SLOT(setCnt2(int,int,int,int,int,int,int,int,int,float)));
     connect(this,SIGNAL(setup2(int,int,int,int,int,int,int,int,int,float)),listingchild2,SLOT(grab2(int,int,int,int,int,int,int,int,int,float)));
     connect(listingchild2,SIGNAL(page1()),this,SLOT(crLiP1()));
+    connect(listingchild2,SIGNAL(page3()),this,SLOT(crLiP3()));
 
     //change borders
     this->menuBar()->setStyleSheet(tr("background-color: rgb(178, 175, 155);"));
@@ -259,6 +261,35 @@ void MainWindow::crLiP2()
 
     //set status bar
     this->statusBar()->showMessage(tr("The Walking Dead Items"));
+}
+
+void MainWindow::crLiP3()
+{
+    //check if any listings are displayed
+    setFal();
+    //create the first listing page
+    isList3 = true;
+    listingchild3 = new ListingChild3(ui->mdiArea);
+    listingchild3->setAttribute(Qt::WA_DeleteOnClose);
+    listingchild3->setWindowFlags(Qt::FramelessWindowHint);
+    listingchild3->show();
+    //connections between the listing page and the mainwindow
+    connect(listingchild3,SIGNAL(fetch3()),this,SLOT(emSetUp3()));
+    connect(listingchild3,SIGNAL(sendCnt3(int,int,int,int,int,int,int,int,int,float)),this,SLOT(setCnt3(int,int,int,int,int,int,int,int,int,float)));
+    connect(this,SIGNAL(setup3(int,int,int,int,int,int,int,int,int,float)),listingchild3,SLOT(grab3(int,int,int,int,int,int,int,int,int,float)));
+    connect(listingchild3,SIGNAL(page1()),this,SLOT(crLiP1()));
+    connect(listingchild3,SIGNAL(page2()),this,SLOT(crLiP2()));
+
+    //change borders
+    this->menuBar()->setStyleSheet(tr("background-color: rgb(51, 59, 71);"));
+    this->ui->mainToolBar->setStyleSheet(tr("background-color: rgb(1, 72, 186);"));
+    this->statusBar()->setStyleSheet(tr("background-color: rgb(1, 72, 186);"));
+
+    //emit fetch
+    listingchild3->fetch3();
+
+    //set status bar
+    this->statusBar()->showMessage(tr("BBC's Sherlock Items"));
 }
 
 void MainWindow::remLog()
@@ -282,7 +313,7 @@ void MainWindow::setFal()
         isList2 = false;
     }
     if(isList3){
-        //delete listingchild3;
+        delete listingchild3;
         isList3 = false;
     }
     if(isCheck){
@@ -329,6 +360,20 @@ void MainWindow::setCnt2(int u10, int u11, int u12, int u13, int u14, int u15, i
     totalM=t;
 }
 
+void MainWindow::setCnt3(int u19, int u20, int u21, int u22, int u23, int u24, int u25, int u26, int u27, float t)
+{
+    unitC19=u19;
+    unitC20=u20;
+    unitC21=u21;
+    unitC22=u22;
+    unitC23=u23;
+    unitC24=u24;
+    unitC25=u25;
+    unitC26=u26;
+    unitC27=u27;
+    totalM=t;
+}
+
 void MainWindow::emSetUp1()
 {
 //    qDebug()<<"entered emSetUp1";
@@ -339,4 +384,10 @@ void MainWindow::emSetUp2()
 {
 //    qDebug()<<"entered emSetUp2";
     emit setup2(unitC10,unitC11,unitC12,unitC13,unitC14,unitC15,unitC16,unitC17,unitC18,totalM);
+}
+
+void MainWindow::emSetUp3()
+{
+    //    qDebug()<<"entered emSetUp3";
+    emit setup3(unitC19,unitC20,unitC21,unitC22,unitC23,unitC24,unitC25,unitC26,unitC27,totalM);
 }

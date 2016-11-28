@@ -41,5 +41,16 @@
         <file>images/WDBanner.jpg</file>
         <file>images/WDBG.png</file>
         <file>images/RegBG.png</file>
+        <file>images/Pop!Sherlock.jpg</file>
+        <file>images/SHBluRayS1.jpg</file>
+        <file>images/SHBluRayS2.jpg</file>
+        <file>images/SHBoardGame.jpg</file>
+        <file>images/SHBook.jpg</file>
+        <file>images/SHCoffeeMug.jpg</file>
+        <file>images/SHColoringBook.jpg</file>
+        <file>images/Sherlock.jpg</file>
+        <file>images/SherlockHolmes.jpg</file>
+        <file>images/SHBG.png</file>
+        <file>images/SHBanner.png</file>
     </qresource>
 </RCC>

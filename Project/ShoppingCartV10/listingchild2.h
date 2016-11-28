@@ -44,8 +44,9 @@ private:
 
 signals:
     void sendCnt2(int,int,int,int,int,int,int,int,int,float); //send the user counts
-    void fetch2(); //for listing setup purposes
-    void page1();  //switch to page 1
+    void fetch2();  //for listing setup purposes
+    void page1();   //switch to page 1
+    void page3();   //switch to page 3
 
 public slots:
 
@@ -86,7 +87,9 @@ private slots:
     void grab2(int u10, int u11, int u12, int u13, int u14, int u15, int u16, int u17, int u18, float t); //grabs the values to set on the page
     void bannerT();                 //banner timeout slot
     void on_GoTo1_clicked();        //go to page 1 button clicked
+    void on_GoTo3_clicked();        //go to page 3 button clicked
     void on_previous_clicked();     //previous page button clicked
+    void on_nextPage_clicked();
 };
 
 #endif // LISTINGCHILD2_H

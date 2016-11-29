@@ -41,8 +41,8 @@ void ListingChild3::on_Expand_clicked()
     image = new QPushButton;
     image->setFlat(true);
     image->setIcon(QPixmap(":/images/images/SHBluRayS1"));
-    image->setIconSize(QSize(643,750));
-    image->setFixedSize(643,750);
+    image->setIconSize(QSize(504,645));
+    image->setFixedSize(504,645);
     image->setWindowTitle(tr("Item #10"));
     image->setWindowFlags(Qt::FramelessWindowHint);
     image->setToolTip(tr("Click image to close"));
@@ -59,7 +59,7 @@ void ListingChild3::on_Expand_2_clicked()
     image->setFlat(true);
     image->setIcon(QPixmap(":/images/images/SHBluRayS2"));
     image->setIconSize(QSize(600,800));
-    image->setFixedSize(500,639);
+    image->setFixedSize(570,770);
     image->setWindowTitle(tr("Item #11"));
     image->setWindowFlags(Qt::FramelessWindowHint);
     image->setToolTip(tr("Click image to close"));
@@ -110,7 +110,7 @@ void ListingChild3::on_Expand_5_clicked()
     image->setFlat(true);
     image->setIcon(QPixmap(":/images/images/SHBoardGame"));
     image->setIconSize(QSize(750,514));
-    image->setFixedSize(750,514);
+    image->setFixedSize(360,514);
     image->setWindowTitle(tr("Item #14"));
     image->setWindowFlags(Qt::FramelessWindowHint);
     image->setToolTip(tr("Click image to close"));
@@ -127,7 +127,7 @@ void ListingChild3::on_Expand_6_clicked()
     image->setFlat(true);
     image->setIcon(QPixmap(":/images/images/SHCoffeeMug"));
     image->setIconSize(QSize(700,700));
-    image->setFixedSize(607,579);
+    image->setFixedSize(700,700);
     image->setWindowTitle(tr("Item #15"));
     image->setWindowFlags(Qt::FramelessWindowHint);
     image->setToolTip(tr("Click image to close"));
@@ -144,7 +144,7 @@ void ListingChild3::on_Expand_7_clicked()
     image->setFlat(true);
     image->setIcon(QPixmap(":/images/images/SherlockHolmes"));
     image->setIconSize(QSize(700,700));
-    image->setFixedSize(700,700);
+    image->setFixedSize(380,700);
     image->setWindowTitle(tr("Item #16"));
     image->setWindowFlags(Qt::FramelessWindowHint);
     image->setToolTip(tr("Click image to close"));
@@ -161,7 +161,7 @@ void ListingChild3::on_Expand_8_clicked()
     image->setFlat(true);
     image->setIcon(QPixmap(":/images/images/Sherlock"));
     image->setIconSize(QSize(400,750));
-    image->setFixedSize(400,750);
+    image->setFixedSize(400,480);
     image->setWindowTitle(tr("Item #17"));
     image->setWindowFlags(Qt::FramelessWindowHint);
     image->setToolTip(tr("Click image to close"));
@@ -178,7 +178,7 @@ void ListingChild3::on_Expand_9_clicked()
     image->setFlat(true);
     image->setIcon(QPixmap(":/images/images/Pop!Sherlock"));
     image->setIconSize(QSize(700,700));
-    image->setFixedSize(600,427);
+    image->setFixedSize(490,700);
     image->setWindowTitle(tr("Item #18"));
     image->setWindowFlags(Qt::FramelessWindowHint);
     image->setToolTip(tr("Click image to close"));

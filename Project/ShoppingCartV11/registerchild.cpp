@@ -62,7 +62,7 @@ bool RegisterChild::regEx()
 
     //Regular Expressions to match
     QRegularExpression passRegEx ("^((?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})$");
-    QRegularExpression nameRegEx ("^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$");
+    QRegularExpression nameRegEx ("^(?=.{6,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$");
     //bools
     bool one = false, two = false;
     //check password
@@ -128,4 +128,16 @@ void RegisterChild::on_Submit_clicked()
 void RegisterChild::on_Back_clicked()
 {
     emit back();
+}
+
+void RegisterChild::on_toolButton_clicked()
+{
+    tip = new QMessageBox();
+    tip->setWindowTitle("Account Setup");
+    tip->setWindowIcon(QIcon(":/images/images/Icon.png"));
+    tip->setText("Usernames must be between 6-20 characters in length and must not start/end with a period or underscore. \n"
+                 "Password must contain 1 digit, 1 lower case, 1 upper case and @#$% in 6 to 20 characters.");
+    tip->addButton(QMessageBox::Ok);
+    tip->show();
+
 }

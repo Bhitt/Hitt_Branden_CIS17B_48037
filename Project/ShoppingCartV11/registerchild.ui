@@ -42,6 +42,9 @@ background-image: url(:/images/images/RegBG.png);
      <height>20</height>
     </rect>
    </property>
+   <property name="placeholderText">
+    <string>UserName</string>
+   </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -109,6 +112,9 @@ background-image: url(:/images/images/RegBG.png);
    <property name="echoMode">
     <enum>QLineEdit::Password</enum>
    </property>
+   <property name="placeholderText">
+    <string>PassWord1#</string>
+   </property>
   </widget>
   <widget class="QPushButton" name="Submit">
    <property name="enabled">
@@ -141,8 +147,8 @@ background-image: url(:/images/images/RegBG.png);
   <widget class="QCheckBox" name="showChar">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>150</y>
+     <x>350</x>
+     <y>190</y>
      <width>111</width>
      <height>17</height>
     </rect>
@@ -154,10 +160,10 @@ background-image: url(:/images/images/RegBG.png);
   <widget class="QLabel" name="Warning">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>180</y>
+     <x>60</x>
+     <y>220</y>
      <width>311</width>
-     <height>61</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
@@ -230,6 +236,9 @@ background-image: url(:/images/images/RegBG.png);
    <property name="echoMode">
     <enum>QLineEdit::Password</enum>
    </property>
+   <property name="placeholderText">
+    <string>PassWord1#</string>
+   </property>
   </widget>
   <widget class="QPushButton" name="Back">
    <property name="enabled">
@@ -257,6 +266,19 @@ background-image: url(:/images/images/RegBG.png);
    </property>
    <property name="text">
     <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>150</y>
+     <width>25</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
    </property>
   </widget>
  </widget>

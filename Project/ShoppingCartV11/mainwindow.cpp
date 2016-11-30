@@ -90,7 +90,7 @@ void MainWindow::validate()
     }else{
          //qDebug() << "Connected!";
          QSqlQuery query;
-         query.exec("SELECT username, password FROM entity_bcart1");
+         query.exec("SELECT username, password FROM entity_bcart");
          while (query.next()) {
             QString uName = query.value(0).toString();
             if(uName == regchild->getTwo())
@@ -103,7 +103,7 @@ void MainWindow::validate()
 
             if(!found)
             {
-                query.prepare("INSERT INTO entity_bcart1(username,password) VALUE(?,?)");
+                query.prepare("INSERT INTO entity_bcart(username,password) VALUE(?,?)");
                 query.addBindValue(regchild->getTwo());
                 query.addBindValue(hashed);
                 query.exec();
@@ -131,7 +131,7 @@ void MainWindow::checkUser()
     }else{
             qDebug() << "Connected!";
             QSqlQuery query;
-            query.exec("SELECT username, password FROM entity_bcart1");
+            query.exec("SELECT username, password FROM entity_bcart");
             while (query.next()) {
                 QString uName = query.value(0).toString();
                 if(uName == loginchild->getTwo())

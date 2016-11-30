@@ -6,6 +6,7 @@
 #include <QCloseEvent>
 #include <QRegularExpression>
 #include <QRegularExpressionMatch>
+#include <QMessageBox>
 
 
 namespace Ui {
@@ -34,6 +35,7 @@ private:
     bool regEx();
     QRegularExpressionMatch passMatch;
     QRegularExpressionMatch nameMatch;
+    QMessageBox *tip;
 
 signals:
     void submit();
@@ -47,6 +49,7 @@ private slots:
 
     void on_Submit_clicked();
     void on_Back_clicked();
+    void on_toolButton_clicked();
 };
 
 #endif // REGISTERCHILD_H

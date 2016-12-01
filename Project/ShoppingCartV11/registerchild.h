@@ -43,7 +43,6 @@ signals:
     void clReg();
 
 private slots:
-    void passChck();
     void enableSubmit();
     void showPass();
 

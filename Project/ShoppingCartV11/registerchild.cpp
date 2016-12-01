@@ -25,9 +25,6 @@ RegisterChild::RegisterChild(QWidget *parent) :
     connect(ui->passEdit,SIGNAL(textChanged(QString)),this,SLOT(enableSubmit()));
     connect(ui->confirmEdit,SIGNAL(textChanged(QString)),this,SLOT(enableSubmit()));
 
-    //create connections to make sure pass and confirm are the same
-    connect(ui->confirmEdit,SIGNAL(textChanged(QString)),this,SLOT(passChck()));
-
 }
 
 RegisterChild::~RegisterChild()
@@ -75,14 +72,8 @@ bool RegisterChild::regEx()
     two = nameMatch.hasMatch();
 
     //return results
-    if(one && two) return true;
+    if(two == true && one == true) return true;
     else return false;
-}
-
-void RegisterChild::passChck()
-{
-    if(ui->passEdit->text() == ui->confirmEdit->text()) ui->Submit->setEnabled(true);
-    else ui->Submit->setEnabled(false);
 }
 
 void RegisterChild::enableSubmit()
@@ -99,11 +90,16 @@ void RegisterChild::enableSubmit()
     else ok2 = false;
 
     //check regular expressions
-    if(ok1 && ok2) ok3 = regEx();
+    if(ok1 == true && ok2 == true) ok3 = regEx();
 
     //set the submit to enabled or not enabled
-    if(ok1 && ok2 && ok3) ui->Submit->setEnabled(true);
-    else ui->Submit->setEnabled(false);
+    qDebug () << "ok1 = "<<ok1<<" , ok2 = "<<ok2<<" , ok3 = "<<ok3;
+    if(ok1 == true && ok2 == true && ok3 == true){
+        ui->Submit->setEnabled(true);
+        ui->toolButton->setStyleSheet("");
+    }
+    else ui->toolButton->setStyleSheet(tr("background-color: rgb(255, 0, 0);"));
+//    else ui->Submit->setEnabled(false);
 }
 
 void RegisterChild::showPass()

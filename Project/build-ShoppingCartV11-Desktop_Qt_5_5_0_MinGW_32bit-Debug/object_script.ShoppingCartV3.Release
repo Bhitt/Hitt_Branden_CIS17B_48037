@@ -1,0 +1,16 @@
+INPUT(
+./release/main.o
+./release/mainwindow.o
+./release/loginchild.o
+./release/listingchild1.o
+./release/listingchild2.o
+./release/registerchild.o
+./release/listingchild3.o
+./release/qrc_res.o
+./release/moc_mainwindow.o
+./release/moc_loginchild.o
+./release/moc_listingchild1.o
+./release/moc_listingchild2.o
+./release/moc_registerchild.o
+./release/moc_listingchild3.o
+);

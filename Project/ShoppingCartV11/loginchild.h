@@ -34,12 +34,14 @@ signals:
     void sendNaPa(QString user, QString pass); //send name value and password when submitted
     void beginReg();
     void submit();
+    void guest();
 
 private slots:
     void showPass(); //show password characters
     void subPush();  //submit button is pushed
     void on_pushButton_2_clicked();
     void on_Submit_clicked();
+    void on_guest_clicked();
 };
 
 #endif // LOGINCHILD_H

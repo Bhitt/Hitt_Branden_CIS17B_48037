@@ -52,14 +52,15 @@ private:
     RegisterChild *regchild;
     connection con;
 
-    bool isLog;
-    bool isList1;
-    bool isList2;
-    bool isList3;
-    bool isCheck;
-    bool isReg;
+    bool isLog;     //is the login child open
+    bool isList1;   //is the listing1 child open
+    bool isList2;   //is the listing2 child open
+    bool isList3;   //is the listing3 child open
+    bool isCheck;   //is the checking child open
+    bool isReg;     //is the register child open
 
-    bool isGuest;
+    bool isGuest;   //is it a guest browsing
+    bool isDirty;   //are there unsaved changes
     
     QString name;
     QString password;
@@ -78,6 +79,7 @@ public slots:
     void emSetUp3();    //emit the third setup signal
     void validate();    //validates the account creation
     void checkUser();   //checks the username
+    void guestBg();     //browse the store as a guest
 
 private slots:
     void crLgSc(); //create the login screen

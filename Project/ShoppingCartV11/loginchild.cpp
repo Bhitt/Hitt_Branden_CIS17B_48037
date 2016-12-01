@@ -70,3 +70,8 @@ void LoginChild::on_Submit_clicked()
 {
     emit submit();
 }
+
+void LoginChild::on_guest_clicked()
+{
+    emit guest();
+}

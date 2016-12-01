@@ -19,6 +19,7 @@ MainWindow::MainWindow(QWidget *parent) :
     isReg = false;
 
     isGuest = false;
+    isDirty = false;
 
     name = "default";
     password = "default";
@@ -153,7 +154,22 @@ void MainWindow::checkUser()
             else loginchild->setEChck(tr("The username and/or password that you<br>entered did not match any of our records."));
 
             //connection.db.close();
-        }
+    }
+}
+
+void MainWindow::guestBg()
+{
+    //set the bool to true
+    isGuest = true;
+    //set the name
+    name = "Guest";
+    //set the dirty to true
+    isDirty = true;
+    //close the login child
+    loginchild->close();
+    isLog = false;
+    //open the first listing page
+    crLiP1();
 }
 
 void MainWindow::crLgSc()
@@ -176,7 +192,8 @@ void MainWindow::crLgSc()
     connect(loginchild,SIGNAL(closeLg()),this,SLOT(remLog()));                                  //if the user exits the login by the close event, set isLog to false
     connect(loginchild,SIGNAL(sendNaPa(QString,QString)),this,SLOT(setNaPa(QString,QString)));  //connect the login submit to the main window
     connect(loginchild,SIGNAL(beginReg()),this,SLOT(crRgSc()));                                 //create the registry child if the menu action is clicked
-    connect(loginchild,SIGNAL(submit()),this,SLOT(checkUser()));                                //checks to see if the login information is correct
+    connect(loginchild,SIGNAL(submit()),this,SLOT(checkUser()));
+    connect(loginchild,SIGNAL(guest()),this,SLOT(guestBg()));
     //set status bar
     this->statusBar()->showMessage(tr("Log-In page"));
 }

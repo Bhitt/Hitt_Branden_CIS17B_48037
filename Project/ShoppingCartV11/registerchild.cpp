@@ -17,9 +17,6 @@ RegisterChild::RegisterChild(QWidget *parent) :
     //set the password toggle to false
     passTog = false;
 
-    //set the regular expressions
-//    QRegularExpression passRegEx ("^((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})$");
-
     //create connections to make sure all fields are filled
     connect(ui->nameEdit,SIGNAL(textChanged(QString)),this,SLOT(enableSubmit()));
     connect(ui->passEdit,SIGNAL(textChanged(QString)),this,SLOT(enableSubmit()));
@@ -58,21 +55,19 @@ bool RegisterChild::regEx()
     //http://stackoverflow.com/questions/12018245/regular-expression-to-validate-username
 
     //Regular Expressions to match
-    QRegularExpression passRegEx ("^((?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})$");
-    QRegularExpression nameRegEx ("^(?=.{6,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$");
+    QRegularExpression *passRegEx = new QRegularExpression("^((?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})$");
+    QRegularExpression *nameRegEx = new QRegularExpression("^(?=.{6,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$");
     //bools
     bool one = false, two = false;
     //check password
-    passMatch = passRegEx.match(ui->passEdit->text());
-    qDebug() << "passMatch.hasMatch() = " << passMatch.hasMatch();
-    one = passMatch.hasMatch();
+    QRegularExpressionMatch *passMatch = new QRegularExpressionMatch(passRegEx->match(ui->passEdit->text()));
+    one = passMatch->hasMatch();
     //check name
-    nameMatch = nameRegEx.match(ui->nameEdit->text());
-    qDebug() << "nameMatch.hasMatch() = " << nameMatch.hasMatch();
-    two = nameMatch.hasMatch();
+    QRegularExpressionMatch *nameMatch = new QRegularExpressionMatch(nameRegEx->match(ui->nameEdit->text()));
+    two = nameMatch->hasMatch();
 
     //return results
-    if(two == true && one == true) return true;
+    if(one && two) return true;
     else return false;
 }
 
@@ -90,16 +85,17 @@ void RegisterChild::enableSubmit()
     else ok2 = false;
 
     //check regular expressions
-    if(ok1 == true && ok2 == true) ok3 = regEx();
+    if(ok1 && ok2) ok3 = regEx();
 
     //set the submit to enabled or not enabled
-    qDebug () << "ok1 = "<<ok1<<" , ok2 = "<<ok2<<" , ok3 = "<<ok3;
-    if(ok1 == true && ok2 == true && ok3 == true){
+    if(ok1 && ok2 && ok3){
         ui->Submit->setEnabled(true);
         ui->toolButton->setStyleSheet("");
     }
-    else ui->toolButton->setStyleSheet(tr("background-color: rgb(255, 0, 0);"));
-//    else ui->Submit->setEnabled(false);
+    else{
+        ui->toolButton->setStyleSheet(tr("background-color: rgb(255, 0, 0);"));
+        ui->Submit->setEnabled(false);
+    }
 }
 
 void RegisterChild::showPass()
@@ -117,7 +113,6 @@ void RegisterChild::showPass()
 
 void RegisterChild::on_Submit_clicked()
 {
-    qDebug() << "register submit pushed";
     emit submit();
 }
 

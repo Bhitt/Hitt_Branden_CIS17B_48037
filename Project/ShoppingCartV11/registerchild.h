@@ -33,8 +33,6 @@ private:
     bool passTog;
     void setOne(QString data);
     bool regEx();
-    QRegularExpressionMatch passMatch;
-    QRegularExpressionMatch nameMatch;
     QMessageBox *tip;
 
 signals:

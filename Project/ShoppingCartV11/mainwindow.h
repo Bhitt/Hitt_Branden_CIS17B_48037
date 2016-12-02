@@ -90,7 +90,7 @@ private slots:
     void remLog(); //set the isLog to false
     void remReg(); //set the isReg to false
     void setFal(); //set bools to false
-    void setNaPa(QString user, QString pass); //set the user name and password
+    void setNaPa(QString user); //set the user name and password
     void setCnt1(int u1, int u2, int u3, int u4, int u5, int u6, int u7, int u8, int u9, float t); //set the unitC counts from the first listing page
     void setCnt2(int u10, int u11, int u12, int u13, int u14, int u15, int u16, int u17, int u18, float t); //set the unitC counts from the second listing page
     void setCnt3(int u19, int u20, int u21, int u22, int u23, int u24, int u25, int u26, int u27, float t); //set the unitC counts from the third listing page

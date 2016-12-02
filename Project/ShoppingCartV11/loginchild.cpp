@@ -58,7 +58,7 @@ void LoginChild::showPass()
 
 void LoginChild::subPush()
 {
-    emit sendNaPa(ui->nameEdit->text(),ui->passEdit->text());
+    emit sendNaPa(ui->nameEdit->text());
 }
 
 void LoginChild::on_pushButton_2_clicked()

@@ -61,7 +61,6 @@ connection MainWindow::createC()
                 con.connected = false;
                 return con;
             }
-            qDebug() << "this just happened";
 
             con.connected = true;
 
@@ -83,7 +82,6 @@ void MainWindow::validate()
     QByteArray hashed;
     hashed.append(regchild->getOne());
     hashed = QCryptographicHash::hash(hashed,QCryptographicHash::Sha1);
-    qDebug() << "hashed:" << hashed;
     if(!con.connected) con = createC();
     if ( !con.connected ){
          regchild->setEChck(tr("No connection found."));
@@ -124,7 +122,7 @@ void MainWindow::checkUser()
     QByteArray hashed;
     hashed.append(loginchild->getOne());
     hashed = QCryptographicHash::hash(hashed,QCryptographicHash::Sha1);
-    qDebug() << "hashed:" << hashed;
+//    qDebug() << "hashed:" << hashed;
     if(!con.connected) con = createC();
     if(!con.connected){
             loginchild->setEChck(tr("No connection found."));
@@ -137,7 +135,7 @@ void MainWindow::checkUser()
                 QString uName = query.value(0).toString();
                 if(uName == loginchild->getTwo())
                 {
-                    qDebug() << query.value(1).toByteArray();
+//                    qDebug() << query.value(1).toByteArray();
                     if(query.value(1).toByteArray() == hashed) found = true;
                     break;
                 }else{
@@ -190,7 +188,7 @@ void MainWindow::crLgSc()
     loginchild->move(390,200);
     //connections between the login screen and the main window
     connect(loginchild,SIGNAL(closeLg()),this,SLOT(remLog()));                                  //if the user exits the login by the close event, set isLog to false
-    connect(loginchild,SIGNAL(sendNaPa(QString,QString)),this,SLOT(setNaPa(QString,QString)));  //connect the login submit to the main window
+    connect(loginchild,SIGNAL(sendNaPa(QString)),this,SLOT(setNaPa(QString)));  //connect the login submit to the main window
     connect(loginchild,SIGNAL(beginReg()),this,SLOT(crRgSc()));                                 //create the registry child if the menu action is clicked
     connect(loginchild,SIGNAL(submit()),this,SLOT(checkUser()));
     connect(loginchild,SIGNAL(guest()),this,SLOT(guestBg()));
@@ -339,12 +337,9 @@ void MainWindow::setFal()
     }
 }
 
-void MainWindow::setNaPa(QString user, QString pass)
+void MainWindow::setNaPa(QString user)
 {
     name = user;
-    password = pass;
-    qDebug() << user;
-    qDebug() << pass;
 }
 
 void MainWindow::setCnt1(int u1, int u2, int u3, int u4, int u5, int u6, int u7, int u8, int u9, float t)

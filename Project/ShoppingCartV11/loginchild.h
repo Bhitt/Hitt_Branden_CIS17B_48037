@@ -31,7 +31,7 @@ private:
 
 signals:
     void closeLg(); //close login
-    void sendNaPa(QString user, QString pass); //send name value and password when submitted
+    void sendNaPa(QString user); //send name value when submitted
     void beginReg();
     void submit();
     void guest();

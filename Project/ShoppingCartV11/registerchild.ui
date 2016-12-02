@@ -290,6 +290,15 @@ background-image: url(:/images/images/RegBG.png);
    <container>1</container>
   </customwidget>
  </customwidgets>
+ <tabstops>
+  <tabstop>nameEdit</tabstop>
+  <tabstop>passEdit</tabstop>
+  <tabstop>confirmEdit</tabstop>
+  <tabstop>toolButton</tabstop>
+  <tabstop>showChar</tabstop>
+  <tabstop>Back</tabstop>
+  <tabstop>Submit</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>

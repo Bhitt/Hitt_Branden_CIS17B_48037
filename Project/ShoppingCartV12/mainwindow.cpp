@@ -24,6 +24,7 @@ MainWindow::MainWindow(QWidget *parent) :
     name = "default";
     password = "default";
     totalM=0;
+
     //page one unitC count holders
     unitC1=0,unitC2=0,unitC3=0;
     unitC4=0,unitC5=0,unitC6=0;
@@ -321,7 +322,12 @@ void MainWindow::crChOt()
     checkoutchild->setWindowFlags(Qt::FramelessWindowHint);
     checkoutchild->show();
     //create the connections between the checkout page and the mainwindow
-
+    connect(checkoutchild,SIGNAL(page1()),this,SLOT(crLiP1()));
+    connect(checkoutchild,SIGNAL(page2()),this,SLOT(crLiP2()));
+    connect(checkoutchild,SIGNAL(page3()),this,SLOT(crLiP3()));
+    connect(checkoutchild,SIGNAL(fetchC()),this,SLOT(emSetUpC()));
+    connect(checkoutchild,SIGNAL(dos()),checkoutchild,SLOT(dos2()));
+    connect(this,SIGNAL(setupC(int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,float)),checkoutchild,SLOT(grabAll(int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,float)));
     //change borders
     this->menuBar()->setStyleSheet(tr("background-color: rgb(100, 161, 159);"));
     this->ui->mainToolBar->setStyleSheet(tr("background-color: rgb(157, 213, 211);"));
@@ -425,6 +431,12 @@ void MainWindow::emSetUp2()
 
 void MainWindow::emSetUp3()
 {
-    //    qDebug()<<"entered emSetUp3";
+//    qDebug()<<"entered emSetUp3";
     emit setup3(unitC19,unitC20,unitC21,unitC22,unitC23,unitC24,unitC25,unitC26,unitC27,totalM);
+}
+
+void MainWindow::emSetUpC()
+{
+//    qDebug()<< "entered MainWindow::emSetUpC";
+    emit setupC(unitC1,unitC2,unitC3,unitC4,unitC5,unitC6,unitC7,unitC8,unitC9,unitC10,unitC11,unitC12,unitC13,unitC14,unitC15,unitC16,unitC17,unitC18,unitC19,unitC20,unitC21,unitC22,unitC23,unitC24,unitC25,unitC26,unitC27,totalM);
 }

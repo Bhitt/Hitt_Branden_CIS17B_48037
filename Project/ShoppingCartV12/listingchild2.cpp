@@ -411,6 +411,7 @@ void ListingChild2::bannerT()
 {
     ui->banner->deleteLater();
     timer->stop();
+    delete timer;
 }
 
 void ListingChild2::addCart()

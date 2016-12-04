@@ -74,11 +74,12 @@ signals:
     void setup1(int,int,int,int,int,int,int,int,int,float); //send the information to set up the first page
     void setup2(int,int,int,int,int,int,int,int,int,float); //send the information to set up the second page
     void setup3(int,int,int,int,int,int,int,int,int,float); //send the information to set up the third page
-
+    void setupC(int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,float);
 public slots:
     void emSetUp1();    //emit the setup signal
     void emSetUp2();    //emit the second setup signal
     void emSetUp3();    //emit the third setup signal
+    void emSetUpC();    //emit the checking setup signal
     void validate();    //validates the account creation
     void checkUser();   //checks the username
     void guestBg();     //browse the store as a guest

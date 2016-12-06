@@ -53,51 +53,55 @@ void CheckoutChild::on_GoTo3_clicked()
 void CheckoutChild::setup()
 {
 
-    itemC=1;
+
+    itemC=3;
     itemC2=0;
+
     //page 1 items
     if(unit1>0){
         QLabel *item1 = new QLabel("Game of Thrones BluRay S1-S5", this);   //create the labels
         QLabel *amount = new QLabel(QString::number(unit1),this);
         QLabel *price = new QLabel(QString::number(unit1*80.07),this);
-        item1->setGeometry(20,20,300,20);                                   //position them
-        amount->setGeometry(330,20,50,20);
-        price->setGeometry(390,20,50,20);
+        item1->setGeometry(120,20*itemC,300,20);                                   //position them
+        amount->setGeometry(430,20*itemC,50,20);
+        price->setGeometry(490,20*itemC,50,20);
         item1->setStyleSheet("background-color:#ffffff");                   //whiten background
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item1->show();                                                      //show labels
         amount->show();
         price->show();
         itemC++;
         itemC2++;                                                           //increment item count
+
     }
     if(unit2>0){
         QLabel *item2 = new QLabel("Game of Thrones BluRay S6", this);
         QLabel *amount = new QLabel(QString::number(unit2),this);
         QLabel *price = new QLabel(QString::number(unit2*39.99),this);
-        item2->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item2->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item2->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item2->show();
         amount->show();
         price->show();
         itemC++;
         itemC2++;
+
     }
     if(unit3>0){
         QLabel *item3 = new QLabel("Game of Thrones 5 Book Set", this);
         QLabel *amount = new QLabel(QString::number(unit3),this);
         QLabel *price = new QLabel(QString::number(unit3*59.99),this);
-        item3->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item3->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item3->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item3->show();
         amount->show();
         price->show();
@@ -108,12 +112,12 @@ void CheckoutChild::setup()
         QLabel *item4 = new QLabel("The World of Ice and Fire", this);
         QLabel *amount = new QLabel(QString::number(unit4),this);
         QLabel *price = new QLabel(QString::number(unit4*29.49),this);
-        item4->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item4->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item4->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item4->show();
         amount->show();
         price->show();
@@ -124,12 +128,12 @@ void CheckoutChild::setup()
         QLabel *item5 = new QLabel("Game of Thrones Board Game", this);
         QLabel *amount = new QLabel(QString::number(unit5),this);
         QLabel *price = new QLabel(QString::number(unit5*46.86),this);
-        item5->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item5->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item5->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item5->show();
         amount->show();
         price->show();
@@ -140,12 +144,12 @@ void CheckoutChild::setup()
         QLabel *item6 = new QLabel("Game of Thrones Coffee Mug", this);
         QLabel *amount = new QLabel(QString::number(unit6),this);
         QLabel *price = new QLabel(QString::number(unit6*10.51),this);
-        item6->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item6->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item6->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item6->show();
         amount->show();
         price->show();
@@ -156,12 +160,12 @@ void CheckoutChild::setup()
         QLabel *item7 = new QLabel("The Iron Throne", this);
         QLabel *amount = new QLabel(QString::number(unit7),this);
         QLabel *price = new QLabel(QString::number(unit7*45.18),this);
-        item7->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item7->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item7->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item7->show();
         amount->show();
         price->show();
@@ -172,12 +176,12 @@ void CheckoutChild::setup()
         QLabel *item8 = new QLabel("The Night's King", this);
         QLabel *amount = new QLabel(QString::number(unit8),this);
         QLabel *price = new QLabel(QString::number(unit8*129.99),this);
-        item8->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item8->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item8->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item8->show();
         amount->show();
         price->show();
@@ -188,12 +192,12 @@ void CheckoutChild::setup()
         QLabel *item9 = new QLabel("Funko Pop! John Snow", this);
         QLabel *amount = new QLabel(QString::number(unit9),this);
         QLabel *price = new QLabel(QString::number(unit9*11.99),this);
-        item9->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item9->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item9->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item9->show();
         amount->show();
         price->show();
@@ -206,12 +210,12 @@ void CheckoutChild::setup()
         QLabel *item10 = new QLabel("The Walking Dead BluRay S1-S5", this);
         QLabel *amount = new QLabel(QString::number(unit10),this);
         QLabel *price = new QLabel(QString::number(unit10*77.21),this);
-        item10->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item10->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item10->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item10->show();
         amount->show();
         price->show();
@@ -222,12 +226,12 @@ void CheckoutChild::setup()
         QLabel *item11 = new QLabel("The Walking Dead BluRay S6", this);
         QLabel *amount = new QLabel(QString::number(unit11),this);
         QLabel *price = new QLabel(QString::number(unit11*49.99),this);
-        item11->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item11->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item11->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item11->show();
         amount->show();
         price->show();
@@ -238,12 +242,12 @@ void CheckoutChild::setup()
         QLabel *item12 = new QLabel("The Walking Dead: Compendium One", this);
         QLabel *amount = new QLabel(QString::number(unit12),this);
         QLabel *price = new QLabel(QString::number(unit12*34.45),this);
-        item12->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item12->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item12->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item12->show();
         amount->show();
         price->show();
@@ -254,12 +258,12 @@ void CheckoutChild::setup()
         QLabel *item13 = new QLabel("The Walking Dead: Compendium Two", this);
         QLabel *amount = new QLabel(QString::number(unit13),this);
         QLabel *price = new QLabel(QString::number(unit13*30.50),this);
-        item13->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item13->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item13->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item13->show();
         amount->show();
         price->show();
@@ -270,12 +274,12 @@ void CheckoutChild::setup()
         QLabel *item14 = new QLabel("The Walking Dead Board Game", this);
         QLabel *amount = new QLabel(QString::number(unit14),this);
         QLabel *price = new QLabel(QString::number(unit14*25.96),this);
-        item14->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item14->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item14->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item14->show();
         amount->show();
         price->show();
@@ -286,12 +290,12 @@ void CheckoutChild::setup()
         QLabel *item15 = new QLabel("The Walking Dead Coffee Mug", this);
         QLabel *amount = new QLabel(QString::number(unit15),this);
         QLabel *price = new QLabel(QString::number(unit15*16.23),this);
-        item15->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item15->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item15->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item15->show();
         amount->show();
         price->show();
@@ -302,12 +306,12 @@ void CheckoutChild::setup()
         QLabel *item16 = new QLabel("The Walking Dead - Daryl", this);
         QLabel *amount = new QLabel(QString::number(unit16),this);
         QLabel *price = new QLabel(QString::number(unit16*192.74),this);
-        item16->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item16->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item16->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item16->show();
         amount->show();
         price->show();
@@ -318,12 +322,12 @@ void CheckoutChild::setup()
         QLabel *item17 = new QLabel("The Walking Dead - Glenn", this);
         QLabel *amount = new QLabel(QString::number(unit17),this);
         QLabel *price = new QLabel(QString::number(unit17*474.23),this);
-        item17->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item17->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item17->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item17->show();
         amount->show();
         price->show();
@@ -334,12 +338,12 @@ void CheckoutChild::setup()
         QLabel *item18 = new QLabel("Funko Pop! Negan", this);
         QLabel *amount = new QLabel(QString::number(unit18),this);
         QLabel *price = new QLabel(QString::number(unit18*15.43),this);
-        item18->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item18->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item18->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item18->show();
         amount->show();
         price->show();
@@ -352,12 +356,12 @@ void CheckoutChild::setup()
         QLabel *item19 = new QLabel("BBC Sherlock Season One BluRay", this);
         QLabel *amount = new QLabel(QString::number(unit19),this);
         QLabel *price = new QLabel(QString::number(unit19*22.49),this);
-        item19->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item19->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item19->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item19->show();
         amount->show();
         price->show();
@@ -368,12 +372,12 @@ void CheckoutChild::setup()
         QLabel *item20 = new QLabel("BBC Sherlock Season Two BluRay", this);
         QLabel *amount = new QLabel(QString::number(unit20),this);
         QLabel *price = new QLabel(QString::number(unit20*20.77),this);
-        item20->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item20->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item20->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item20->show();
         amount->show();
         price->show();
@@ -384,12 +388,12 @@ void CheckoutChild::setup()
         QLabel *item21 = new QLabel("The Complete Sherlock Holmes Book", this);
         QLabel *amount = new QLabel(QString::number(unit21),this);
         QLabel *price = new QLabel(QString::number(unit21*28.14),this);
-        item21->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item21->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item21->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item21->show();
         amount->show();
         price->show();
@@ -400,12 +404,12 @@ void CheckoutChild::setup()
         QLabel *item22 = new QLabel("The Mind Palace - Coloring Book", this);
         QLabel *amount = new QLabel(QString::number(unit22),this);
         QLabel *price = new QLabel(QString::number(unit22*9.68),this);
-        item22->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item22->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item22->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item22->show();
         amount->show();
         price->show();
@@ -416,12 +420,12 @@ void CheckoutChild::setup()
         QLabel *item23 = new QLabel("Sherlock Holmes - Consulting Detective Game", this);
         QLabel *amount = new QLabel(QString::number(unit23),this);
         QLabel *price = new QLabel(QString::number(unit23*60.99),this);
-        item23->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item23->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item23->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item23->show();
         amount->show();
         price->show();
@@ -432,12 +436,12 @@ void CheckoutChild::setup()
         QLabel *item24 = new QLabel("BBC Sherlock Coffee Mug", this);
         QLabel *amount = new QLabel(QString::number(unit24),this);
         QLabel *price = new QLabel(QString::number(unit24*11.95),this);
-        item24->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item24->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item24->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item24->show();
         amount->show();
         price->show();
@@ -448,12 +452,12 @@ void CheckoutChild::setup()
         QLabel *item25 = new QLabel("Detective Sherlock Holmes Statue", this);
         QLabel *amount = new QLabel(QString::number(unit25),this);
         QLabel *price = new QLabel(QString::number(unit25*63.99),this);
-        item25->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item25->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item25->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item25->show();
         amount->show();
         price->show();
@@ -464,12 +468,12 @@ void CheckoutChild::setup()
         QLabel *item26 = new QLabel("BBC Sherlock Figure", this);
         QLabel *amount = new QLabel(QString::number(unit26),this);
         QLabel *price = new QLabel(QString::number(unit26*19.87),this);
-        item26->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item26->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item26->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item26->show();
         amount->show();
         price->show();
@@ -480,12 +484,12 @@ void CheckoutChild::setup()
         QLabel *item27 = new QLabel("Funko Pop! Sherlock", this);
         QLabel *amount = new QLabel(QString::number(unit27),this);
         QLabel *price = new QLabel(QString::number(unit27*9.24),this);
-        item27->setGeometry(20,20*itemC+(5*itemC2),300,20);
-        amount->setGeometry(330,20*itemC+(5*itemC2),50,20);
-        price->setGeometry(390,20*itemC+(5*itemC2),50,20);
+        item27->setGeometry(120,20*itemC+(5*itemC2),300,20);
+        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
+        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item27->setStyleSheet("background-color:#ffffff");
-        amount->setStyleSheet("background-color:#ffffff");
-        price->setStyleSheet("background-color:#ffffff");
+        amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
+        price->setStyleSheet("background-color:#ffffff;qproperty-alignment: 'AlignCenter|AlignRight';");
         item27->show();
         amount->show();
         price->show();
@@ -493,8 +497,31 @@ void CheckoutChild::setup()
         itemC2++;
     }
 
-    //size the listing box to the amount of items
-//    ui->listingBox->setGeometry(390,60,500,(20*itemC+20));
+
+    //if there are items
+    if(itemC>3){
+        //add the order background
+        QLabel *ordBack = new QLabel("C",this);
+        ordBack->setGeometry(120,20*2,420,20*(itemC-2)+(5*itemC2));
+        ordBack->setStyleSheet("background-color:#4e535b;");
+        ordBack->show();
+        ordBack->lower();                                           //lowers the background label to the bottom of the stack
+        //add the headers
+        QLabel *header1 = new QLabel("Name",this);
+        QLabel *header2 = new QLabel("Amount",this);
+        QLabel *header3 = new QLabel("Price",this);
+        header1->setGeometry(120,20*2,300,20);
+        header2->setGeometry(430,20*2,50,20);
+        header3->setGeometry(490,20*2,50,20);
+        header1->setStyleSheet("background-color:#d3d3d3;qproperty-alignment: AlignCenter;");
+        header2->setStyleSheet("background-color:#d3d3d3;qproperty-alignment: AlignCenter;");
+        header3->setStyleSheet("background-color:#d3d3d3;qproperty-alignment: AlignCenter;");
+        header1->show();
+        header2->show();
+        header3->show();
+    }else{
+        //create the empty checkout
+    }
 }
 
 void CheckoutChild::grabAll(int u1, int u2, int u3, int u4, int u5, int u6, int u7, int u8, int u9, int u10, int u11, int u12, int u13, int u14, int u15, int u16, int u17, int u18, int u19, int u20, int u21, int u22, int u23, int u24, int u25, int u26, int u27, float tot)

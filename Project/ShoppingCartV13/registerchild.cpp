@@ -55,7 +55,7 @@ bool RegisterChild::regEx()
     //http://stackoverflow.com/questions/12018245/regular-expression-to-validate-username
 
     //Regular Expressions to match
-    QRegularExpression *passRegEx = new QRegularExpression("^((?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})$");
+    QRegularExpression *passRegEx = new QRegularExpression("^((?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[#?!@$%^&*-]).{6,20})$");
     QRegularExpression *nameRegEx = new QRegularExpression("^(?=.{6,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$");
     //bools
     bool one = false, two = false;
@@ -127,7 +127,7 @@ void RegisterChild::on_toolButton_clicked()
     tip->setWindowTitle("Account Setup");
     tip->setWindowIcon(QIcon(":/images/images/Icon.png"));
     tip->setText("Usernames must be between 6-20 characters in length and must not start/end with a period or underscore. \n"
-                 "Password must contain 1 digit, 1 lower case, 1 upper case and @#$% in 6 to 20 characters.");
+                 "Password must contain 1 digit, 1 lower case, 1 upper case and #?!@$%^&*- in 6 to 20 characters.");
     tip->addButton(QMessageBox::Ok);
     tip->show();
 

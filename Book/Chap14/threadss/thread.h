@@ -1,7 +1,9 @@
 #ifndef THREAD_H
 #define THREAD_H
 
+
 #include <QThread>
+#include <QPushButton>
 
 class Thread : public QThread
 {
@@ -21,4 +23,4 @@ private:
     volatile bool stopped;
 };
 
-#endif
+#endif // THREAD_H

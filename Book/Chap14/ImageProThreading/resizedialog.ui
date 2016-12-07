@@ -1,5 +1,5 @@
 <ui version="4.0" >
- <class>ResizeDialog</class>
+<class>ResizeDialog</class>
  <widget class="QDialog" name="ResizeDialog" >
   <property name="geometry" >
    <rect>

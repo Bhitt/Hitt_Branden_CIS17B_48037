@@ -2,6 +2,8 @@
 #define THREADDIALOG_H
 
 #include <QDialog>
+#include <QHBoxLayout>
+#include <QPushButton>
 
 #include "thread.h"
 
@@ -29,4 +31,4 @@ private:
     QPushButton *quitButton;
 };
 
-#endif
+#endif // THREADDIALOG_H

@@ -78,4 +78,4 @@ private:
     QMutex mutex;
 };
 
-#endif
+#endif // TRANSACTIONTHREAD_H

@@ -2,6 +2,11 @@
 #define IMAGEWINDOW_H
 
 #include <QMainWindow>
+#include <QStatusBar>
+#include <QFileDialog>
+#include <QMessageBox>
+#include <QMenuBar>
+#include <QMenu>
 
 #include "transactionthread.h"
 
@@ -66,4 +71,4 @@ private:
     QAction *aboutQtAction;
 };
 
-#endif
+#endif // IMAGEWINDOW_H

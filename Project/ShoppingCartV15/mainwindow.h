@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QCryptographicHash>
 #include <QCloseEvent>
+#include <QTimer>
 
 #include "loginchild.h"
 #include "listingchild1.h"
@@ -56,6 +57,9 @@ private:
     UserChild *userchild;
     connection con;
 
+    QTimer *hide;
+    QTimer *moveIt;
+
     bool isLog;     //is the login child open
     bool isList1;   //is the listing1 child open
     bool isList2;   //is the listing2 child open
@@ -105,6 +109,8 @@ private slots:
     void setCnt3(int u19, int u20, int u21, int u22, int u23, int u24, int u25, int u26, int u27, float t); //set the unitC counts from the third listing page
     void oneOfEach();   //set the cart to one of everything
     void clearCart();   //clear the cart and start over
+    void callMove();
+    void hideUser();
 };
 
 #endif // MAINWINDOW_H

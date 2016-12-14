@@ -12,6 +12,7 @@
 #include <QScrollArea>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
+#include <QUdpSocket>
 
 #include <iomanip>
 #include <iostream>
@@ -55,6 +56,8 @@ private:
     //validation functions
     bool isFilled();
     bool regEx();
+    //udpsocket for networking
+    QUdpSocket udpSocket;
 
 private slots:
     void on_GoTo1_clicked();
@@ -65,6 +68,8 @@ private slots:
     void validate();
 
     void on_subOrder_clicked();
+
+    void sendDatagram();
 
 signals:
     void page1();

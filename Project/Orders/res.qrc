@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/res">
+        <file>sounds/cash.wav</file>
+        <file>images/Icon.png</file>
+        <file>images/ShoppingCartBG.png</file>
+    </qresource>
+</RCC>

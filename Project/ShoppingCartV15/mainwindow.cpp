@@ -11,6 +11,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
 //    ui->mdiArea->setBackground(QColor("blue"));
 
+    hide = new QTimer();
+    moveIt = new QTimer();
+    connect(hide,SIGNAL(timeout()),this,SLOT(callMove()));
+    connect(moveIt,SIGNAL(timeout()),this,SLOT(hideUser()));
+
     isLog = false;
     isList1 = false;
     isList2 = false;
@@ -358,6 +363,8 @@ void MainWindow::crUsCh()
     connect(this,SIGNAL(updUser(QString)),userchild,SLOT(updateN(QString)));
     //update the user name
     emit updUser(name);
+    //start the timer
+    hide->start(2000);
 }
 
 void MainWindow::remLog()
@@ -475,6 +482,22 @@ void MainWindow::clearCart()
     //add total of each
     totalM = 0;
     crLiP1();
+}
+
+void MainWindow::callMove()
+{
+    hide->stop();
+    moveIt->start(50);
+}
+
+void MainWindow::hideUser()
+{
+    if(userchild->y() > 730){
+        qDebug() << "user hidden";
+        moveIt->stop();
+    }
+    userchild->move(0,userchild->y()+3);
+
 }
 
 void MainWindow::emSetUp1()

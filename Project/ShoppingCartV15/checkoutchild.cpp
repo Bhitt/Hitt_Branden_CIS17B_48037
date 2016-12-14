@@ -90,20 +90,13 @@ void CheckoutChild::setup()
         QLabel *item1 = new QLabel("Game of Thrones BluRay S1-S5");   //create the labels
         QLabel *amount = new QLabel(QString::number(unit1));
         QLabel *price = new QLabel(QString::number(unit1*80.07));
-//        item1->setGeometry(120,20*itemC,300,20);                                   //position them
-//        amount->setGeometry(430,20*itemC,50,20);
-//        price->setGeometry(490,20*itemC,50,20);
         item1->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-        item1->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");                   //whiten background
+        item1->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");      //whiten background
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item1->show();                                                      //show labels
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item1);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -116,20 +109,13 @@ void CheckoutChild::setup()
         QLabel *item2 = new QLabel("Game of Thrones BluRay S6");
         QLabel *amount = new QLabel(QString::number(unit2));
         QLabel *price = new QLabel(QString::number(unit2*39.99));
-//        item2->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item2->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
         item2->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item2->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item2);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -145,17 +131,10 @@ void CheckoutChild::setup()
         item3->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item3->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item3->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item3->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item3);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -170,17 +149,10 @@ void CheckoutChild::setup()
         item4->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item4->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item4->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item4->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item4);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -195,17 +167,10 @@ void CheckoutChild::setup()
         item5->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item5->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item5->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item5->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item5);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -220,17 +185,10 @@ void CheckoutChild::setup()
         item6->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item6->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item6->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item6->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item6);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -245,17 +203,10 @@ void CheckoutChild::setup()
         item7->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item7->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item7->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item7->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item7);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -270,17 +221,10 @@ void CheckoutChild::setup()
         item8->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item8->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item8->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item8->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item8);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -295,17 +239,10 @@ void CheckoutChild::setup()
         item9->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item9->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item9->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item9->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item9);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -322,17 +259,10 @@ void CheckoutChild::setup()
         item10->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item10->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item10->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item10->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item10);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -347,17 +277,10 @@ void CheckoutChild::setup()
         item11->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item11->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item11->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item11->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item11);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -372,17 +295,10 @@ void CheckoutChild::setup()
         item12->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item12->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item12->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item12->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item12);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -397,17 +313,10 @@ void CheckoutChild::setup()
         item13->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item13->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item13->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item13->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item13);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -422,17 +331,10 @@ void CheckoutChild::setup()
         item14->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item14->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item14->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item14->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item14);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -447,17 +349,10 @@ void CheckoutChild::setup()
         item15->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item15->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item15->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item15->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item15);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -472,17 +367,10 @@ void CheckoutChild::setup()
         item16->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item16->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item16->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item16->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item16);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -497,17 +385,10 @@ void CheckoutChild::setup()
         item17->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item17->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item17->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item17->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item17);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -522,17 +403,10 @@ void CheckoutChild::setup()
         item18->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item18->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item18->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item18->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item18);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -549,17 +423,10 @@ void CheckoutChild::setup()
         item19->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item19->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item19->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item19->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item19);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -574,17 +441,10 @@ void CheckoutChild::setup()
         item20->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item20->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item20->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item20->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item20);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -599,17 +459,10 @@ void CheckoutChild::setup()
         item21->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item21->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item21->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item21->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item21);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -624,17 +477,10 @@ void CheckoutChild::setup()
         item22->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item22->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item22->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item22->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item22);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -649,17 +495,10 @@ void CheckoutChild::setup()
         item23->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item23->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item23->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item23->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item23);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -674,17 +513,10 @@ void CheckoutChild::setup()
         item24->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item24->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item24->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item24->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item24);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -699,17 +531,10 @@ void CheckoutChild::setup()
         item25->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item25->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item25->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item25->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item25);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -724,17 +549,10 @@ void CheckoutChild::setup()
         item26->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item26->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item26->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item26->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item26);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -749,17 +567,10 @@ void CheckoutChild::setup()
         item27->setFixedSize(300,20);
         amount->setFixedSize(60,20);
         price->setFixedSize(60,20);
-//        item27->setGeometry(120,20*itemC+(5*itemC2),300,20);
-//        amount->setGeometry(430,20*itemC+(5*itemC2),50,20);
-//        price->setGeometry(490,20*itemC+(5*itemC2),50,20);
         item27->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         amount->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
         price->setStyleSheet("background-color:#ffffff;qproperty-alignment:AlignCenter;");
-//        item27->show();
-//        amount->show();
-//        price->show();
         QHBoxLayout *hLayout = new QHBoxLayout();
-//        hLayout->setSpacing(5);
         hLayout->addWidget(item27);
         hLayout->addWidget(amount);
         hLayout->addWidget(price);
@@ -898,10 +709,39 @@ void CheckoutChild::on_subOrder_clicked()
     reply = QMessageBox::question(this,"Confirm Order","Are you sure you want to commit the order?",
                                   QMessageBox::Yes|QMessageBox::No);
     if(reply == QMessageBox::Yes){
-        //emit the signal
+        //send them datagrams
+        sendDatagram();
 //        qDebug()<<"submit button :Yes was clicked";
     }else{
         //do nothing
 //        qDebug()<<"submit button :No was clicked";
     }
+}
+
+void CheckoutChild::sendDatagram()
+{
+    //grab the combobox values
+    QString exp1,exp2;
+    exp1 = ui->comboMon->currentText();
+    exp2 = ui->comYear->currentText();
+
+    QByteArray datagram;
+    QDataStream out(&datagram, QIODevice::WriteOnly);
+    out.setVersion(QDataStream::Qt_4_3);
+    out << ui->fullNameEdit->text() << ui->addressEdit->text() << ui->cityEdit->text()
+        << ui->stateEdit->text() << ui->zipEdit->text() << ui->phoneEdit->text()
+        << ui->cardEdit->text() << ui->nameOnEdit->text() << exp1 << exp2
+        << unit1  << unit2  << unit3
+        << unit4  << unit5  << unit6
+        << unit7  << unit8  << unit9
+        << unit10 << unit11 << unit12
+        << unit13 << unit14 << unit15
+        << unit16 << unit17 << unit18
+        << unit19 << unit20 << unit21
+        << unit22 << unit23 << unit24
+        << unit25 << unit26 << unit27
+        << total;
+
+
+    udpSocket.writeDatagram(datagram, QHostAddress::LocalHost, 5825);
 }

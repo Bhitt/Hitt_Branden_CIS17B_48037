@@ -4,6 +4,9 @@
 
 RegisterUser::RegisterUser(QWidget *parent) : QMdiSubWindow(parent)
 {
+
+    this->setStyleSheet("QMdiSubWindow{background-image:url(:/res/images/bg2.jpg);}");
+
     this->setGeometry(0,0,1280,720);
     this->setFixedSize(1280,720);
 

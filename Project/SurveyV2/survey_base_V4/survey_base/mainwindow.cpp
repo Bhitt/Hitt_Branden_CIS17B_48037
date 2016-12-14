@@ -13,9 +13,6 @@ MainWindow::MainWindow(QWidget *parent) :
     isTake = false;
     isList = false;
     isRslt = false;
-
-
-    setWindowTitle(tr("Welcome, please log in"));
     setWindowIcon(QIcon(":/res/images/Icon.png"));
 
     crLgCh();
@@ -63,7 +60,7 @@ void MainWindow::crTkCh(int id)
 
 void MainWindow::CrSlCh()
 {
-    qDebug() << "Survey List Child";
+//    qDebug() << "Survey List Child";
     setFal();
     sList = new SurveyListChild(ui->mdiArea);
     isList = true;
@@ -404,7 +401,7 @@ void MainWindow::addResults(QString text, int num)
     }
     else
     {
-        qDebug() << "Add to result";
+//        qDebug() << "Add to result";
         QSqlQuery query;
         query.exec("SELECT id,survey_question,survey_answer1,survey_answer2,survey_answer3 FROM v_survey_info");
 
@@ -416,7 +413,7 @@ void MainWindow::addResults(QString text, int num)
                 {
                     int number = query.value(2).toInt();
                     number+=1;
-                    qDebug() << number;
+//                    qDebug() << number;
                     QSqlQuery query2;
                     query2.prepare("UPDATE v_survey_info SET survey_answer1=:25 WHERE id=:rowid");
                     query2.bindValue(":rowid",query.value(0).toInt());
@@ -428,7 +425,7 @@ void MainWindow::addResults(QString text, int num)
                 {
                     int number = query.value(3).toInt();
                     number+=1;
-                    qDebug() << number;
+//                    qDebug() << number;
                     QSqlQuery query2;
                     query2.prepare("UPDATE v_survey_info SET survey_answer2=:25 WHERE id=:rowid");
                     query2.bindValue(":rowid",query.value(0).toInt());
@@ -440,7 +437,7 @@ void MainWindow::addResults(QString text, int num)
                 {
                     int number = query.value(4).toInt();
                     number+=1;
-                    qDebug() << number;
+//                    qDebug() << number;
                     QSqlQuery query2;
                     query2.prepare("UPDATE v_survey_info SET survey_answer3=:25 WHERE id=:rowid");
                     query2.bindValue(":rowid",query.value(0).toInt());
@@ -470,7 +467,7 @@ void MainWindow::getResults()
        {
            if(crtPollId == query.value(0).toInt())
            {
-               qDebug() << "In the if";
+//               qDebug() << "In the if";
                result->setQuestion(query.value(1).toString());
                result->setP1(query.value(5).toInt(),query.value(2).toString());
                result->setP2(query.value(6).toInt(),query.value(3).toString());

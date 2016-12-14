@@ -25,6 +25,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QLabel" name="question">
    <property name="geometry">
     <rect>
@@ -41,7 +44,7 @@
   <widget class="QRadioButton" name="radioButton1">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>270</x>
      <y>220</y>
      <width>451</width>
      <height>51</height>
@@ -54,7 +57,7 @@
   <widget class="QRadioButton" name="radioButton2">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>270</x>
      <y>300</y>
      <width>451</width>
      <height>51</height>
@@ -67,7 +70,7 @@
   <widget class="QRadioButton" name="radioButton3">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>270</x>
      <y>380</y>
      <width>451</width>
      <height>51</height>
@@ -80,7 +83,7 @@
   <widget class="QPushButton" name="take_submit">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>270</x>
      <y>510</y>
      <width>171</width>
      <height>51</height>

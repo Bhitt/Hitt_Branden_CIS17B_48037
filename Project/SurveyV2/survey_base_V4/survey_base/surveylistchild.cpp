@@ -6,7 +6,7 @@ SurveyListChild::SurveyListChild(QWidget *parent) :
     ui(new Ui::SurveyListChild)
 {
     ui->setupUi(this);
-    qDebug() << "Survey List Constructor";
+//    qDebug() << "Survey List Constructor";
 }
 
 SurveyListChild::~SurveyListChild()
@@ -43,13 +43,15 @@ void SurveyListChild::setBox()
         temp[i]->setAttribute(Qt::WA_TranslucentBackground);
         temp[i]->setFlat(true);
         temp[i]->setCheckable(true);
-        temp[i]->setFixedSize(1230,150);
+        temp[i]->setFixedSize(1000,150);
+        temp[i]->setStyleSheet("background-image:url(:/res/images/bg1.png);");
         vLayout->addWidget(temp[i]);
 
         connect(temp[i],SIGNAL(clicked(bool)),this,SLOT(hello()));
     }
     ui->scrollAreaWidget->setLayout(vLayout);
     ui->scrollArea->setWidget(ui->scrollAreaWidget);
+    ui->scrollArea->setStyleSheet("background-color:#022636;");
 }
 
 void SurveyListChild::hello()

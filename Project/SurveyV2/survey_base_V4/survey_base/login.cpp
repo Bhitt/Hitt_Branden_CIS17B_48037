@@ -5,10 +5,14 @@ Login::Login(QWidget *parent) : QWidget(parent)
     this->setGeometry(0,0,1280,720);
     // creating user name label and line edit
     uLabel = new QLabel(tr("Username:"),this);
+    uLabel->setStyleSheet("font-size:20px;font-family:Verdana;");
     uLine = new QLineEdit(this);
+
 
     // creating password label and line edit
     pLabel = new QLabel(tr("Password:"),this);
+    pLabel->setStyleSheet("font-size:20px;font-family:Verdana;");
+
     pLine = new QLineEdit(this);
 
     pLine->setEchoMode(QLineEdit::Password);
@@ -43,9 +47,9 @@ Login::Login(QWidget *parent) : QWidget(parent)
     reg->setStyleSheet("text-decoration: underline; color: blue;");
 
     // set geometry for all things
-    uLabel->setGeometry(this->width()/2 - 100,this->height()/2 - 100,50,20);
+    uLabel->setGeometry(this->width()/2 - 155,this->height()/2 - 110,130,30);
     uLine->setGeometry(this->width()/2 - 45,this->height()/2 - 100,100,20);
-    pLabel->setGeometry(this->width()/2 - 100,this->height()/2 - 75,50,20);
+    pLabel->setGeometry(this->width()/2 - 147,this->height()/2 - 82,120,30);
     pLine->setGeometry(this->width()/2 - 45,this->height()/2 - 75,100,20);
     pBox->setGeometry(this->width()/2 + 60,this->height()/2 - 75,25,25);
     submit->setGeometry(this->width()/2 - 100,this->height()/2 - 50,75,25);

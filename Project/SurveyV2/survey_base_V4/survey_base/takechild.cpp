@@ -16,6 +16,7 @@ takeChild::~takeChild()
 void takeChild::setQuest(QString quest)
 {
     ui->question->setText(quest);
+    ui->question->setStyleSheet("font-size:24px;");
 }
 void takeChild::setAns1(QString ans)
 {

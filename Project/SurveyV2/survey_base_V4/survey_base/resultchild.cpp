@@ -11,6 +11,8 @@ ResultChild::ResultChild(QWidget *parent) :
 ResultChild::~ResultChild()
 {
     delete ui;
+
+
 }
 
 void ResultChild::setP1(int val,QString ans)
@@ -38,6 +40,7 @@ void ResultChild::setQuestion(QString q)
 {
     qDebug() << q;
     ui->label->setText(q);
+    ui->label->setStyleSheet("font-size:24px; qproperty-alignment: AlignCenter;");
 }
 
 void ResultChild::on_gotomenu_clicked()

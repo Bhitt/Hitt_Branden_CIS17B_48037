@@ -12,14 +12,17 @@ RegisterUser::RegisterUser(QWidget *parent) : QMdiSubWindow(parent)
 
     // creating user name label and line edit
     uLabel = new QLabel(tr("Username:"),this);
+    uLabel->setStyleSheet("font-size:20px;font-family:Verdana;");
     uLine = new QLineEdit(this);
 
     // creating password label and line edit
     pLabel = new QLabel(tr("Password:"),this);
+    pLabel->setStyleSheet("font-size:20px;font-family:Verdana;");
     pLine = new QLineEdit(this);
 
     // creating password confirmation label and line edit
     cLabel = new QLabel(tr("Confirm:"),this);
+    cLabel->setStyleSheet("font-size:20px;font-family:Verdana;");
     cLine = new QLineEdit(this);
 
     // setting the initial echo mode for the password line edits
@@ -57,16 +60,22 @@ RegisterUser::RegisterUser(QWidget *parent) : QMdiSubWindow(parent)
     eCheck->setAttribute(Qt::WA_TranslucentBackground);
 
     // set geometry for all things
-    uLabel->setGeometry(this->width()/2 - 100,this->height()/2 - 100,50,20);
+    uLabel->setGeometry(this->width()/2 - 155,this->height()/2 - 110,130,30);
     uLine->setGeometry(this->width()/2 - 45,this->height()/2 - 100,100,20);
-    pLabel->setGeometry(this->width()/2 - 100,this->height()/2 - 75,50,20);
+    pLabel->setGeometry(this->width()/2 - 148,this->height()/2 - 82,120,30);
     pLine->setGeometry(this->width()/2 - 45,this->height()/2 - 75,100,20);
     pBox->setGeometry(this->width()/2 + 60,this->height()/2 - 75,25,25);
-    cLabel->setGeometry(this->width()/2 - 100,this->height()/2 - 50,50,20);
+    cLabel->setGeometry(this->width()/2 - 135,this->height()/2 - 55,100,30);
     cLine->setGeometry(this->width()/2 - 45,this->height()/2 - 50,100,20);
     submit->setGeometry(this->width()/2 - 100,this->height()/2 - 25,75,25);
     back->setGeometry(this->width()/2 - 20,this->height()/2 - 25,75,25);
     eCheck->setGeometry(this->width()/2 - 100,this->height()/2 + 10,100,20);
+
+    //create the toolButton hint
+    hint = new QToolButton(this);
+    hint->setText(tr("..."));
+    hint->setGeometry(this->width()/2 + 60,this->height()/2 - 50, 30,20);
+    connect(hint,SIGNAL(clicked(bool)),this,SLOT(hintClick()));
 }
 
 RegisterUser::~RegisterUser()
@@ -129,6 +138,17 @@ void RegisterUser::validate()
         else{
             submit->setEnabled(false);
         }
+}
+
+void RegisterUser::hintClick()
+{
+    tip = new QMessageBox();
+    tip->setWindowTitle("Account Setup");
+    tip->setWindowIcon(QIcon(":/res/images/Icon.png"));
+    tip->setText("Usernames must be between 6-20 characters in length and must not start/end with a period or underscore. \n"
+                 "Password must contain 1 digit, 1 lower case, 1 upper case and #?!@$%^&*- in 6 to 20 characters.");
+    tip->addButton(QMessageBox::Ok);
+    tip->show();
 }
 
 bool RegisterUser::regEx()

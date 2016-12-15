@@ -9,6 +9,8 @@
 #include <QDebug>
 #include <QRegularExpression>
 #include <QRegularExpressionMatch>
+#include <QToolButton>
+#include <QMessageBox>
 
 class RegisterUser : public QMdiSubWindow
 {
@@ -28,6 +30,8 @@ private:
     QRegularExpressionMatch *pMatch;    // match for regular expression
     bool matchChk;                      // boolean for match instantiation
     bool regEx();           //checks the regular expressions
+    QToolButton *hint;       //hint for the reg exp constraints
+    QMessageBox *tip;
 
     QLabel *eCheck;
 
@@ -43,6 +47,7 @@ public:
 private slots:
     void setVis();          // slot for setting password to visible while typing
     void validate();        // slot for validating the confirm password
+    void hintClick();       // slot for toolbutton
 };
 
 #endif // REGISTERUSER_H
